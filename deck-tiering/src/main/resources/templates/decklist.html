@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <head>
+        <title>Deck Tiering</title>    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet" />
+    </head>
+<body>
+
+<header id ="header">
+    <h1>Deck Tiering</h1>
+</header>
+
+<section id="banner">
+    <div class="inner">
+        <header>
+            <h1 th:text="${card}">Decks</h1>
+        </header>
+        <div>
+            <table class="table table-striped">
+                <tr>
+                    <th>Deck</th>
+                    <th>Rating</th>
+                    <th>Tier</th>
+                    <th>Owner</th>
+                </tr>
+                <tr th:each="deck : ${decklist}">
+                    <td th:text="${deck.name}">Deck</td><!--         click into for card list           -->
+                    <td th:text="${deck.rating}">Rating</td><!--      click into for history              -->
+                    <td th:text="${deck.tier}">Tier</td><!--       click into for other of this tier             -->
+                    <td>
+                        <a th:href="@{/deck/{ownerId}(ownerId=${deck.owner})}"
+                           th:text="${deck.owner}">Owner</a>
+                    </td> <!--       click into for other dekcs they own             -->
+                </tr>
+            </table>
+
+            <a href="#main" class="button big alt scrolly" th:href="@{/deck/addoutcome}">Add result</a>
+        </div>
+    </div>
+</section>
+</body>
+</html>

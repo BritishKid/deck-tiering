@@ -1,0 +1,85 @@
+package com.trials.deck_tiering.dao;
+
+import com.trials.deck_tiering.model.Deck;
+import org.springframework.stereotype.Repository;
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+@Repository
+public class DeckDao {
+
+    private static final String CSV_SEPARATOR = ",";
+    File file = new File("decks.csv").getAbsoluteFile();
+
+
+    public Map<String, Deck> getDeckList() {
+        Map<String, Deck> decks = new HashMap<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] values = line.split(CSV_SEPARATOR);
+                String deckId = values[0];
+                Deck deck = new Deck(deckId, values[1], Integer.parseInt(values[2]), values[3], values[4], Integer.parseInt(values[5]));
+                decks.put(deckId, deck);
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        return decks;
+    }
+    //read and write files
+
+
+    public List<Deck> getDeckInformationFromId(String deckId) {
+        List<Deck> decks = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] values = line.split(",");
+                if(values[0].equals(deckId)) {
+                    Deck deck = new Deck(values[0], values[1], Integer.parseInt(values[2]), values[3], values[4], Integer.parseInt(values[5]));
+                    decks.add(deck);
+                }
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        return decks;
+    }
+
+
+    public void writeDecks(List<Deck> decks) {
+
+        try {
+            FileWriter fw = new FileWriter(file, true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            for(Deck deck: decks) {
+                StringBuffer oneline = new StringBuffer();
+                oneline.append(deck.getId());
+                oneline.append(CSV_SEPARATOR);
+                oneline.append(deck.getName());
+                oneline.append(CSV_SEPARATOR);
+                oneline.append(deck.getRating());
+                oneline.append(CSV_SEPARATOR);
+                oneline.append(deck.getOwner());
+                oneline.append(CSV_SEPARATOR);
+                oneline.append(deck.getCardList());
+                oneline.append(CSV_SEPARATOR);
+                oneline.append(deck.getTier());
+                bw.write(oneline.toString());
+                bw.newLine();
+            }
+            bw.flush();
+            bw.close();
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+}
