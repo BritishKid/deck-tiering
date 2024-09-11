@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 @Service
 public class DeckService {
@@ -21,7 +21,7 @@ public class DeckService {
     //manip data from reads
 
     public List<Deck> getAllUniqueDecks() {
-        Map<String, Deck> mapDeckList = deckDao.getDeckList();
+        Map<String, Deck> mapDeckList = deckDao.getUniqueDeckList();
         return new ArrayList<Deck>(mapDeckList.values());
     }
 
@@ -70,5 +70,29 @@ public class DeckService {
 
     public List<Deck> filterPlayersDecks(List<Deck> allUniqueDecks, String owner) {
         return allUniqueDecks.stream().filter(deck -> deck.getOwner().equals(owner)).collect(Collectors.toList());
+    }
+
+    public List<Deck> getHistoryForDeck(List<Deck> allUniqueDecks, String deckId) {
+        return IntStream.range(0, allUniqueDecks.size()).filter(i -> allUniqueDecks.get(i).getId().equals(deckId)).mapToObj(allUniqueDecks::get).toList();
+    }
+
+    public List<Deck> filterByGame(List<Deck> allUniqueDecks, String game) {
+        return IntStream.range(0, allUniqueDecks.size()).filter(i -> allUniqueDecks.get(i).getGame().equals(game)).mapToObj(allUniqueDecks::get).toList();
+    }
+
+    public List<Deck> getFullDeckList() {
+        return deckDao.getFullDeckList();
+        }
+
+    public List<List<Object>> getChartData(List<Deck> deckHistoryList) {
+        List<List<Object>> graphData = new ArrayList<>();
+        for (int i = 0; i < deckHistoryList.size(); i++) {
+            graphData.add(List.of(i, deckHistoryList.get(i).getRating()));
+        }
+        return graphData;
+    }
+
+    public Object filterByTier(List<Deck> allUniqueDecks, int tier) {
+        return allUniqueDecks.stream().filter(allUniqueDeck -> allUniqueDeck.getTier() == tier).collect(Collectors.toList());
     }
 }

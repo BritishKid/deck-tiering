@@ -14,4 +14,5 @@ public class Deck {
     private String owner;
     private String cardList;
     private int tier;
+    private String game;
 }

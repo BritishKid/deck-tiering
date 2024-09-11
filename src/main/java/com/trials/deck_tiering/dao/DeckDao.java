@@ -16,14 +16,14 @@ public class DeckDao {
     File file = new File("decks.csv").getAbsoluteFile();
 
 
-    public Map<String, Deck> getDeckList() {
+    public Map<String, Deck> getUniqueDeckList() {
         Map<String, Deck> decks = new HashMap<>();
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(CSV_SEPARATOR);
                 String deckId = values[0];
-                Deck deck = new Deck(deckId, values[1], Integer.parseInt(values[2]), values[3], values[4], Integer.parseInt(values[5]));
+                Deck deck = new Deck(deckId, values[1], Integer.parseInt(values[2]), values[3], values[4], Integer.parseInt(values[5]), values[6]);
                 decks.put(deckId, deck);
             }
         } catch (IOException e) {
@@ -42,7 +42,7 @@ public class DeckDao {
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(",");
                 if(values[0].equals(deckId)) {
-                    Deck deck = new Deck(values[0], values[1], Integer.parseInt(values[2]), values[3], values[4], Integer.parseInt(values[5]));
+                    Deck deck = new Deck(values[0], values[1], Integer.parseInt(values[2]), values[3], values[4], Integer.parseInt(values[5]), values[6]);
                     decks.add(deck);
                 }
             }
@@ -57,7 +57,7 @@ public class DeckDao {
     public void writeDecks(List<Deck> decks) {
 
         try {
-            FileWriter fw = new FileWriter(file, true);
+            FileWriter fw = new FileWriter(file, true); //todo put csv creator in the model
             BufferedWriter bw = new BufferedWriter(fw);
             for(Deck deck: decks) {
                 StringBuffer oneline = new StringBuffer();
@@ -72,6 +72,8 @@ public class DeckDao {
                 oneline.append(deck.getCardList());
                 oneline.append(CSV_SEPARATOR);
                 oneline.append(deck.getTier());
+                oneline.append(CSV_SEPARATOR);
+                oneline.append(deck.getGame());
                 bw.write(oneline.toString());
                 bw.newLine();
             }
@@ -81,5 +83,21 @@ public class DeckDao {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public List<Deck> getFullDeckList() {
+       List<Deck> decks = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] values = line.split(CSV_SEPARATOR);
+                Deck deck = new Deck(values[0], values[1], Integer.parseInt(values[2]), values[3], values[4], Integer.parseInt(values[5]), values[6]);
+                decks.add(deck);
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        return decks;
     }
 }

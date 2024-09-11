@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:float="http://www.w3.org/1999/xhtml">
 <head lang="en">
 
   <head>
@@ -10,31 +10,64 @@
 <body>
 
 <header id ="header">
-  <h1>Deck Tiering</h1>
+  <h1><a href="#main" th:href="@{/}">Deck Tiering</a></h1>
 </header>
 
 <section id="banner">
   <div class="inner">
     <header>
-      <h1 th:text="${owner}">Decks</h1>
+      <h1 th:text="${title}">Decks</h1>
     </header>
-    <div>
-      <table class="table table-striped">
+    <div style="width:400px;height:690px;overflow:auto;float:left;">
+    <table class="table table-striped">
         <tr>
-          <th>Deck</th>
+          <th>Pokemon Decks</th>
           <th>Rating</th>
           <th>Tier</th>
         </tr>
-        <tr th:each="deck : ${decklist}">
-          <td th:text="${deck.name}">Deck</td><!--         click into for card list           -->
-          <td th:text="${deck.rating}">Rating</td><!--      click into for history              -->
-          <td th:text="${deck.tier}">Tier</td><!--       click into for other of this tier             -->
+        <tr th:each="pokemondeck : ${pokemondecklist}">
+          <td>
+            <a th:href="@{/deck/history/{deckId}(deckId=${pokemondeck.id})}"
+               th:text="${pokemondeck.name}">Name</a>
+          </td>
+          <td th:text="${pokemondeck.rating}">Rating</td><!--      click into for history              -->
+          <td th:text="${pokemondeck.tier}">Tier</td><!--       click into for other of this tier             -->
         </tr>
       </table>
-
-      <a href="#main" class="button big alt scrolly" th:href="@{/deck/addoutcome}">Add result</a>
     </div>
-  </div>
+    <div style="width:400px;height:690px;overflow:auto;float:left;">
+      <table class="table table-striped">
+        <tr>
+          <th>Yu-Gi-Oh Decks</th>
+          <th>Rating</th>
+          <th>Tier</th>
+        </tr>
+        <tr th:each="ygodeck : ${ygodecklist}">
+          <td>
+            <a th:href="@{/deck/history/{deckId}(deckId=${ygodeck.id})}"
+               th:text="${ygodeck.name}">Name</a>
+          </td>
+          <td th:text="${ygodeck.rating}">Rating</td><!--      click into for history              -->
+          <td th:text="${ygodeck.tier}">Tier</td><!--       click into for other of this tier             -->
+        </tr>
+      </table>
+    </div>
+    <div style="width:400px;height:690px;overflow:auto;float:left;">
+    <table class="table table-striped">
+      <tr>
+        <th>Commander Decks</th>
+        <th>Rating</th>
+        <th>Tier</th>
+      </tr>
+      <tr th:each="edhdeck : ${edhdecklist}">
+        <td>
+          <a th:href="@{/deck/history/{deckId}(deckId=${edhdeck.id})}"
+             th:text="${edhdeck.name}">Name</a>
+        </td>
+        <td th:text="${edhdeck.rating}">Rating</td><!--      click into for history              -->
+        <td th:text="${edhdeck.tier}">Tier</td><!--       click into for other of this tier             -->
+      </tr>
+    </table>
 </section>
 </body>
 </html>
