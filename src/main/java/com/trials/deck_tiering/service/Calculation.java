@@ -7,6 +7,13 @@ import java.util.List;
 
 public class Calculation {
 
+    private final int TIER_1_RATING = 2000;
+    private final int TIER_2_RATING = 1750;
+    private final int TIER_3_RATING = 1400;
+    private final int TIER_4_RATING = 1000;
+    private final int TIER_5_RATING = 750;
+
+
     public List<Deck> deckRatingCalculation(List<Deck> winningDecks, List<Deck> losingDecks) {
         List<Deck> updatedList = new ArrayList<>();
 
@@ -20,17 +27,28 @@ public class Calculation {
         float winnerChange = WinnerEloRatingChange(winnerAverage, probabilityWinner);
         for (Deck deck : winningDecks) {
             deck.setRating((int) (deck.getRating() + winnerChange));
+            deck.setTier(deckTierCalculation(deck.getRating()));
             updatedList.add(deck);
         }
 
         float loserChange = LoserEloRatingChange(loserAverage, probabilityLoser);
         for (Deck deck: losingDecks) {
             deck.setRating((int) (deck.getRating() - loserChange));
+            deck.setTier(deckTierCalculation(deck.getRating()));
             updatedList.add(deck);
         }
 
         return updatedList;
 
+    }
+
+    private int deckTierCalculation(int rating) {
+        if(rating >= TIER_1_RATING) return 1;
+        if(rating >= TIER_2_RATING) return 2;
+        if(rating >= TIER_3_RATING) return 3;
+        if(rating >= TIER_4_RATING) return 4;
+        if(rating >= TIER_5_RATING) return 5;
+        return 6;
     }
 
     private float LoserEloRatingChange(float loserAverage, float probabilityLoser) {

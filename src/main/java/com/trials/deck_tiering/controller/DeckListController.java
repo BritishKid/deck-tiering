@@ -32,7 +32,7 @@ public class DeckListController {
         return "decklist";
     }
 
-    @PostMapping(path="/deck/winners={winners}&losers={losers}")
+    @PostMapping(path="/deck/winners={winners}&losers={losers}") //unused
     public String updateResults(@PathVariable("winners") String winnerIds,
                                 @PathVariable("losers") String losersIds,
                                 Model model) {
@@ -54,11 +54,23 @@ public class DeckListController {
         return "addoutcome";
     }
 
+    @RequestMapping(path="/deck/addoutcome/game/{game}")
+    public String createOutcomeForGame(@PathVariable("game") String game,
+                                       Model model) {
+        List<Deck> allUniqueDecks = deckService.getAllUniqueDecks();
+        List<Deck> filteredByGame = deckService.filterByGame(deckService.orderDeckByRating(allUniqueDecks), game);
+        model.addAttribute("decklist", filteredByGame);
+        return "addoutcome";
+    }
+
     @PostMapping(path="/deck/resultsupdate")
     public String updateResult(@ModelAttribute("winningDeck") String winningDeck,
                                @ModelAttribute("losingDeck") String losingDeck,
                                Model model) {
 
+        if(winningDeck.isEmpty() || losingDeck.isEmpty()) { //prevent 500 on forgetting to add result
+            return "index";
+        }
         String[] winners = new String[]{winningDeck}; //this allows for multi games in future for now handle 1v1
         String[] losers = new String[]{losingDeck};
         deckService.updateDeckRatings(winners, losers);

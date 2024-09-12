@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4dc2f24-9b18-4da5-9e0f-f85bfa536152" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/deckhistory.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/decks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/decks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DeckDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DeckDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/DeckService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/DeckService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/Calculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/Calculation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addoutcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addoutcome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/decklist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/decklist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ownersdecks.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ownersdecks.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,9 +156,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/Calculation.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/DeckService.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
