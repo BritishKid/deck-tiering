@@ -108,9 +108,13 @@ public class DeckListController {
         List<Deck> allDecks = deckService.getFullDeckList();
         List<Deck> deckHistoryList = deckService.getHistoryForDeck(allDecks, deckId);
 
-        model.addAttribute("deckHistory", deckHistoryList);
-        model.addAttribute("title", deckHistoryList.getFirst().getName() + " History \n Owner: " + deckHistoryList.getFirst().getOwner());
+        //idk whats going on here and why it won't let me do in single line
+        String string = "Rating: " + deckHistoryList.getLast().getRating();
+        String string2 = " Tier: " + String.valueOf(deckHistoryList.getLast().getTier());
 
+        model.addAttribute("deckHistory", deckHistoryList);
+        model.addAttribute("title", deckHistoryList.getFirst().getName() + "  Owner: " + deckHistoryList.getFirst().getOwner());
+        model.addAttribute("currentRating", string + string2);
         //TODO ADD OUTPUT FOR HISTORY VS OPPONENTS
 
         //data for graphs
@@ -134,3 +138,11 @@ public class DeckListController {
 
 }
 //TODO add controller for adding multiple games in a row
+
+//TODO - other functionalities to add
+//        showing history of games played for all/specific games
+//        showing history of a decks games played
+//        show who a deck is best against or worst against
+//        player coefficient?
+//        player rating
+//        card list for a deck

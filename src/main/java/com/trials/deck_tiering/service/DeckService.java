@@ -53,6 +53,7 @@ public class DeckService {
             winnerHistory.setRecordedDeckOwner(latestDeckInformation.getOwner());
             winnerHistory.setOutcome("WON");
             winnerHistory.setOldRating(latestDeckInformation.getRating());
+            winnerHistory.setGame(latestDeckInformation.getGame());
             historyForWinners.add(winnerHistory);
         }
 
@@ -69,6 +70,7 @@ public class DeckService {
             loserHistory.setRecordedDeckOwner(latestDeckInformation.getOwner());
             loserHistory.setOutcome("LOST");
             loserHistory.setOldRating(latestDeckInformation.getRating());
+            loserHistory.setGame(latestDeckInformation.getGame());
             historyForLosers.add(loserHistory);
         }
 

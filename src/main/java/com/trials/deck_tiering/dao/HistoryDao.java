@@ -35,6 +35,8 @@ public class HistoryDao {
                 oneline.append(CSV_SEPARATOR);
                 oneline.append(history.getOpponent());
                 oneline.append(CSV_SEPARATOR);
+                oneline.append(history.getGame());
+                oneline.append(CSV_SEPARATOR);
                 bw.write(oneline.toString());
                 bw.newLine();
             }

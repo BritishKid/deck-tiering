@@ -15,28 +15,28 @@
     <h1><a href="#main"  th:href="@{/}">Deck Tiering</a></h1>
 </header>
 
-<section id="banner">
+<section id="banner" style="overflow:auto">
     <div class="inner">
-        <header>
+        <header style="padding-top:5px">
             <h1 th:text="${title}">Decks</h1>
+            <h2 th:text="${currentRating}">Current Rating</h2>
+            <h4 > Card list for this deck (Coming soon)</h4>
         </header>
-        <div style="width:400px;height:690px;overflow:auto;float:left;">
-        <table class="table table-striped">
-                <tr>
-                    <th>Rating</th>
-                    <th>Tier</th>
-                </tr>
-                <tr th:each="deck : ${deckHistory}">
-                    <td th:text="${deck.rating}">Rating</td><!--      click into for history              -->
-                    <td th:text="${deck.tier}">Tier</td><!--       click into for other of this tier             -->
-                </tr>
-            </table>
-        </div>
-
-        <div style="width: 800px;float:right;">
-            <div id="chart_div"></div>
-            <div id="piechart" style="width: 900px; height: 500px;"></div>
-        </div>
+            <div id="chart_div" style="height:200px"></div>
+            <div style="padding-top:10px">
+                <div style="width:400px;height:300px;overflow:auto;float:left;">
+                <table class="table table-striped">
+                    <tr>
+                        <th>Rating</th>
+                        <th>Tier</th>
+                    </tr>
+                    <tr th:each="deck : ${deckHistory}">
+                        <td th:text="${deck.rating}">Rating</td><!--      click into for history              -->
+                        <td th:text="${deck.tier}">Tier</td><!--       click into for other of this tier             -->
+                    </tr>
+                </table>
+                </div>
+            </div>
 
         <script th:inline="javascript">
 
@@ -49,8 +49,8 @@
                 data.addColumn('number', 'Rating');
                 data.addRows([[${chartData}]]);
                     var options = {
-                    'width':800,
-                    'height':300};
+                    'width':1200,
+                    'height':200};
 
                 var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
                 chart.draw(data, options);

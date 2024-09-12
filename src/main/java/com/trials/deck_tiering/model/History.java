@@ -14,4 +14,5 @@ public class History {
     private String outcome;
     private int oldRating;
     private String opponent;
+    private String game;
 }
