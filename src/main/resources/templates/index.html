@@ -10,18 +10,19 @@
 <body>
 
 <header id ="header">
-    <h1>Deck Tiering</h1>
+    <h1><a href="#main"  th:href="@{/}">Deck Tiering</a></h1>
 </header>
+
 
 <section id="banner" style="margin-top:48px">
     <div class="inner">
         <header>
             <h1 th:text="${title}">Index</h1>
         </header>
-            <a href="#main" class="button big alt scrolly" th:href="@{/decks/game/Pokemon}">Pokemon</a>
-            <a href="#main" class="button big alt scrolly" th:href="@{/decks/game/Yu-Gi-Oh}">Yu-Gi-Oh</a>
-            <a href="#main" class="button big alt scrolly" th:href="@{/decks/game/Commander}">Commander</a>
-        </div>
+        <tr th:each="game : ${gameList}">
+            <a href="#main" class="button big alt scrolly" th:text="${game}" th:href="@{/decks/game/{game}(game=${game})}">Auto genned</a>
+        </tr>
+        <a href="#main" class="button big alt scrolly" th:href="@{/decks/new}">Add Deck</a>
     </div>
 </section>
 </body>

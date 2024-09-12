@@ -1,6 +1,7 @@
 package com.trials.deck_tiering.controller;
 
 import com.trials.deck_tiering.model.Deck;
+import com.trials.deck_tiering.model.GameEnum;
 import com.trials.deck_tiering.service.DeckService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.ui.Model;
 
 import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+
+import static com.trials.deck_tiering.model.GameEnum.getGameList;
 
 @Controller
 public class DeckListController {
@@ -18,7 +19,8 @@ public class DeckListController {
     private DeckService deckService;
 
     @RequestMapping("/")
-    public String index() {
+    public String index(Model model) {
+        model.addAttribute("gameList", getGameList());
         return "index.html";
     }
 
@@ -88,6 +90,24 @@ public class DeckListController {
         return "decklist";
     }
 
+    @PostMapping("/decks/add")
+    public String addDeck(@ModelAttribute("deckName") String deckName,
+                          @ModelAttribute("ownerName") String owner,
+                          @ModelAttribute("gameName") String game,
+                          Model model) {
+
+        //add to csv the new deck
+        return "decklist";
+    }
+
+    @GetMapping("/decks/new")
+    public String newDeck(Model model) {
+
+        model.addAttribute("gameList", getGameList());
+
+        return "newdeck";
+    }
+
     @GetMapping(path="/deck/owner/{ownerId}")
     public String getPlayersDeck (@PathVariable("ownerId") String owner,
                                   Model model) {
@@ -95,9 +115,10 @@ public class DeckListController {
         List<Deck> allUniquePlayerDecks = deckService.filterPlayersDecks(allUniqueDecks, owner);
         List<Deck> orderedDeckByRating = deckService.orderDeckByRating(allUniquePlayerDecks);
         model.addAttribute("title", owner +"'s Decks");
-        model.addAttribute("pokemondecklist", deckService.filterByGame(orderedDeckByRating, "Pokemon"));
-        model.addAttribute("ygodecklist", deckService.filterByGame(orderedDeckByRating, "Yu-Gi-Oh"));
-        model.addAttribute("edhdecklist", deckService.filterByGame(orderedDeckByRating, "Commander"));
+        model.addAttribute("pokemondecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.POKEMON.getName()));
+        model.addAttribute("ygodecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.YUGIOH.getName()));
+        model.addAttribute("edhdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.COMMANDER.getName()));
+        model.addAttribute("magicdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.MAGIC.getName())); //todo implement
 
         return "ownersdecks";
     }
@@ -146,3 +167,4 @@ public class DeckListController {
 //        player coefficient?
 //        player rating
 //        card list for a deck
+//        add a deck api
