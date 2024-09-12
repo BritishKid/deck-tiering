@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title><!DOCTYPE HTML>
+    <html xmlns:th="http://www.thymeleaf.org">
+    <head lang="en">
+
+    <head>
+    <title>Deck Tiering</title>    <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet" />
+</head>
+<body>
+
+<header id ="header">
+  <h1><a href="#main" th:href="@{/}">Deck Tiering</a></h1>
+</header>
+
+
+<section id="banner" style="margin-top:48px">
+  <div class="inner">
+    <div class="col-lg-3" th:object="${decklist}">
+      <form action="#" th:action="@{/deck/resultsupdate/multi/game/{game}(game=${game})}" th:object="${String}" method="post">
+        <select class="form-control" id="winningDeck1" name="winningDeck1">
+          <option value="">Winning Deck 1</option>
+          <option th:each="deck : ${decklist}"
+                  th:value="${deck.id}"
+                  th:text="${deck.name}+' : '+${deck.owner}"></option>
+        </select>
+        <select class="form-control" id="winningDeck2" name="winningDeck2">
+          <option value="">Winning Deck 2</option>
+          <option th:each="deck : ${decklist}"
+                  th:value="${deck.id}"
+                  th:text="${deck.name}+' : '+${deck.owner}"></option>
+        </select>
+        <select class="form-control" id="losingDeck1" name="losingDeck1">
+          <option value="">Losing Deck 1</option>
+          <option th:each="deck : ${decklist}"
+                  th:value="${deck.id}"
+                  th:text="${deck.name}+' : '+${deck.owner}"></option>
+        </select>
+        <select class="form-control" id="losingDeck2" name="losingDeck2">
+          <option value="">Losing Deck 2</option>
+          <option th:each="deck : ${decklist}"
+                  th:value="${deck.id}"
+                  th:text="${deck.name}+' : '+${deck.owner}"></option>
+        </select>
+        <p><input type="submit" value="Submit" /></p>
+    </div>
+  </div>
+</section>
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>

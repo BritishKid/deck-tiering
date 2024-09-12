@@ -10,7 +10,7 @@ import org.springframework.ui.Model;
 
 import java.util.List;
 
-import static com.trials.deck_tiering.model.GameEnum.getGameList;
+import static com.trials.deck_tiering.model.GameEnum.*;
 
 @Controller
 public class DeckListController {
@@ -65,6 +65,12 @@ public class DeckListController {
         List<Deck> filteredByGame = deckService.filterByGame(deckService.orderDeckByRating(allUniqueDecks), game);
         model.addAttribute("decklist", filteredByGame);
         model.addAttribute("game", game);
+        if(game.equals(YUGIOHTAG.getName()) ||
+                game.equals(YUGIOHBR.getName()) ||
+                game.equals(YUGIOHTEAM.getName()) ||
+                game.equals(COMMANDER.getName())) { //for multi games
+            return "addoutcomemulti";
+        }
         return "addoutcome";
     }
 
@@ -80,6 +86,30 @@ public class DeckListController {
 
         String[] winners = new String[]{winningDeck}; //this allows for multi games in future for now handle 1v1
         String[] losers = new String[]{losingDeck};
+        deckService.updateDeckRatings(winners, losers);
+
+        List<Deck> allUniqueDecks = deckService.getAllUniqueDecks();
+        List<Deck> filteredByGame = deckService.filterByGame(deckService.orderDeckByRating(allUniqueDecks), game);
+
+        model.addAttribute("decklist", filteredByGame);
+        model.addAttribute("game", game); //todo fix this bit
+        return "decklist";
+    }
+
+    @PostMapping(path="/deck/resultsupdate/multi/game/{game}")
+    public String updateResult(@ModelAttribute("winningDeck1") String winningDeck1,
+                               @ModelAttribute("losingDeck1") String losingDeck1,
+                               @ModelAttribute("winningDeck2") String winningDeck2,
+                               @ModelAttribute("losingDeck2") String losingDeck2,
+                               @PathVariable String game,
+                               Model model) {
+
+        if(winningDeck1.isEmpty() || losingDeck1.isEmpty() || losingDeck2.isEmpty()) { //prevent error HTTP 500 on forgetting to add result
+            return "index";
+        }
+
+        String[] winners = new String[]{winningDeck1, winningDeck2}; //this allows for multi games in future for now handle 1v1
+        String[] losers = new String[]{losingDeck1, losingDeck2};
         deckService.updateDeckRatings(winners, losers);
 
         List<Deck> allUniqueDecks = deckService.getAllUniqueDecks();
@@ -118,6 +148,9 @@ public class DeckListController {
         model.addAttribute("pokemondecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.POKEMON.getName()));
         model.addAttribute("ygodecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.YUGIOH.getName()));
         model.addAttribute("edhdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.COMMANDER.getName()));
+        model.addAttribute("ygobrdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.YUGIOHBR.getName())); //todo implement
+        model.addAttribute("ygottdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.YUGIOHTAG.getName())); //todo implement
+        model.addAttribute("ygoteamdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.YUGIOHTEAM.getName())); //todo implement
         model.addAttribute("magicdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.MAGIC.getName())); //todo implement
 
         return "ownersdecks";

@@ -7,7 +7,10 @@ public enum GameEnum {
     POKEMON("Pokemon"),
     YUGIOH("Yu-Gi-Oh"),
     COMMANDER("Commander"),
-    MAGIC("Magic the Gathering");
+    MAGIC("Magic the Gathering"),
+    YUGIOHTEAM("Yu-Gi-Oh Team"),
+    YUGIOHBR("Yu-Gi-Oh FFA"),
+    YUGIOHTAG("Yu-Gi-Oh Tag Team");
 
     private String name;
 
@@ -26,6 +29,9 @@ public enum GameEnum {
         gameList.add(YUGIOH.getName());
         gameList.add(COMMANDER.getName());
         gameList.add(MAGIC.getName());
+        gameList.add(YUGIOHBR.getName());
+        gameList.add(YUGIOHTEAM.getName());
+        gameList.add(YUGIOHTAG.getName());
 
         return gameList;
     }
