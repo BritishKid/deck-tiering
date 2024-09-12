@@ -26,7 +26,9 @@ public class DeckListController {
     public String getDeckList(@PathVariable("game") String game,
                               Model model) {
         List<Deck> allUniqueDecks = deckService.getAllUniqueDecks();
-        model.addAttribute("decklist", deckService.filterByGame(allUniqueDecks, game));
+        List<Deck> filteredByGame = deckService.filterByGame(deckService.orderDeckByRating(allUniqueDecks), game);
+
+        model.addAttribute("decklist", filteredByGame);
         model.addAttribute("title", game + " decks");
         model.addAttribute("game", game);
         return "decklist";
@@ -60,23 +62,29 @@ public class DeckListController {
         List<Deck> allUniqueDecks = deckService.getAllUniqueDecks();
         List<Deck> filteredByGame = deckService.filterByGame(deckService.orderDeckByRating(allUniqueDecks), game);
         model.addAttribute("decklist", filteredByGame);
+        model.addAttribute("game", game);
         return "addoutcome";
     }
 
-    @PostMapping(path="/deck/resultsupdate")
+    @PostMapping(path="/deck/resultsupdate/game/{game}")
     public String updateResult(@ModelAttribute("winningDeck") String winningDeck,
                                @ModelAttribute("losingDeck") String losingDeck,
+                               @PathVariable String game,
                                Model model) {
 
-        if(winningDeck.isEmpty() || losingDeck.isEmpty()) { //prevent 500 on forgetting to add result
+        if(winningDeck.isEmpty() || losingDeck.isEmpty()) { //prevent error HTTP 500 on forgetting to add result
             return "index";
         }
+
         String[] winners = new String[]{winningDeck}; //this allows for multi games in future for now handle 1v1
         String[] losers = new String[]{losingDeck};
         deckService.updateDeckRatings(winners, losers);
 
-        model.addAttribute("decklist", deckService.getAllUniqueDecks());
-        model.addAttribute("game", "NEED TO ADD GAME"); //todo fix this bit
+        List<Deck> allUniqueDecks = deckService.getAllUniqueDecks();
+        List<Deck> filteredByGame = deckService.filterByGame(deckService.orderDeckByRating(allUniqueDecks), game);
+
+        model.addAttribute("decklist", filteredByGame);
+        model.addAttribute("game", game); //todo fix this bit
         return "decklist";
     }
 
@@ -103,6 +111,8 @@ public class DeckListController {
         model.addAttribute("deckHistory", deckHistoryList);
         model.addAttribute("title", deckHistoryList.getFirst().getName() + " History \n Owner: " + deckHistoryList.getFirst().getOwner());
 
+        //TODO ADD OUTPUT FOR HISTORY VS OPPONENTS
+
         //data for graphs
         model.addAttribute("chartData", deckService.getChartData(deckHistoryList));
 
@@ -123,3 +133,4 @@ public class DeckListController {
     }
 
 }
+//TODO add controller for adding multiple games in a row

@@ -21,7 +21,7 @@
 <section id="banner">
   <div class="inner">
     <div class="col-lg-3" th:object="${decklist}">
-      <form action="#" th:action="@{/deck/resultsupdate}" th:object="${String}" method="post">
+      <form action="#" th:action="@{/deck/resultsupdate/game/{game}(game=${game})}" th:object="${String}" method="post">
       <select class="form-control" id="winningDeck" name="winningDeck">
         <option value="">Winning Deck</option>
         <option th:each="deck : ${decklist}"

@@ -14,6 +14,8 @@ public class Calculation {
     private final int TIER_5_RATING = 750;
 
 
+
+
     public List<Deck> deckRatingCalculation(List<Deck> winningDecks, List<Deck> losingDecks) {
         List<Deck> updatedList = new ArrayList<>();
 

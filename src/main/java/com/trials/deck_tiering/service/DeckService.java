@@ -1,11 +1,14 @@
 package com.trials.deck_tiering.service;
 
 import com.trials.deck_tiering.dao.DeckDao;
+import com.trials.deck_tiering.dao.HistoryDao;
 import com.trials.deck_tiering.model.Deck;
 import com.trials.deck_tiering.model.DeckComprator;
+import com.trials.deck_tiering.model.History;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -17,6 +20,9 @@ public class DeckService {
 
     @Autowired
     private DeckDao deckDao;
+
+    @Autowired
+    private HistoryDao historyDao;
 
     //manip data from reads
 
@@ -30,18 +36,40 @@ public class DeckService {
         List<Deck> winnerDecks = new ArrayList<>();
         List<Deck> loserDecks = new ArrayList<>();
 
+        //todo make history work for multi matches
+        List<History> historyForWinners = new ArrayList<>();
+        List<History> historyForLosers = new ArrayList<>();
+
         //get winner deck information
         for (String winner : winners) {
             List<Deck> deckHistory = getDeckInformation(winner); //get history of the deck
             int latestDeckData = deckHistory.size() - 1;
-            winnerDecks.add(deckHistory.get(latestDeckData));
+            Deck latestDeckInformation = deckHistory.get(latestDeckData);
+            winnerDecks.add(latestDeckInformation);
+
+            History winnerHistory = new History();
+            winnerHistory.setRecordedDeckId(latestDeckInformation.getId());
+            winnerHistory.setRecordedDeckName(latestDeckInformation.getName());
+            winnerHistory.setRecordedDeckOwner(latestDeckInformation.getOwner());
+            winnerHistory.setOutcome("WON");
+            winnerHistory.setOldRating(latestDeckInformation.getRating());
+            historyForWinners.add(winnerHistory);
         }
 
         //get loser deck information
         for (String loser : losers) {
             List<Deck> deckHistory = getDeckInformation(loser); //get history of the deck
             int latestDeckData = deckHistory.size() - 1;
-            loserDecks.add(deckHistory.get(latestDeckData));
+            Deck latestDeckInformation = deckHistory.get(latestDeckData);
+            loserDecks.add(latestDeckInformation);
+
+            History loserHistory = new History();
+            loserHistory.setRecordedDeckId(latestDeckInformation.getId());
+            loserHistory.setRecordedDeckName(latestDeckInformation.getName());
+            loserHistory.setRecordedDeckOwner(latestDeckInformation.getOwner());
+            loserHistory.setOutcome("LOST");
+            loserHistory.setOldRating(latestDeckInformation.getRating());
+            historyForLosers.add(loserHistory);
         }
 
         //calculate new ratings
@@ -49,8 +77,41 @@ public class DeckService {
 
         //update csv
         List<Deck> updatedList = calculation.deckRatingCalculation(winnerDecks, loserDecks);
-        writeDecks(updatedList);
 
+        writeDecks(updatedList);
+        writeHistory(historyForWinners, historyForLosers);
+    }
+
+    private void writeHistory(List<History> historyForWinners, List<History> historyForLosers) {
+        //collect
+        List<History> deckHistory = new ArrayList<>();
+
+        //add to opponents the other ones then put into new list
+        for(History winner: historyForWinners) {
+            StringBuffer opponents = new StringBuffer();
+            for (int i = 0; i < historyForLosers.size(); i++) {
+                if(i>0) {
+                    opponents.append(" and ");
+                }
+                opponents.append(historyForLosers.get(i).getRecordedDeckName() +" owned by " + historyForLosers.get(i).getRecordedDeckOwner());
+            }
+            winner.setOpponent(opponents.toString());
+            deckHistory.add(winner);
+        }
+
+        for(History loser: historyForLosers) {
+            StringBuffer opponents = new StringBuffer();
+            for (int i = 0; i < historyForWinners.size(); i++) {
+                if(i>0) {
+                    opponents.append(" and ");
+                }
+                opponents.append(historyForWinners.get(i).getRecordedDeckName() +" owned by " + historyForWinners.get(i).getRecordedDeckOwner());
+            }
+            loser.setOpponent(opponents.toString());
+            deckHistory.add(loser);
+        }
+
+        historyDao.writeHistory(deckHistory);
     }
 
     public void writeDecks (List<Deck> decks) {

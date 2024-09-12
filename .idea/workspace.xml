@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4dc2f24-9b18-4da5-9e0f-f85bfa536152" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/history.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/HistoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/History.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/decks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/decks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/Calculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/Calculation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/DeckService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/DeckService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addoutcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addoutcome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/decklist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/decklist.html" afterDir="false" />
     </list>
@@ -43,8 +47,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -88,9 +92,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.trials.deck_tiering.dao" />
       <recent name="com.trials.deck_tiering.model" />
       <recent name="com.trials.deck_tiering.service" />
-      <recent name="com.trials.deck_tiering.dao" />
       <recent name="com.trials.deck_tiering.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -151,16 +155,5 @@
       <updated>1726042228639</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/DeckService.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
