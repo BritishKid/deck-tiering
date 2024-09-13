@@ -163,7 +163,6 @@ public class DeckListController {
     public String getCardlist(@PathVariable("deckid") String deckId, //this isn't working currently from the template
                               @PathVariable("cardlist") String cardlist,
                               Model model) {
-        System.out.println("Hold");
         List<Card> listofCards;
         try {
             listofCards = deckService.getCardList(cardlist); //this eventually will be an object
