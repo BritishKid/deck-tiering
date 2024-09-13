@@ -158,4 +158,13 @@ public class DeckService {
     public Object filterByTier(List<Deck> allUniqueDecks, int tier) {
         return allUniqueDecks.stream().filter(allUniqueDeck -> allUniqueDeck.getTier() == tier).collect(Collectors.toList());
     }
+
+    public void addNewDeck(Deck deck) {
+        deck.setId(deck.getName() + deck.getOwner() + deck.getGame());
+        deck.setRating(1000);
+        deck.setTier(4);
+        deck.setCardList("TBA");
+
+        deckDao.writeDeck(deck);
+    }
 }

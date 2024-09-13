@@ -20,17 +20,16 @@
       <h1 th:text="${title}">Index</h1>
     </header>
 
-    not yet coded
-<!--    <form action="#" th:action="@{/decks/add}" th:object="${String}" method="post">
-      <input type="text" th:field="*{deckName}" />
-      <input type="text" th:field="*{ownerName}" />
-      <select class="form-control" id="gameName" name="gameName">
-        <option value="">Game</option>
+    <form action="#" th:action="@{/decks/add}" th:object="${deck}" method="post">
+      Deck Name: <input type="text" th:field="*{name}"/>
+      Owner Name: <input type="text" th:field="*{owner}"/>
+      Game Name: <select class="form-control" id="game" name="game">
+<!--        <option value="">Game</option>-->
         <option th:each="game : ${gameList}"
                 th:value="${game}"
                 th:text="${game}"></option>
       </select>
-    <p><input type="submit" value="Submit" />-->
+    <p><input type="submit" value="Submit" />
     </form>
   </div>
 </section>

@@ -27,12 +27,8 @@ public class DeckListController {
     @GetMapping("/decks/game/{game}")
     public String getDeckList(@PathVariable("game") String game,
                               Model model) {
-        List<Deck> allUniqueDecks = deckService.getAllUniqueDecks();
-        List<Deck> filteredByGame = deckService.filterByGame(deckService.orderDeckByRating(allUniqueDecks), game);
-
-        model.addAttribute("decklist", filteredByGame);
+        getDecksbyGame(model, game);
         model.addAttribute("title", game + " decks");
-        model.addAttribute("game", game);
         return "decklist";
     }
 
@@ -61,10 +57,7 @@ public class DeckListController {
     @RequestMapping(path="/deck/addoutcome/game/{game}")
     public String createOutcomeForGame(@PathVariable("game") String game,
                                        Model model) {
-        List<Deck> allUniqueDecks = deckService.getAllUniqueDecks();
-        List<Deck> filteredByGame = deckService.filterByGame(deckService.orderDeckByRating(allUniqueDecks), game);
-        model.addAttribute("decklist", filteredByGame);
-        model.addAttribute("game", game);
+        getDecksbyGame(model, game);
         if(game.equals(YUGIOHTAG.getName()) ||
                 game.equals(YUGIOHTEAM.getName())) { //for multi games
             return "addoutcomemulti";
@@ -90,11 +83,7 @@ public class DeckListController {
         String[] losers = new String[]{losingDeck};
         deckService.updateDeckRatings(winners, losers);
 
-        List<Deck> allUniqueDecks = deckService.getAllUniqueDecks();
-        List<Deck> filteredByGame = deckService.filterByGame(deckService.orderDeckByRating(allUniqueDecks), game);
-
-        model.addAttribute("decklist", filteredByGame);
-        model.addAttribute("game", game);
+        getDecksbyGame(model, game);
         return "decklist";
     }
 
@@ -114,11 +103,7 @@ public class DeckListController {
         String[] losers = new String[]{losingDeck1, losingDeck2};
         deckService.updateDeckRatings(winners, losers);
 
-        List<Deck> allUniqueDecks = deckService.getAllUniqueDecks();
-        List<Deck> filteredByGame = deckService.filterByGame(deckService.orderDeckByRating(allUniqueDecks), game);
-
-        model.addAttribute("decklist", filteredByGame);
-        model.addAttribute("game", game);
+        getDecksbyGame(model, game);
         return "decklist";
     }
 
@@ -144,23 +129,21 @@ public class DeckListController {
         else {
             losers = new String[]{losingDeck1, losingDeck2, losingDeck3};
         }
-        
-        deckService.updateDeckRatings(winners, losers);
-        List<Deck> allUniqueDecks = deckService.getAllUniqueDecks();
-        List<Deck> filteredByGame = deckService.filterByGame(deckService.orderDeckByRating(allUniqueDecks), game);
 
-        model.addAttribute("decklist", filteredByGame);
-        model.addAttribute("game", game);
+        deckService.updateDeckRatings(winners, losers);
+        getDecksbyGame(model, game);
         return "decklist";
     }
 
     @PostMapping("/decks/add")
-    public String addDeck(@ModelAttribute("deckName") String deckName,
-                          @ModelAttribute("ownerName") String owner,
-                          @ModelAttribute("gameName") String game,
+    public String addDeck(@ModelAttribute Deck deck,
                           Model model) {
 
-        //add to csv the new deck
+        deckService.addNewDeck(deck);
+        String game = deck.getGame();
+
+        getDecksbyGame(model, game);
+
         return "decklist";
     }
 
@@ -168,6 +151,8 @@ public class DeckListController {
     public String newDeck(Model model) {
 
         model.addAttribute("gameList", getGameList());
+        model.addAttribute("deck", new Deck());
+        model.addAttribute("title", "Add A New Deck");
 
         return "newdeck";
     }
@@ -224,6 +209,14 @@ public class DeckListController {
         return "decklist";
     }
 
+    private void getDecksbyGame(Model model, String game) {
+        List<Deck> allUniqueDecks = deckService.getAllUniqueDecks();
+        List<Deck> filteredByGame = deckService.filterByGame(deckService.orderDeckByRating(allUniqueDecks), game);
+
+        model.addAttribute("decklist", filteredByGame);
+        model.addAttribute("game", game);
+    }
+
 }
 //TODO add controller for adding multiple games in a row
 
@@ -235,3 +228,4 @@ public class DeckListController {
 //        player rating
 //        card list for a deck
 //        add a deck api
+//        have decks have all their playstyles grouped together

@@ -61,19 +61,7 @@ public class DeckDao {
             BufferedWriter bw = new BufferedWriter(fw);
             for(Deck deck: decks) {
                 StringBuffer oneline = new StringBuffer();
-                oneline.append(deck.getId());
-                oneline.append(CSV_SEPARATOR);
-                oneline.append(deck.getName());
-                oneline.append(CSV_SEPARATOR);
-                oneline.append(deck.getRating());
-                oneline.append(CSV_SEPARATOR);
-                oneline.append(deck.getOwner());
-                oneline.append(CSV_SEPARATOR);
-                oneline.append(deck.getCardList());
-                oneline.append(CSV_SEPARATOR);
-                oneline.append(deck.getTier());
-                oneline.append(CSV_SEPARATOR);
-                oneline.append(deck.getGame());
+                buildCsvWriter(deck, oneline);
                 bw.write(oneline.toString());
                 bw.newLine();
             }
@@ -99,5 +87,36 @@ public class DeckDao {
         }
 
         return decks;
+    }
+
+    public void writeDeck(Deck deck) {
+        try {
+            FileWriter fw = new FileWriter(file, true); //todo put csv creator in the model
+            BufferedWriter bw = new BufferedWriter(fw);
+            StringBuffer oneline = new StringBuffer();
+            buildCsvWriter(deck, oneline);
+            bw.write(oneline.toString());
+            bw.flush();
+            bw.close();
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private static void buildCsvWriter(Deck deck, StringBuffer oneline) {
+        oneline.append(deck.getId());
+        oneline.append(CSV_SEPARATOR);
+        oneline.append(deck.getName());
+        oneline.append(CSV_SEPARATOR);
+        oneline.append(deck.getRating());
+        oneline.append(CSV_SEPARATOR);
+        oneline.append(deck.getOwner());
+        oneline.append(CSV_SEPARATOR);
+        oneline.append(deck.getCardList());
+        oneline.append(CSV_SEPARATOR);
+        oneline.append(deck.getTier());
+        oneline.append(CSV_SEPARATOR);
+        oneline.append(deck.getGame());
     }
 }
