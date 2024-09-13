@@ -14,7 +14,7 @@ import java.util.List;
 public class HistoryDao {
 
     private static final String CSV_SEPARATOR = ",";
-    File file = new File("history.csv").getAbsoluteFile();
+    File file = new File("csv/history.csv").getAbsoluteFile();
 
 
     public void writeHistory(List<History> deckHistory) {

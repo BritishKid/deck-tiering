@@ -13,7 +13,7 @@ import java.util.Map;
 public class DeckDao {
 
     private static final String CSV_SEPARATOR = ",";
-    File file = new File("decks.csv").getAbsoluteFile();
+    File file = new File("csv/decks.csv").getAbsoluteFile();
 
 
     public Map<String, Deck> getUniqueDeckList() {
