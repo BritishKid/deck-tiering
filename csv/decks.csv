@@ -1,5 +1,5 @@
 SliferRobertYu-Gi-Oh,Slifer,1000,Robert,TBA,4,Yu-Gi-Oh
-Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1000,Robert,TBA,4,Yu-Gi-Oh
+Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1000,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
 DinosaursRobertYu-Gi-Oh,Dinosaurs,1000,Robert,TBA,4,Yu-Gi-Oh
 Dark WorldMatYu-Gi-Oh,Dark World,1000,Mat,TBA,4,Yu-Gi-Oh
 Dark MagicianMatYu-Gi-Oh,Dark Magician,1000,Mat,TBA,4,Yu-Gi-Oh
@@ -15,8 +15,8 @@ Odd EyesOllieYu-Gi-Oh,Odd Eyes,1000,Ollie,TBA,4,Yu-Gi-Oh
 Odd EyesRobertYu-Gi-Oh,Odd Eyes,1000,Robert,TBA,4,Yu-Gi-Oh
 Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,1000,Robert,TBA,4,Yu-Gi-Oh
 Dark Magician DragonOllieYu-Gi-Oh,Dark Magician Dragon,1000,Ollie,TBA,4,Yu-Gi-Oh
-Festival LeadRobertPokemon,Festival Lead,1000,Robert,TBA,4,Pokemon
-Ancient BoxRobertPokemon,Ancient Box,1000,Robert,TBA,4,Pokemon
+Festival LeadRobertPokemon,Festival Lead,1000,Robert,FestivalLeadRobert,4,Pokemon
+Ancient BoxRobertPokemon,Ancient Box,1000,Robert,AncientBoxRobert,4,Pokemon
 United WingsRobertPokemon,United Wings,1000,Robert,TBA,4,Pokemon
 Pikachu and FriendsRobertPokemon,Pikachu and Friends,1000,Robert,TBA,4,Pokemon
 Sleeping SlakingRobertPokemon,Sleeping Slaking,1000,Robert,TBA,4,Pokemon
@@ -64,9 +64,9 @@ SliferRobertYu-Gi-Oh,Slifer,1015,Robert,TBA,4,Yu-Gi-Oh
 Blue EyesOllieYu-Gi-Oh,Blue Eyes,985,Ollie,TBA,5,Yu-Gi-Oh
 Blue EyesOllieYu-Gi-Oh,Blue Eyes,999,Ollie,TBA,5,Yu-Gi-Oh
 Dark WorldMatYu-Gi-Oh,Dark World,983,Mat,TBA,5,Yu-Gi-Oh
-Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1015,Robert,TBA,4,Yu-Gi-Oh
+Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1015,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
 Dark WorldMatYu-Gi-Oh,Dark World,967,Mat,TBA,5,Yu-Gi-Oh
-Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1032,Robert,TBA,4,Yu-Gi-Oh
+Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1032,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
 Dark WorldMatYu-Gi-Oh,Dark World,949,Mat,TBA,5,Yu-Gi-Oh
 Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,1015,Robert,TBA,4,Yu-Gi-Oh
 Cyber DragonRobertYu-Gi-Oh,Cyber Dragon,985,Robert,TBA,5,Yu-Gi-Oh
@@ -80,11 +80,11 @@ Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,983,Robert,TBA,5,Yu-Gi-O
 Realm of LightRobertYu-Gi-Oh,Realm of Light,1001,Robert,TBA,4,Yu-Gi-Oh
 Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,997,Robert,TBA,5,Yu-Gi-Oh
 Realm of LightRobertYu-Gi-Oh,Realm of Light,986,Robert,TBA,5,Yu-Gi-Oh
-Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1047,Robert,TBA,4,Yu-Gi-Oh
+Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1047,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
 DinosaursRobertYu-Gi-Oh,Dinosaurs,1014,Robert,TBA,4,Yu-Gi-Oh
-Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1063,Robert,TBA,4,Yu-Gi-Oh
+Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1063,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
 DinosaursRobertYu-Gi-Oh,Dinosaurs,997,Robert,TBA,5,Yu-Gi-Oh
-Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1080,Robert,TBA,4,Yu-Gi-Oh
+Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1080,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
 DinosaursRobertYu-Gi-Oh,Dinosaurs,979,Robert,TBA,5,Yu-Gi-Oh
 SliferRobertYu-Gi-Oh,Slifer,1031,Robert,TBA,4,Yu-Gi-Oh
 DinosaursRobertYu-Gi-Oh,Dinosaurs,962,Robert,TBA,5,Yu-Gi-Oh
@@ -93,7 +93,7 @@ DinosaursRobertYu-Gi-Oh,Dinosaurs,944,Robert,TBA,5,Yu-Gi-Oh
 DinosaursRobertYu-Gi-Oh,Dinosaurs,954,Robert,TBA,5,Yu-Gi-Oh
 SliferRobertYu-Gi-Oh,Slifer,1037,Robert,TBA,4,Yu-Gi-Oh
 SliferRobertYu-Gi-Oh Team,Slifer,1000,Robert,TBA,4,Yu-Gi-Oh Team
-Crystal BeastRobertYu-Gi-Oh Team,Crystal Beast,1000,Robert,TBA,4,Yu-Gi-Oh Team
+Crystal BeastRobertYu-Gi-Oh Team,Crystal Beast,1000,Robert,CrystalBeastRobert,4,Yu-Gi-Oh Team
 DinosaursRobertYu-Gi-Oh Team,Dinosaurs,1000,Robert,TBA,4,Yu-Gi-Oh Team
 Dark WorldMatYu-Gi-Oh Team,Dark World,1000,Mat,TBA,4,Yu-Gi-Oh Team
 Dark MagicianMatYu-Gi-Oh Team,Dark Magician,1000,Mat,TBA,4,Yu-Gi-Oh Team
@@ -111,7 +111,7 @@ Dark Magician DragonRobertYu-Gi-Oh Team,Dark Magician Dragon,1000,Robert,TBA,4,Y
 Dark Magician DragonOllieYu-Gi-Oh Team,Dark Magician Dragon,1000,Ollie,TBA,4,Yu-Gi-Oh Team
 Realm of LightRobertYu-Gi-Oh Team,Realm of Light,1000,Robert,TBA,4,Yu-Gi-Oh Team
 SliferRobertYu-Gi-Oh FFA,Slifer,1000,Robert,TBA,4,Yu-Gi-Oh FFA
-Crystal BeastRobertYu-Gi-Oh FFA,Crystal Beast,1000,Robert,TBA,4,Yu-Gi-Oh FFA
+Crystal BeastRobertYu-Gi-Oh FFA,Crystal Beast,1000,Robert,CrystalBeastRobert,4,Yu-Gi-Oh FFA
 DinosaursRobertYu-Gi-Oh FFA,Dinosaurs,1000,Robert,TBA,4,Yu-Gi-Oh FFA
 Dark WorldMatYu-Gi-Oh FFA,Dark World,1000,Mat,TBA,4,Yu-Gi-Oh FFA
 Dark MagicianMatYu-Gi-Oh FFA,Dark Magician,1000,Mat,TBA,4,Yu-Gi-Oh FFA
@@ -129,7 +129,7 @@ Dark Magician DragonRobertYu-Gi-Oh FFA,Dark Magician Dragon,1000,Robert,TBA,4,Yu
 Dark Magician DragonOllieYu-Gi-Oh FFA,Dark Magician Dragon,1000,Ollie,TBA,4,Yu-Gi-Oh FFA
 Realm of LightRobertYu-Gi-Oh FFA,Realm of Light,1000,Robert,TBA,4,Yu-Gi-Oh FFA
 SliferRobertYu-Gi-Oh Tag Team,Slifer,1000,Robert,TBA,4,Yu-Gi-Oh Tag Team
-Crystal BeastRobertYu-Gi-Oh Tag Team,Crystal Beast,1000,Robert,TBA,4,Yu-Gi-Oh Tag Team
+Crystal BeastRobertYu-Gi-Oh Tag Team,Crystal Beast,1000,Robert,CrystalBeastRobert,4,Yu-Gi-Oh Tag Team
 DinosaursRobertYu-Gi-Oh Tag Team,Dinosaurs,1000,Robert,TBA,4,Yu-Gi-Oh Tag Team
 Dark WorldMatYu-Gi-Oh Tag Team,Dark World,1000,Mat,TBA,4,Yu-Gi-Oh Tag Team
 Dark MagicianMatYu-Gi-Oh Tag Team,Dark Magician,1000,Mat,TBA,4,Yu-Gi-Oh Tag Team

@@ -1,5 +1,6 @@
 package com.trials.deck_tiering.controller;
 
+import com.trials.deck_tiering.model.Card;
 import com.trials.deck_tiering.model.Deck;
 import com.trials.deck_tiering.model.GameEnum;
 import com.trials.deck_tiering.service.DeckService;
@@ -8,7 +9,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.ui.Model;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static com.trials.deck_tiering.model.GameEnum.*;
 
@@ -157,6 +162,39 @@ public class DeckListController {
         return "newdeck";
     }
 
+    @GetMapping("/decks/{deckid}/decklist/{cardlist}")
+    public String getCardlist(@PathVariable("deckid") String deckId, //this isn't working currently from the template
+                              @PathVariable("cardlist") String cardlist,
+                              Model model) {
+        List<Card> listofCards;
+        try {
+            listofCards = deckService.getCardList(cardlist); //this eventually will be an object
+        } catch (IOException e) {
+            return "cardList";
+        }
+
+        List<Card> mainDeck = listofCards.stream().filter(card -> card.getDeckLocation().equals("Deck")).toList();
+
+        //below are only used in YuGiOh
+        List<Card> extraDeck = listofCards.stream().filter(card -> card.getDeckLocation().equals("Extra Deck")).toList();
+        List<Card> sideDeck = listofCards.stream().filter(card -> card.getDeckLocation().equals("Side Deck")).toList();
+
+        if(extraDeck.isEmpty()){
+            model.addAttribute("gameCheck", false);
+        }
+        else {
+            model.addAttribute("gameCheck", true);
+        }
+
+        model.addAttribute("title", "Deck List");
+        model.addAttribute("mainDeck", mainDeck); //split by extra, regular and side
+        model.addAttribute("extraDeck", extraDeck); //split by extra, regular and side
+        model.addAttribute("sideDeck", sideDeck); //split by extra, regular and side
+        model.addAttribute("deckId", deckId);
+
+        return "cardlist";
+    }
+
     @GetMapping(path="/deck/owner/{ownerId}")
     public String getPlayersDeck (@PathVariable("ownerId") String owner,
                                   Model model) {
@@ -188,6 +226,8 @@ public class DeckListController {
         model.addAttribute("deckHistory", deckHistoryList);
         model.addAttribute("title", deckHistoryList.getFirst().getName() + "  Owner: " + deckHistoryList.getFirst().getOwner());
         model.addAttribute("currentRating", string + string2);
+        model.addAttribute("deckId", deckHistoryList.getFirst().getId());
+        model.addAttribute("cardList", deckHistoryList.getFirst().getCardList());
         //TODO ADD OUTPUT FOR HISTORY VS OPPONENTS
 
         //data for graphs

@@ -20,7 +20,7 @@
         <header style="padding-top:5px">
             <h1 th:text="${title}">Decks</h1>
             <h2 th:text="${currentRating}">Current Rating</h2>
-            <h4 > Card list for this deck (Coming soon)</h4>
+            <h4><a href="#"  th:href="@{/decks/{deckid}(deckid=${deckId})/decklist/{cardlist}(cardlist=${cardList})}">Card List</a></h4>
         </header>
             <div id="chart_div" style="height:200px"></div>
             <div style="padding-top:10px">

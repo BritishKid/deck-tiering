@@ -1,13 +1,16 @@
 package com.trials.deck_tiering.service;
 
 import com.trials.deck_tiering.dao.DeckDao;
+import com.trials.deck_tiering.dao.DecklistDao;
 import com.trials.deck_tiering.dao.HistoryDao;
+import com.trials.deck_tiering.model.Card;
 import com.trials.deck_tiering.model.Deck;
 import com.trials.deck_tiering.model.DeckComprator;
 import com.trials.deck_tiering.model.History;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +26,9 @@ public class DeckService {
 
     @Autowired
     private HistoryDao historyDao;
+
+    @Autowired
+    private DecklistDao decklistDao;
 
     //manip data from reads
 
@@ -167,4 +173,8 @@ public class DeckService {
 
         deckDao.writeDeck(deck);
     }
+
+    public List<Card> getCardList(String cardlist) throws IOException {
+        return decklistDao.getDecklist(cardlist);
+        }
 }
