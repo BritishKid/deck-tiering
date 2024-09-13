@@ -28,10 +28,13 @@
                 </tr>
                 <tr th:each="deck : ${decklist}">
                     <td>
-                    <a th:href="@{/deck/history/{deckId}(deckId=${deck.id})}"
+                    <a th:href="@{/decks/{deckId}/decklist/{cardlist}(cardlist=${deck.cardList}, deckId=${deck.id})}"
                        th:text="${deck.name}">Name</a>
                     </td>
-                    <td th:text="${deck.rating}">Rating</td><!--      click into for history              -->
+                    <td>
+                        <a th:href="@{/deck/history/{deckId}(deckId=${deck.id})}"
+                           th:text="${deck.rating}">Rating</a>
+                    </td>
                     <td th:text="${deck.tier}">Tier</td><!--       click into for other of this tier             -->
                     <td>
                         <a th:href="@{/deck/owner/{ownerId}(ownerId=${deck.owner})}"

@@ -5,17 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4dc2f24-9b18-4da5-9e0f-f85bfa536152" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/csv/decklists/AncientBoxRobert.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/csv/decklists/CrystalBeastRobert.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/csv/decklists/FestivalLeadRobert.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DecklistDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/cardlist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/decklists/CyberDragonOllie.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/decklists/CyberDragonRobert.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/decklists/DarkMagicianDragonOllie.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/decklists/DarkMagicianDragonRobert.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/decklists/MewtwoStall.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/decklists/OddEyesOllie.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/decklists/OddEyesRobert.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csv/decks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/decks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/DeckService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/DeckService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/deckhistory.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/deckhistory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cardlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/cardlist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/decklist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/decklist.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +87,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Robert/Documents/apps/deck-tiering/src/main/resources/templates",
+    "last_opened_file_path": "C:/Users/Robert/Documents/apps/deck-tiering/csv/decklists",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -100,6 +101,7 @@
       <recent name="com.trials.deck_tiering.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Robert\Documents\apps\deck-tiering\csv\decklists" />
       <recent name="C:\Users\Robert\Documents\apps\deck-tiering\src\main\resources\templates" />
       <recent name="C:\Users\Robert\Documents\apps\deck-tiering\deck-tiering" />
       <recent name="C:\Users\Robert\Documents\apps\deck-tiering\deck-tiering\src\main\resources" />
@@ -159,5 +161,16 @@
       <updated>1726042228639</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java</url>
+          <line>165</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

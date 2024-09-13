@@ -9,11 +9,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.ui.Model;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static com.trials.deck_tiering.model.GameEnum.*;
 
@@ -166,6 +163,7 @@ public class DeckListController {
     public String getCardlist(@PathVariable("deckid") String deckId, //this isn't working currently from the template
                               @PathVariable("cardlist") String cardlist,
                               Model model) {
+        System.out.println("Hold");
         List<Card> listofCards;
         try {
             listofCards = deckService.getCardList(cardlist); //this eventually will be an object
@@ -266,6 +264,6 @@ public class DeckListController {
 //        show who a deck is best against or worst against
 //        player coefficient?
 //        player rating
-//        card list for a deck
-//        add a deck api
+//        card list improvements
+//              better card insight, way to add decks easier, visual?
 //        have decks have all their playstyles grouped together

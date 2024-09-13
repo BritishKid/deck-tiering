@@ -17,6 +17,7 @@
     <div class="inner">
         <header>
             <h1 th:text="${title}">Title</h1>
+            <h4><a href="#"  th:href="@{/deck/history/{deckId}(deckId=${deckId})}">Rating History</a></h4>
         </header>
         <ol th:if="!${gameCheck}">
             <div style="width:1200px;height:690px;overflow:auto;float:left;">
