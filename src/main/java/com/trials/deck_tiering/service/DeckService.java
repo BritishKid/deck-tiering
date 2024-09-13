@@ -174,7 +174,7 @@ public class DeckService {
         deckDao.writeDeck(deck);
     }
 
-    public List<Card> getCardList(String cardlist) throws IOException {
-        return decklistDao.getDecklist(cardlist);
+    public List<Card> getCardList(String cardList) throws IOException {
+        return decklistDao.getDecklist(cardList);
         }
 }

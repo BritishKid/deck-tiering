@@ -13,9 +13,9 @@ public class DecklistDao {
     private static final String CSV_SEPARATOR = ",";
     String filePath = "csv/decklists/%s.csv"; //todo use this to add in the name genned by the decklist id
 
-    public List<Card> getDecklist(String cardlist) throws IOException {
+    public List<Card> getDecklist(String cardList) throws IOException {
         List<Card> listOfCards = new ArrayList<>();
-        String fileLocation = String.format(filePath, cardlist);
+        String fileLocation = String.format(filePath, cardList);
         File file = new File(fileLocation).getAbsoluteFile();
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;

@@ -161,11 +161,11 @@ public class DeckListController {
 
     @GetMapping("/decks/{deckid}/decklist/{cardlist}")
     public String getCardlist(@PathVariable("deckid") String deckId, //this isn't working currently from the template
-                              @PathVariable("cardlist") String cardlist,
+                              @PathVariable("cardlist") String cardList,
                               Model model) {
         List<Card> listofCards;
         try {
-            listofCards = deckService.getCardList(cardlist); //this eventually will be an object
+            listofCards = deckService.getCardList(cardList); //this eventually will be an object
         } catch (IOException e) {
             return "cardList";
         }
@@ -264,5 +264,5 @@ public class DeckListController {
 //        player coefficient?
 //        player rating
 //        card list improvements
-//              better card insight, way to add decks easier, visual?
+//              better card insight, way to add decks easier, visual for the cards/deck?
 //        have decks have all their playstyles grouped together
