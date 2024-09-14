@@ -24,13 +24,15 @@
         </header>
             <div id="chart_div" style="height:200px"></div>
             <div style="padding-top:10px">
-                <div style="width:400px;height:300px;overflow:auto;float:left;">
+                <div style="width:1200px;height:300px;overflow:auto;float:left;">
                 <table class="table table-striped">
                     <tr>
+                        <th>Result</th>
                         <th>Rating</th>
                         <th>Tier</th>
                     </tr>
                     <tr th:each="deck : ${deckHistory}">
+                        <td th:text="${deck.historyOutcome}">Outcome</td><!--      click into for history              -->
                         <td th:text="${deck.rating}">Rating</td><!--      click into for history              -->
                         <td th:text="${deck.tier}">Tier</td><!--       click into for other of this tier             -->
                     </tr>

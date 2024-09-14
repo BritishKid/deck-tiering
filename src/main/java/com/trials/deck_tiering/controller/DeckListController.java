@@ -3,6 +3,7 @@ package com.trials.deck_tiering.controller;
 import com.trials.deck_tiering.model.Card;
 import com.trials.deck_tiering.model.Deck;
 import com.trials.deck_tiering.model.GameEnum;
+import com.trials.deck_tiering.model.History;
 import com.trials.deck_tiering.service.DeckService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -215,10 +216,13 @@ public class DeckListController {
                                   Model model ) {
         List<Deck> allDecks = deckService.getFullDeckList();
         List<Deck> deckHistoryList = deckService.getHistoryForDeck(allDecks, deckId);
+        List<String> deckHistoryOutput = deckService.getHistoryOutput(deckId);
+
+        deckHistoryList = deckService.addHistoryOutput(deckHistoryList, deckHistoryOutput);
 
         //idk whats going on here and why it won't let me do in single line
         String string = "Rating: " + deckHistoryList.getLast().getRating();
-        String string2 = " Tier: " + String.valueOf(deckHistoryList.getLast().getTier());
+        String string2 = " Tier: " + deckHistoryList.getLast().getTier();
 
         model.addAttribute("deckHistory", deckHistoryList);
         model.addAttribute("title", deckHistoryList.getFirst().getName() + "  Owner: " + deckHistoryList.getFirst().getOwner());

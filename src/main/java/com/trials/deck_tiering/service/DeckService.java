@@ -11,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -177,4 +176,34 @@ public class DeckService {
     public List<Card> getCardList(String cardList) throws IOException {
         return decklistDao.getDecklist(cardList);
         }
+
+    public List<History> getHistory(String deckId) {
+        return historyDao.getHistoryFromDeckId(deckId);
+    }
+
+    public List<String> getHistoryOutput(String deckId) {
+        List<History> history = getHistory(deckId);
+        List<String> output = new ArrayList<>();
+        for(History h: history) {
+               StringBuffer sb = new StringBuffer();
+               sb.append(h.getOutcome());
+               sb.append(" against ");
+               sb.append(h.getOpponent());
+               output.add(sb.toString());
+        }
+        return output;
+    }
+
+    public List<Deck> addHistoryOutput(List<Deck> deckHistoryList, List<String> deckHistoryOutput) {
+        int i=0;
+        for(Deck deck: deckHistoryList) {
+            if(i > 0) {
+                deck.setHistoryOutcome(deckHistoryOutput.get(i-1));
+            } else {
+                deck.setHistoryOutcome("Deck created");
+            }
+            i++;
+        }
+        return deckHistoryList;
+    }
 }
