@@ -7,13 +7,6 @@
     <list default="true" id="e4dc2f24-9b18-4da5-9e0f-f85bfa536152" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csv/decks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/decks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv/history.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/history.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DeckDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DeckDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/GameEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/GameEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/DeckService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/DeckService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ownersdecks.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ownersdecks.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,15 +1,15 @@
 SliferRobertYu-Gi-Oh,Slifer,1000,Robert,SliferRobert,4,Yu-Gi-Oh
 Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1000,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
 DinosaursRobertYu-Gi-Oh,Dinosaurs,1000,Robert,DinosaursRobert,4,Yu-Gi-Oh
-Dark WorldMatYu-Gi-Oh,Dark World,1000,Mat,TBA,4,Yu-Gi-Oh
-Dark MagicianMatYu-Gi-Oh,Dark Magician,1000,Mat,TBA,4,Yu-Gi-Oh
-SliferOllieYu-Gi-Oh,Slifer,1000,Ollie,TBA,4,Yu-Gi-Oh
-Blue EyesOllieYu-Gi-Oh,Blue Eyes,1000,Ollie,TBA,4,Yu-Gi-Oh
-Red EyesAlexYu-Gi-Oh,Red Eyes,1000,Alex,TBA,4,Yu-Gi-Oh
-ExodiaOllieYu-Gi-Oh,Exodia,1000,Ollie,TBA,4,Yu-Gi-Oh
+Dark WorldMatYu-Gi-Oh,Dark World,1000,Mat,DarkWorldMat,4,Yu-Gi-Oh
+Dark MagicianMatYu-Gi-Oh,Dark Magician,1000,Mat,DarkMagicianMat,4,Yu-Gi-Oh
+SliferOllieYu-Gi-Oh,Slifer,1000,Ollie,SliferOllie,4,Yu-Gi-Oh
+Blue EyesOllieYu-Gi-Oh,Blue Eyes,1000,Ollie,BlueEyesOllie,4,Yu-Gi-Oh
+Red EyesAlexYu-Gi-Oh,Red Eyes,1000,Alex,RedEyesAlex,4,Yu-Gi-Oh
+ExodiaOllieYu-Gi-Oh,Exodia,1000,Ollie,ExodiaOllie,4,Yu-Gi-Oh
 Cyber DragonOllieYu-Gi-Oh,Cyber Dragon,1000,Ollie,CyberDragonOllie,4,Yu-Gi-Oh
-Cyber DragonAlexYu-Gi-Oh,Cyber Dragon,1000,Alex,TBA,4,Yu-Gi-Oh
-Noble KnightsAlexYu-Gi-Oh,Noble Knights,1000,Alex,TBA,4,Yu-Gi-Oh
+Cyber DragonAlexYu-Gi-Oh,Cyber Dragon,1000,Alex,CyberDragonAlex,4,Yu-Gi-Oh
+Noble KnightsAlexYu-Gi-Oh,Noble Knights,1000,Alex,NobleKnightsAlex,4,Yu-Gi-Oh
 Cyber DragonRobertYu-Gi-Oh,Cyber Dragon,1000,Robert,CyberDragonRobert,4,Yu-Gi-Oh
 Odd EyesOllieYu-Gi-Oh,Odd Eyes,1000,Ollie,OddEyesOllie,4,Yu-Gi-Oh
 Odd EyesRobertYu-Gi-Oh,Odd Eyes,1000,Robert,OddEyesRobert,4,Yu-Gi-Oh
@@ -17,69 +17,69 @@ Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,1000,Robert,DarkMagician
 Dark Magician DragonOllieYu-Gi-Oh,Dark Magician Dragon,1000,Ollie,DarkMagicianDragonOllie,4,Yu-Gi-Oh
 Festival LeadRobertPokemon,Festival Lead,1000,Robert,FestivalLeadRobert,4,Pokemon
 Ancient BoxRobertPokemon,Ancient Box,1000,Robert,AncientBoxRobert,4,Pokemon
-United WingsRobertPokemon,United Wings,1000,Robert,TBA,4,Pokemon
-Pikachu and FriendsRobertPokemon,Pikachu and Friends,1000,Robert,TBA,4,Pokemon
-Sleeping SlakingRobertPokemon,Sleeping Slaking,1000,Robert,TBA,4,Pokemon
-Gone FishinRobertPokemon,Gone Fishin,1000,Robert,TBA,4,Pokemon
-Toxic GlimmoraRobertPokemon,Toxic Glimmora,1000,Robert,TBA,4,Pokemon
-Giritina Lost BoxRobertPokemon,Giritina Lost Box,1000,Robert,TBA,4,Pokemon
-Wugtrio MillRobertPokemon,Wugtrio Mill,1000,Robert,TBA,4,Pokemon
-JumpluffRobertPokemon,Jumpluff,1000,Robert,TBA,4,Pokemon
-Rapid Strike UrshifuRobertPokemon,Rapid Strike Urshifu,1000,Robert,TBA,4,Pokemon
-Wailord TankRobertPokemon,Wailord Tank,1000,Robert,TBA,4,Pokemon
-LunarockRobertPokemon,Lunarock,1000,Robert,TBA,4,Pokemon
-Chien-po exRobertPokemon,Chien-po ex,1000,Robert,TBA,4,Pokemon
-Psychic EleganceTallyPokemon,Psychic Elegance,1000,Tally,TBA,4,Pokemon
-Giritina VTallyPokemon,Giritina V,1000,Tally,TBA,4,Pokemon
-Stonjourer TankRobertPokemon,Stonjourer Tank,1000,Robert,TBA,4,Pokemon
-Mewtwo exRobertPokemon,Mewtwo ex,1000,Robert,TBA,4,Pokemon
-Exeggutor VRobertPokemon,Exeggutor V,1000,Robert,TBA,4,Pokemon
-GroudonRobertPokemon,Groudon,1000,Robert,TBA,4,Pokemon
-LunalaRobertPokemon,Lunala,1000,Robert,TBA,4,Pokemon
-HoopaRobertPokemon,Hoopa,1000,Robert,TBA,4,Pokemon
-SirfetchdRobertPokemon,Sirfetchd,1000,Robert,TBA,4,Pokemon
-ChewtleRobertPokemon,Chewtle,1000,Robert,TBA,4,Pokemon
-Noivern VRobertPokemon,Noivern V,1000,Robert,TBA,4,Pokemon
-Corviknight VRobertPokemon,Corviknight V,1000,Robert,TBA,4,Pokemon
-Melmetal VRobertPokemon,Melmetal V,1000,Robert,TBA,4,Pokemon
-Victini VRobertPokemon,Victini V,1000,Robert,TBA,4,Pokemon
-Pikachu Zekrom GXRobertPokemon,Pikachu Zekrom GX,1000,Robert,TBA,4,Pokemon
-Charizard GXRobertPokemon,Charizard GX,1000,Robert,TBA,4,Pokemon
-Raichu GXRobertPokemon,Raichu GX,1000,Robert,TBA,4,Pokemon
-Mewtwo GXRobertPokemon,Mewtwo GX,1000,Robert,TBA,4,Pokemon
-Lurantis GXRobertPokemon,Lurantis GX,1000,Robert,TBA,4,Pokemon
-TurtlesTallyPokemon,Turtles,1000,Tally,TBA,4,Pokemon
-EmpoleonTallyPokemon,Empoleon,1000,Tally,TBA,4,Pokemon
-SeahorseTallyPokemon,Seahorse,1000,Tally,TBA,4,Pokemon
-Legendary PokemonRobertCommander,Legendary Pokemon,1000,Robert,TBA,4,Commander
-SteelixOlliePokemon,Steelix,1000,Ollie,TBA,4,Pokemon
-Realm of LightRobertYu-Gi-Oh,Realm of Light,1000,Robert,RealmOfLightRobert,4,Yu-Gi-Oh
+United WingsRobertPokemon,United Wings,1000,Robert,UnitedWingsRobert,4,Pokemon
+Pikachu and FriendsRobertPokemon,Pikachu and Friends,1000,Robert,PikachuandFriendsRobert,4,Pokemon
+Sleeping SlakingRobertPokemon,Sleeping Slaking,1000,Robert,SleepingSlakingRobert,4,Pokemon
+Gone FishinRobertPokemon,Gone Fishin,1000,Robert,GoneFishinRobert,4,Pokemon
+Toxic GlimmoraRobertPokemon,Toxic Glimmora,1000,Robert,ToxicGlimmoraRobert,4,Pokemon
+Giritina Lost BoxRobertPokemon,Giritina Lost Box,1000,Robert,GiritinaLostBoxRobert,4,Pokemon
+Wugtrio MillRobertPokemon,Wugtrio Mill,1000,Robert,WugtrioMillRobert,4,Pokemon
+JumpluffRobertPokemon,Jumpluff,1000,Robert,JumpluffRobert,4,Pokemon
+Rapid Strike UrshifuRobertPokemon,Rapid Strike Urshifu,1000,Robert,RapidStrikeUrshifuRobert,4,Pokemon
+Wailord TankRobertPokemon,Wailord Tank,1000,Robert,WailordTankRobert,4,Pokemon
+LunarockRobertPokemon,Lunarock,1000,Robert,LunarockRobert,4,Pokemon
+Chien-po exRobertPokemon,Chien-po ex,1000,Robert,Chien-poexRobert,4,Pokemon
+Psychic EleganceTallyPokemon,Psychic Elegance,1000,Tally,PsychicEleganceTally,4,Pokemon
+Giritina VTallyPokemon,Giritina V,1000,Tally,GiritinaVTally,4,Pokemon
+Stonjourer TankRobertPokemon,Stonjourer Tank,1000,Robert,StonjourerTankRobert,4,Pokemon
+Mewtwo exRobertPokemon,Mewtwo ex,1000,Robert,MewtwoexRobert,4,Pokemon
+Exeggutor VRobertPokemon,Exeggutor V,1000,Robert,ExeggutorVRobert,4,Pokemon
+GroudonRobertPokemon,Groudon,1000,Robert,GroudonRobert,4,Pokemon
+LunalaRobertPokemon,Lunala,1000,Robert,LunalaRobert,4,Pokemon
+HoopaRobertPokemon,Hoopa,1000,Robert,HoopaRobert,4,Pokemon
+SirfetchdRobertPokemon,Sirfetchd,1000,Robert,SirfetchdRobert,4,Pokemon
+ChewtleRobertPokemon,Chewtle,1000,Robert,ChewtleRobert,4,Pokemon
+Noivern VRobertPokemon,Noivern V,1000,Robert,NoivernVRobert,4,Pokemon
+Corviknight VRobertPokemon,Corviknight V,1000,Robert,CorviknightVRobert,4,Pokemon
+Melmetal VRobertPokemon,Melmetal V,1000,Robert,MelmetalVRobert,4,Pokemon
+Victini VRobertPokemon,Victini V,1000,Robert,VictiniVRobert,4,Pokemon
+Pikachu Zekrom GXRobertPokemon,Pikachu Zekrom GX,1000,Robert,PikachuZekromGXRobert,4,Pokemon
+Charizard GXRobertPokemon,Charizard GX,1000,Robert,CharizardGXRobert,4,Pokemon
+Raichu GXRobertPokemon,Raichu GX,1000,Robert,RaichuGXRobert,4,Pokemon
+Mewtwo GXRobertPokemon,Mewtwo GX,1000,Robert,MewtwoGXRobert,4,Pokemon
+Lurantis GXRobertPokemon,Lurantis GX,1000,Robert,LurantisGXRobert,4,Pokemon
+TurtlesTallyPokemon,Turtles,1000,Tally,TurtlesTally,4,Pokemon
+EmpoleonTallyPokemon,Empoleon,1000,Tally,EmpoleonTally,4,Pokemon
+SeahorseTallyPokemon,Seahorse,1000,Tally,SeahorseTally,4,Pokemon
+Legendary PokemonRobertCommander,Legendary Pokemon,1000,Robert,LegendaryPokemonRobert,4,Commander
+SteelixOlliePokemon,Steelix,1000,Ollie,SteelixOllie,4,Pokemon
+Realm of LightRobertYu-Gi-Oh,Realm of Light,1000,Robert,RealmofLightRobert,4,Yu-Gi-Oh
 DinosaursRobertYu-Gi-Oh,Dinosaurs,1015,Robert,DinosaursRobert,4,Yu-Gi-Oh
-SliferOllieYu-Gi-Oh,Slifer,985,Ollie,TBA,5,Yu-Gi-Oh
+SliferOllieYu-Gi-Oh,Slifer,985,Ollie,SliferOllie,5,Yu-Gi-Oh
 DinosaursRobertYu-Gi-Oh,Dinosaurs,1030,Robert,DinosaursRobert,4,Yu-Gi-Oh
-Dark WorldMatYu-Gi-Oh,Dark World,984,Mat,TBA,5,Yu-Gi-Oh
-Dark WorldMatYu-Gi-Oh,Dark World,998,Mat,TBA,5,Yu-Gi-Oh
-SliferOllieYu-Gi-Oh,Slifer,970,Ollie,TBA,5,Yu-Gi-Oh
+Dark WorldMatYu-Gi-Oh,Dark World,984,Mat,DarkWorldMat,5,Yu-Gi-Oh
+Dark WorldMatYu-Gi-Oh,Dark World,998,Mat,DarkWorldMat,5,Yu-Gi-Oh
+SliferOllieYu-Gi-Oh,Slifer,970,Ollie,SliferOllie,5,Yu-Gi-Oh
 SliferRobertYu-Gi-Oh,Slifer,1015,Robert,SliferRobert,4,Yu-Gi-Oh
-Blue EyesOllieYu-Gi-Oh,Blue Eyes,985,Ollie,TBA,5,Yu-Gi-Oh
-Blue EyesOllieYu-Gi-Oh,Blue Eyes,999,Ollie,TBA,5,Yu-Gi-Oh
-Dark WorldMatYu-Gi-Oh,Dark World,983,Mat,TBA,5,Yu-Gi-Oh
+Blue EyesOllieYu-Gi-Oh,Blue Eyes,985,Ollie,BlueEyesOllie,5,Yu-Gi-Oh
+Blue EyesOllieYu-Gi-Oh,Blue Eyes,999,Ollie,BlueEyesOllie,5,Yu-Gi-Oh
+Dark WorldMatYu-Gi-Oh,Dark World,983,Mat,DarkWorldMat,5,Yu-Gi-Oh
 Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1015,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
-Dark WorldMatYu-Gi-Oh,Dark World,967,Mat,TBA,5,Yu-Gi-Oh
+Dark WorldMatYu-Gi-Oh,Dark World,967,Mat,DarkWorldMat,5,Yu-Gi-Oh
 Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1032,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
-Dark WorldMatYu-Gi-Oh,Dark World,949,Mat,TBA,5,Yu-Gi-Oh
+Dark WorldMatYu-Gi-Oh,Dark World,949,Mat,DarkWorldMat,5,Yu-Gi-Oh
 Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,1015,Robert,DarkMagicianDragonRobert,4,Yu-Gi-Oh
 Cyber DragonRobertYu-Gi-Oh,Cyber Dragon,985,Robert,CyberDragonRobert,5,Yu-Gi-Oh
 Cyber DragonRobertYu-Gi-Oh,Cyber Dragon,998,Robert,CyberDragonRobert,5,Yu-Gi-Oh
 Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,1001,Robert,DarkMagicianDragonRobert,4,Yu-Gi-Oh
 Cyber DragonRobertYu-Gi-Oh,Cyber Dragon,1012,Robert,CyberDragonRobert,4,Yu-Gi-Oh
 Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,986,Robert,DarkMagicianDragonRobert,5,Yu-Gi-Oh
-Realm of LightRobertYu-Gi-Oh,Realm of Light,1015,Robert,RealmOfLightRobert,4,Yu-Gi-Oh
+Realm of LightRobertYu-Gi-Oh,Realm of Light,1015,Robert,RealmofLightRobert,4,Yu-Gi-Oh
 Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,970,Robert,DarkMagicianDragonRobert,5,Yu-Gi-Oh
 Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,983,Robert,DarkMagicianDragonRobert,5,Yu-Gi-Oh
-Realm of LightRobertYu-Gi-Oh,Realm of Light,1001,Robert,RealmOfLightRobert,4,Yu-Gi-Oh
+Realm of LightRobertYu-Gi-Oh,Realm of Light,1001,Robert,RealmofLightRobert,4,Yu-Gi-Oh
 Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,997,Robert,DarkMagicianDragonRobert,5,Yu-Gi-Oh
-Realm of LightRobertYu-Gi-Oh,Realm of Light,986,Robert,RealmOfLightRobert,5,Yu-Gi-Oh
+Realm of LightRobertYu-Gi-Oh,Realm of Light,986,Robert,RealmofLightRobert,5,Yu-Gi-Oh
 Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1047,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
 DinosaursRobertYu-Gi-Oh,Dinosaurs,1014,Robert,DinosaursRobert,4,Yu-Gi-Oh
 Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1063,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
@@ -91,168 +91,168 @@ DinosaursRobertYu-Gi-Oh,Dinosaurs,962,Robert,DinosaursRobert,5,Yu-Gi-Oh
 SliferRobertYu-Gi-Oh,Slifer,1048,Robert,SliferRobert,4,Yu-Gi-Oh
 DinosaursRobertYu-Gi-Oh,Dinosaurs,944,Robert,DinosaursRobert,5,Yu-Gi-Oh
 DinosaursRobertYu-Gi-Oh,Dinosaurs,954,Robert,DinosaursRobert,5,Yu-Gi-Oh
-SliferRobertYu-Gi-Oh,Slifer,1037,Robert,TBA,4,Yu-Gi-Oh
+SliferRobertYu-Gi-Oh,Slifer,1037,Robert,SliferRobert,4,Yu-Gi-Oh
 SliferRobertYu-Gi-Oh Team,Slifer,1000,Robert,SliferRobert,4,Yu-Gi-Oh Team
 Crystal BeastRobertYu-Gi-Oh Team,Crystal Beast,1000,Robert,CrystalBeastRobert,4,Yu-Gi-Oh Team
 DinosaursRobertYu-Gi-Oh Team,Dinosaurs,1000,Robert,DinosaursRobert,4,Yu-Gi-Oh Team
-Dark WorldMatYu-Gi-Oh Team,Dark World,1000,Mat,TBA,4,Yu-Gi-Oh Team
-Dark MagicianMatYu-Gi-Oh Team,Dark Magician,1000,Mat,TBA,4,Yu-Gi-Oh Team
-SliferOllieYu-Gi-Oh Team,Slifer,1000,Ollie,TBA,4,Yu-Gi-Oh Team
-Blue EyesOllieYu-Gi-Oh Team,Blue Eyes,1000,Ollie,TBA,4,Yu-Gi-Oh Team
-Red EyesAlexYu-Gi-Oh Team,Red Eyes,1000,Alex,TBA,4,Yu-Gi-Oh Team
-ExodiaOllieYu-Gi-Oh Team,Exodia,1000,Ollie,TBA,4,Yu-Gi-Oh Team
+Dark WorldMatYu-Gi-Oh Team,Dark World,1000,Mat,DarkWorldMat,4,Yu-Gi-Oh Team
+Dark MagicianMatYu-Gi-Oh Team,Dark Magician,1000,Mat,DarkMagicianMat,4,Yu-Gi-Oh Team
+SliferOllieYu-Gi-Oh Team,Slifer,1000,Ollie,SliferOllie,4,Yu-Gi-Oh Team
+Blue EyesOllieYu-Gi-Oh Team,Blue Eyes,1000,Ollie,BlueEyesOllie,4,Yu-Gi-Oh Team
+Red EyesAlexYu-Gi-Oh Team,Red Eyes,1000,Alex,RedEyesAlex,4,Yu-Gi-Oh Team
+ExodiaOllieYu-Gi-Oh Team,Exodia,1000,Ollie,ExodiaOllie,4,Yu-Gi-Oh Team
 Cyber DragonOllieYu-Gi-Oh Team,Cyber Dragon,1000,Ollie,CyberDragonOllie,4,Yu-Gi-Oh Team
-Cyber DragonAlexYu-Gi-Oh Team,Cyber Dragon,1000,Alex,TBA,4,Yu-Gi-Oh Team
-Noble KnightsAlexYu-Gi-Oh Team,Noble Knights,1000,Alex,TBA,4,Yu-Gi-Oh Team
+Cyber DragonAlexYu-Gi-Oh Team,Cyber Dragon,1000,Alex,CyberDragonAlex,4,Yu-Gi-Oh Team
+Noble KnightsAlexYu-Gi-Oh Team,Noble Knights,1000,Alex,NobleKnightsAlex,4,Yu-Gi-Oh Team
 Cyber DragonRobertYu-Gi-Oh Team,Cyber Dragon,1000,Robert,CyberDragonRobert,4,Yu-Gi-Oh Team
 Odd EyesOllieYu-Gi-Oh Team,Odd Eyes,1000,Ollie,OddEyesOllie,4,Yu-Gi-Oh Team
 Odd EyesRobertYu-Gi-Oh Team,Odd Eyes,1000,Robert,OddEyesRobert,4,Yu-Gi-Oh Team
 Dark Magician DragonRobertYu-Gi-Oh Team,Dark Magician Dragon,1000,Robert,DarkMagicianDragonRobert,4,Yu-Gi-Oh Team
 Dark Magician DragonOllieYu-Gi-Oh Team,Dark Magician Dragon,1000,Ollie,DarkMagicianDragonOllie,4,Yu-Gi-Oh Team
-Realm of LightRobertYu-Gi-Oh Team,Realm of Light,1000,Robert,RealmOfLightRobert,4,Yu-Gi-Oh Team
+Realm of LightRobertYu-Gi-Oh Team,Realm of Light,1000,Robert,RealmofLightRobert,4,Yu-Gi-Oh Team
 SliferRobertYu-Gi-Oh FFA,Slifer,1000,Robert,SliferRobert,4,Yu-Gi-Oh FFA
 Crystal BeastRobertYu-Gi-Oh FFA,Crystal Beast,1000,Robert,CrystalBeastRobert,4,Yu-Gi-Oh FFA
 DinosaursRobertYu-Gi-Oh FFA,Dinosaurs,1000,Robert,DinosaursRobert,4,Yu-Gi-Oh FFA
-Dark WorldMatYu-Gi-Oh FFA,Dark World,1000,Mat,TBA,4,Yu-Gi-Oh FFA
-Dark MagicianMatYu-Gi-Oh FFA,Dark Magician,1000,Mat,TBA,4,Yu-Gi-Oh FFA
-SliferOllieYu-Gi-Oh FFA,Slifer,1000,Ollie,TBA,4,Yu-Gi-Oh FFA
-Blue EyesOllieYu-Gi-Oh FFA,Blue Eyes,1000,Ollie,TBA,4,Yu-Gi-Oh FFA
-Red EyesAlexYu-Gi-Oh FFA,Red Eyes,1000,Alex,TBA,4,Yu-Gi-Oh FFA
-ExodiaOllieYu-Gi-Oh FFA,Exodia,1000,Ollie,TBA,4,Yu-Gi-Oh FFA
+Dark WorldMatYu-Gi-Oh FFA,Dark World,1000,Mat,DarkWorldMat,4,Yu-Gi-Oh FFA
+Dark MagicianMatYu-Gi-Oh FFA,Dark Magician,1000,Mat,DarkMagicianMat,4,Yu-Gi-Oh FFA
+SliferOllieYu-Gi-Oh FFA,Slifer,1000,Ollie,SliferOllie,4,Yu-Gi-Oh FFA
+Blue EyesOllieYu-Gi-Oh FFA,Blue Eyes,1000,Ollie,BlueEyesOllie,4,Yu-Gi-Oh FFA
+Red EyesAlexYu-Gi-Oh FFA,Red Eyes,1000,Alex,RedEyesAlex,4,Yu-Gi-Oh FFA
+ExodiaOllieYu-Gi-Oh FFA,Exodia,1000,Ollie,ExodiaOllie,4,Yu-Gi-Oh FFA
 Cyber DragonOllieYu-Gi-Oh FFA,Cyber Dragon,1000,Ollie,CyberDragonOllie,4,Yu-Gi-Oh FFA
-Cyber DragonAlexYu-Gi-Oh FFA,Cyber Dragon,1000,Alex,TBA,4,Yu-Gi-Oh FFA
-Noble KnightsAlexYu-Gi-Oh FFA,Noble Knights,1000,Alex,TBA,4,Yu-Gi-Oh FFA
+Cyber DragonAlexYu-Gi-Oh FFA,Cyber Dragon,1000,Alex,CyberDragonAlex,4,Yu-Gi-Oh FFA
+Noble KnightsAlexYu-Gi-Oh FFA,Noble Knights,1000,Alex,NobleKnightsAlex,4,Yu-Gi-Oh FFA
 Cyber DragonRobertYu-Gi-Oh FFA,Cyber Dragon,1000,Robert,CyberDragonRobert,4,Yu-Gi-Oh FFA
 Odd EyesOllieYu-Gi-Oh FFA,Odd Eyes,1000,Ollie,OddEyesOllie,4,Yu-Gi-Oh FFA
 Odd EyesRobertYu-Gi-Oh FFA,Odd Eyes,1000,Robert,OddEyesRobert,4,Yu-Gi-Oh FFA
 Dark Magician DragonRobertYu-Gi-Oh FFA,Dark Magician Dragon,1000,Robert,DarkMagicianDragonRobert,4,Yu-Gi-Oh FFA
 Dark Magician DragonOllieYu-Gi-Oh FFA,Dark Magician Dragon,1000,Ollie,DarkMagicianDragonOllie,4,Yu-Gi-Oh FFA
-Realm of LightRobertYu-Gi-Oh FFA,Realm of Light,1000,Robert,RealmOfLightRobert,4,Yu-Gi-Oh FFA
+Realm of LightRobertYu-Gi-Oh FFA,Realm of Light,1000,Robert,RealmofLightRobert,4,Yu-Gi-Oh FFA
 SliferRobertYu-Gi-Oh Tag Team,Slifer,1000,Robert,SliferRobert,4,Yu-Gi-Oh Tag Team
 Crystal BeastRobertYu-Gi-Oh Tag Team,Crystal Beast,1000,Robert,CrystalBeastRobert,4,Yu-Gi-Oh Tag Team
 DinosaursRobertYu-Gi-Oh Tag Team,Dinosaurs,1000,Robert,DinosaursRobert,4,Yu-Gi-Oh Tag Team
-Dark WorldMatYu-Gi-Oh Tag Team,Dark World,1000,Mat,TBA,4,Yu-Gi-Oh Tag Team
-Dark MagicianMatYu-Gi-Oh Tag Team,Dark Magician,1000,Mat,TBA,4,Yu-Gi-Oh Tag Team
-SliferOllieYu-Gi-Oh Tag Team,Slifer,1000,Ollie,TBA,4,Yu-Gi-Oh Tag Team
-Blue EyesOllieYu-Gi-Oh Tag Team,Blue Eyes,1000,Ollie,TBA,4,Yu-Gi-Oh Tag Team
-Red EyesAlexYu-Gi-Oh Tag Team,Red Eyes,1000,Alex,TBA,4,Yu-Gi-Oh Tag Team
-ExodiaOllieYu-Gi-Oh Tag Team,Exodia,1000,Ollie,TBA,4,Yu-Gi-Oh Tag Team
+Dark WorldMatYu-Gi-Oh Tag Team,Dark World,1000,Mat,DarkWorldMat,4,Yu-Gi-Oh Tag Team
+Dark MagicianMatYu-Gi-Oh Tag Team,Dark Magician,1000,Mat,DarkMagicianMat,4,Yu-Gi-Oh Tag Team
+SliferOllieYu-Gi-Oh Tag Team,Slifer,1000,Ollie,SliferOllie,4,Yu-Gi-Oh Tag Team
+Blue EyesOllieYu-Gi-Oh Tag Team,Blue Eyes,1000,Ollie,BlueEyesOllie,4,Yu-Gi-Oh Tag Team
+Red EyesAlexYu-Gi-Oh Tag Team,Red Eyes,1000,Alex,RedEyesAlex,4,Yu-Gi-Oh Tag Team
+ExodiaOllieYu-Gi-Oh Tag Team,Exodia,1000,Ollie,ExodiaOllie,4,Yu-Gi-Oh Tag Team
 Cyber DragonOllieYu-Gi-Oh Tag Team,Cyber Dragon,1000,Ollie,CyberDragonOllie,4,Yu-Gi-Oh Tag Team
-Cyber DragonAlexYu-Gi-Oh Tag Team,Cyber Dragon,1000,Alex,TBA,4,Yu-Gi-Oh Tag Team
-Noble KnightsAlexYu-Gi-Oh Tag Team,Noble Knights,1000,Alex,TBA,4,Yu-Gi-Oh Tag Team
+Cyber DragonAlexYu-Gi-Oh Tag Team,Cyber Dragon,1000,Alex,CyberDragonAlex,4,Yu-Gi-Oh Tag Team
+Noble KnightsAlexYu-Gi-Oh Tag Team,Noble Knights,1000,Alex,NobleKnightsAlex,4,Yu-Gi-Oh Tag Team
 Cyber DragonRobertYu-Gi-Oh Tag Team,Cyber Dragon,1000,Robert,CyberDragonRobert,4,Yu-Gi-Oh Tag Team
 Odd EyesOllieYu-Gi-Oh Tag Team,Odd Eyes,1000,Ollie,OddEyesOllie,4,Yu-Gi-Oh Tag Team
 Odd EyesRobertYu-Gi-Oh Tag Team,Odd Eyes,1000,Robert,OddEyesRobert,4,Yu-Gi-Oh Tag Team
 Dark Magician DragonRobertYu-Gi-Oh Tag Team,Dark Magician Dragon,1000,Robert,DarkMagicianDragonRobert,4,Yu-Gi-Oh Tag Team
 Dark Magician DragonOllieYu-Gi-Oh Tag Team,Dark Magician Dragon,1000,Ollie,DarkMagicianDragonOllie,4,Yu-Gi-Oh Tag Team
-Realm of LightRobertYu-Gi-Oh Tag Team,Realm of Light,1000,Robert,RealmOfLightRobert,4,Yu-Gi-Oh Tag Team
-Blue EyesAlexYu-Gi-Oh Team,Blue Eyes,1000,Alex,TBA,4,Yu-Gi-Oh Team
-Blue EyesAlexYu-Gi-Oh FFA,Blue Eyes,1000,Alex,TBA,4,Yu-Gi-Oh FFA
-Blue EyesAlexYu-Gi-Oh Tag Team,Blue Eyes,1000,Alex,TBA,4,Yu-Gi-Oh Tag Team
-Blue EyesOllieYu-Gi-Oh Tag Team,Blue Eyes,1015,Ollie,TBA,4,Yu-Gi-Oh Tag Team
-Blue EyesAlexYu-Gi-Oh Tag Team,Blue Eyes,1015,Alex,TBA,4,Yu-Gi-Oh Tag Team
+Realm of LightRobertYu-Gi-Oh Tag Team,Realm of Light,1000,Robert,RealmofLightRobert,4,Yu-Gi-Oh Tag Team
+Blue EyesAlexYu-Gi-Oh Team,Blue Eyes,1000,Alex,BlueEyesAlex,4,Yu-Gi-Oh Team
+Blue EyesAlexYu-Gi-Oh FFA,Blue Eyes,1000,Alex,BlueEyesAlex,4,Yu-Gi-Oh FFA
+Blue EyesAlexYu-Gi-Oh Tag Team,Blue Eyes,1000,Alex,BlueEyesAlex,4,Yu-Gi-Oh Tag Team
+Blue EyesOllieYu-Gi-Oh Tag Team,Blue Eyes,1015,Ollie,BlueEyesOllie,4,Yu-Gi-Oh Tag Team
+Blue EyesAlexYu-Gi-Oh Tag Team,Blue Eyes,1015,Alex,BlueEyesAlex,4,Yu-Gi-Oh Tag Team
 Dark Magician DragonRobertYu-Gi-Oh Tag Team,Dark Magician Dragon,985,Robert,DarkMagicianDragonRobert,5,Yu-Gi-Oh Tag Team
-Dark MagicianMatYu-Gi-Oh Tag Team,Dark Magician,985,Mat,TBA,5,Yu-Gi-Oh Tag Team
+Dark MagicianMatYu-Gi-Oh Tag Team,Dark Magician,985,Mat,DarkMagicianMat,5,Yu-Gi-Oh Tag Team
 Odd EyesOllieYu-Gi-Oh Team,Odd Eyes,1015,Ollie,OddEyesOllie,4,Yu-Gi-Oh Team
-Cyber DragonAlexYu-Gi-Oh Team,Cyber Dragon,1015,Alex,TBA,4,Yu-Gi-Oh Team
-Dark WorldMatYu-Gi-Oh Team,Dark World,985,Mat,TBA,5,Yu-Gi-Oh Team
-Realm of LightRobertYu-Gi-Oh Team,Realm of Light,985,Robert,RealmOfLightRobert,5,Yu-Gi-Oh Team
-Noble KnightsAlexYu-Gi-Oh Team,Noble Knights,1015,Alex,TBA,4,Yu-Gi-Oh Team
+Cyber DragonAlexYu-Gi-Oh Team,Cyber Dragon,1015,Alex,CyberDragonAlex,4,Yu-Gi-Oh Team
+Dark WorldMatYu-Gi-Oh Team,Dark World,985,Mat,DarkWorldMat,5,Yu-Gi-Oh Team
+Realm of LightRobertYu-Gi-Oh Team,Realm of Light,985,Robert,RealmofLightRobert,5,Yu-Gi-Oh Team
+Noble KnightsAlexYu-Gi-Oh Team,Noble Knights,1015,Alex,NobleKnightsAlex,4,Yu-Gi-Oh Team
 Odd EyesOllieYu-Gi-Oh Team,Odd Eyes,1030,Ollie,OddEyesOllie,4,Yu-Gi-Oh Team
-Dark MagicianMatYu-Gi-Oh Team,Dark Magician,984,Mat,TBA,5,Yu-Gi-Oh Team
+Dark MagicianMatYu-Gi-Oh Team,Dark Magician,984,Mat,DarkMagicianMat,5,Yu-Gi-Oh Team
 Dark Magician DragonRobertYu-Gi-Oh Team,Dark Magician Dragon,984,Robert,DarkMagicianDragonRobert,5,Yu-Gi-Oh Team
-Dark WorldMatYu-Gi-Oh FFA,Dark World,1015,Mat,TBA,4,Yu-Gi-Oh FFA
-SliferOllieYu-Gi-Oh FFA,Slifer,985,Ollie,TBA,5,Yu-Gi-Oh FFA
+Dark WorldMatYu-Gi-Oh FFA,Dark World,1015,Mat,DarkWorldMat,4,Yu-Gi-Oh FFA
+SliferOllieYu-Gi-Oh FFA,Slifer,985,Ollie,SliferOllie,5,Yu-Gi-Oh FFA
 DinosaursRobertYu-Gi-Oh FFA,Dinosaurs,985,Robert,DinosaursRobert,5,Yu-Gi-Oh FFA
-SliferOllieYu-Gi-Oh FFA,Slifer,999,Ollie,TBA,5,Yu-Gi-Oh FFA
-Dark WorldMatYu-Gi-Oh FFA,Dark World,1000,Mat,TBA,4,Yu-Gi-Oh FFA
+SliferOllieYu-Gi-Oh FFA,Slifer,999,Ollie,SliferOllie,5,Yu-Gi-Oh FFA
+Dark WorldMatYu-Gi-Oh FFA,Dark World,1000,Mat,DarkWorldMat,4,Yu-Gi-Oh FFA
 SliferRobertYu-Gi-Oh FFA,Slifer,985,Robert,SliferRobert,5,Yu-Gi-Oh FFA
-Classic Mewtwo StallRobertPokemon,Classic Mewtwo Stall,1000,Robert,MewtwoStall,4,Pokemon
+Classic Mewtwo StallRobertPokemon,Classic Mewtwo Stall,1000,Robert,ClassicMewtwoStallRobert,4,Pokemon
 Cyber DragonRobertYu-Gi-Oh,Cyber Dragon,1027,Robert,CyberDragonRobert,4,Yu-Gi-Oh
 Odd EyesRobertYu-Gi-Oh,Odd Eyes,984,Robert,OddEyesRobert,5,Yu-Gi-Oh
 Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1097,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
 Cyber DragonRobertYu-Gi-Oh,Cyber Dragon,1009,Robert,CyberDragonRobert,4,Yu-Gi-Oh
 Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1116,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
-Realm of LightRobertYu-Gi-Oh,Realm of Light,966,Robert,RealmOfLightRobert,5,Yu-Gi-Oh
-Realm of LightRobertYu-Gi-Oh,Realm of Light,981,Robert,RealmOfLightRobert,5,Yu-Gi-Oh
+Realm of LightRobertYu-Gi-Oh,Realm of Light,966,Robert,RealmofLightRobert,5,Yu-Gi-Oh
+Realm of LightRobertYu-Gi-Oh,Realm of Light,981,Robert,RealmofLightRobert,5,Yu-Gi-Oh
 DinosaursRobertYu-Gi-Oh,Dinosaurs,938,Robert,DinosaursRobert,5,Yu-Gi-Oh
-Realm of LightRobertYu-Gi-Oh,Realm of Light,997,Robert,RealmOfLightRobert,5,Yu-Gi-Oh
+Realm of LightRobertYu-Gi-Oh,Realm of Light,997,Robert,RealmofLightRobert,5,Yu-Gi-Oh
 DinosaursRobertYu-Gi-Oh,Dinosaurs,921,Robert,DinosaursRobert,5,Yu-Gi-Oh
 SliferRobertYu-Gi-Oh,Slifer,1053,Robert,SliferRobert,4,Yu-Gi-Oh
-Realm of LightRobertYu-Gi-Oh,Realm of Light,980,Robert,RealmOfLightRobert,5,Yu-Gi-Oh
+Realm of LightRobertYu-Gi-Oh,Realm of Light,980,Robert,RealmofLightRobert,5,Yu-Gi-Oh
 Festival LeadRobertPokemon FFA,Festival Lead,1000,Robert,FestivalLeadRobert,4,Pokemon FFA
 Ancient BoxRobertPokemon FFA,Ancient Box,1000,Robert,AncientBoxRobert,4,Pokemon FFA
-United WingsRobertPokemon FFA,United Wings,1000,Robert,TBA,4,Pokemon FFA
-Pikachu and FriendsRobertPokemon FFA,Pikachu and Friends,1000,Robert,TBA,4,Pokemon FFA
-Sleeping SlakingRobertPokemon FFA,Sleeping Slaking,1000,Robert,TBA,4,Pokemon FFA
-Gone FishinRobertPokemon FFA,Gone Fishin,1000,Robert,TBA,4,Pokemon FFA
-Toxic GlimmoraRobertPokemon FFA,Toxic Glimmora,1000,Robert,TBA,4,Pokemon FFA
-Giritina Lost BoxRobertPokemon FFA,Giritina Lost Box,1000,Robert,TBA,4,Pokemon FFA
-Wugtrio MillRobertPokemon FFA,Wugtrio Mill,1000,Robert,TBA,4,Pokemon FFA
-JumpluffRobertPokemon FFA,Jumpluff,1000,Robert,TBA,4,Pokemon FFA
-Rapid Strike UrshifuRobertPokemon FFA,Rapid Strike Urshifu,1000,Robert,TBA,4,Pokemon FFA
-Wailord TankRobertPokemon FFA,Wailord Tank,1000,Robert,TBA,4,Pokemon FFA
-LunarockRobertPokemon FFA,Lunarock,1000,Robert,TBA,4,Pokemon FFA
-Chien-po exRobertPokemon FFA,Chien-po ex,1000,Robert,TBA,4,Pokemon FFA
-Psychic EleganceTallyPokemon FFA,Psychic Elegance,1000,Tally,TBA,4,Pokemon FFA
-Giritina VTallyPokemon FFA,Giritina V,1000,Tally,TBA,4,Pokemon FFA
-Stonjourer TankRobertPokemon FFA,Stonjourer Tank,1000,Robert,TBA,4,Pokemon FFA
-Mewtwo exRobertPokemon FFA,Mewtwo ex,1000,Robert,TBA,4,Pokemon FFA
-Exeggutor VRobertPokemon FFA,Exeggutor V,1000,Robert,TBA,4,Pokemon FFA
-GroudonRobertPokemon FFA,Groudon,1000,Robert,TBA,4,Pokemon FFA
-LunalaRobertPokemon FFA,Lunala,1000,Robert,TBA,4,Pokemon FFA
-HoopaRobertPokemon FFA,Hoopa,1000,Robert,TBA,4,Pokemon FFA
-SirfetchdRobertPokemon FFA,Sirfetchd,1000,Robert,TBA,4,Pokemon FFA
-ChewtleRobertPokemon FFA,Chewtle,1000,Robert,TBA,4,Pokemon FFA
-Noivern VRobertPokemon FFA,Noivern V,1000,Robert,TBA,4,Pokemon FFA
-Corviknight VRobertPokemon FFA,Corviknight V,1000,Robert,TBA,4,Pokemon FFA
-Melmetal VRobertPokemon FFA,Melmetal V,1000,Robert,TBA,4,Pokemon FFA
-Victini VRobertPokemon FFA,Victini V,1000,Robert,TBA,4,Pokemon FFA
-Pikachu Zekrom GXRobertPokemon FFA,Pikachu Zekrom GX,1000,Robert,TBA,4,Pokemon FFA
-Charizard GXRobertPokemon FFA,Charizard GX,1000,Robert,TBA,4,Pokemon FFA
-Raichu GXRobertPokemon FFA,Raichu GX,1000,Robert,TBA,4,Pokemon FFA
-Mewtwo GXRobertPokemon FFA,Mewtwo GX,1000,Robert,TBA,4,Pokemon FFA
-Lurantis GXRobertPokemon FFA,Lurantis GX,1000,Robert,TBA,4,Pokemon FFA
-TurtlesTallyPokemon FFA,Turtles,1000,Tally,TBA,4,Pokemon FFA
-EmpoleonTallyPokemon FFA,Empoleon,1000,Tally,TBA,4,Pokemon FFA
-SeahorseTallyPokemon FFA,Seahorse,1000,Tally,TBA,4,Pokemon FFA
-Classic Mewtwo StallRobertPokemon FFA,Classic Mewtwo Stall,1000,Robert,MewtwoStall,4,Pokemon FFA
-SteelixOlliePokemon FFA,Steelix,1000,Ollie,TBA,4,Pokemon FFA
+United WingsRobertPokemon FFA,United Wings,1000,Robert,UnitedWingsRobert,4,Pokemon FFA
+Pikachu and FriendsRobertPokemon FFA,Pikachu and Friends,1000,Robert,PikachuandFriendsRobert,4,Pokemon FFA
+Sleeping SlakingRobertPokemon FFA,Sleeping Slaking,1000,Robert,SleepingSlakingRobert,4,Pokemon FFA
+Gone FishinRobertPokemon FFA,Gone Fishin,1000,Robert,GoneFishinRobert,4,Pokemon FFA
+Toxic GlimmoraRobertPokemon FFA,Toxic Glimmora,1000,Robert,ToxicGlimmoraRobert,4,Pokemon FFA
+Giritina Lost BoxRobertPokemon FFA,Giritina Lost Box,1000,Robert,GiritinaLostBoxRobert,4,Pokemon FFA
+Wugtrio MillRobertPokemon FFA,Wugtrio Mill,1000,Robert,WugtrioMillRobert,4,Pokemon FFA
+JumpluffRobertPokemon FFA,Jumpluff,1000,Robert,JumpluffRobert,4,Pokemon FFA
+Rapid Strike UrshifuRobertPokemon FFA,Rapid Strike Urshifu,1000,Robert,RapidStrikeUrshifuRobert,4,Pokemon FFA
+Wailord TankRobertPokemon FFA,Wailord Tank,1000,Robert,WailordTankRobert,4,Pokemon FFA
+LunarockRobertPokemon FFA,Lunarock,1000,Robert,LunarockRobert,4,Pokemon FFA
+Chien-po exRobertPokemon FFA,Chien-po ex,1000,Robert,Chien-poexRobert,4,Pokemon FFA
+Psychic EleganceTallyPokemon FFA,Psychic Elegance,1000,Tally,PsychicEleganceTally,4,Pokemon FFA
+Giritina VTallyPokemon FFA,Giritina V,1000,Tally,GiritinaVTally,4,Pokemon FFA
+Stonjourer TankRobertPokemon FFA,Stonjourer Tank,1000,Robert,StonjourerTankRobert,4,Pokemon FFA
+Mewtwo exRobertPokemon FFA,Mewtwo ex,1000,Robert,MewtwoexRobert,4,Pokemon FFA
+Exeggutor VRobertPokemon FFA,Exeggutor V,1000,Robert,ExeggutorVRobert,4,Pokemon FFA
+GroudonRobertPokemon FFA,Groudon,1000,Robert,GroudonRobert,4,Pokemon FFA
+LunalaRobertPokemon FFA,Lunala,1000,Robert,LunalaRobert,4,Pokemon FFA
+HoopaRobertPokemon FFA,Hoopa,1000,Robert,HoopaRobert,4,Pokemon FFA
+SirfetchdRobertPokemon FFA,Sirfetchd,1000,Robert,SirfetchdRobert,4,Pokemon FFA
+ChewtleRobertPokemon FFA,Chewtle,1000,Robert,ChewtleRobert,4,Pokemon FFA
+Noivern VRobertPokemon FFA,Noivern V,1000,Robert,NoivernVRobert,4,Pokemon FFA
+Corviknight VRobertPokemon FFA,Corviknight V,1000,Robert,CorviknightVRobert,4,Pokemon FFA
+Melmetal VRobertPokemon FFA,Melmetal V,1000,Robert,MelmetalVRobert,4,Pokemon FFA
+Victini VRobertPokemon FFA,Victini V,1000,Robert,VictiniVRobert,4,Pokemon FFA
+Pikachu Zekrom GXRobertPokemon FFA,Pikachu Zekrom GX,1000,Robert,PikachuZekromGXRobert,4,Pokemon FFA
+Charizard GXRobertPokemon FFA,Charizard GX,1000,Robert,CharizardGXRobert,4,Pokemon FFA
+Raichu GXRobertPokemon FFA,Raichu GX,1000,Robert,RaichuGXRobert,4,Pokemon FFA
+Mewtwo GXRobertPokemon FFA,Mewtwo GX,1000,Robert,MewtwoGXRobert,4,Pokemon FFA
+Lurantis GXRobertPokemon FFA,Lurantis GX,1000,Robert,LurantisGXRobert,4,Pokemon FFA
+TurtlesTallyPokemon FFA,Turtles,1000,Tally,TurtlesTally,4,Pokemon FFA
+EmpoleonTallyPokemon FFA,Empoleon,1000,Tally,EmpoleonTally,4,Pokemon FFA
+SeahorseTallyPokemon FFA,Seahorse,1000,Tally,SeahorseTally,4,Pokemon FFA
+Classic Mewtwo StallRobertPokemon FFA,Classic Mewtwo Stall,1000,Robert,ClassicMewtwoStallRobert,4,Pokemon FFA
+SteelixOlliePokemon FFA,Steelix,1000,Ollie,SteelixOllie,4,Pokemon FFA
 Festival LeadRobertPokemon Team,Festival Lead,1000,Robert,FestivalLeadRobert,4,Pokemon Team
 Ancient BoxRobertPokemon Team,Ancient Box,1000,Robert,AncientBoxRobert,4,Pokemon Team
-United WingsRobertPokemon Team,United Wings,1000,Robert,TBA,4,Pokemon Team
-Pikachu and FriendsRobertPokemon Team,Pikachu and Friends,1000,Robert,TBA,4,Pokemon Team
-Sleeping SlakingRobertPokemon Team,Sleeping Slaking,1000,Robert,TBA,4,Pokemon Team
-Gone FishinRobertPokemon Team,Gone Fishin,1000,Robert,TBA,4,Pokemon Team
-Toxic GlimmoraRobertPokemon Team,Toxic Glimmora,1000,Robert,TBA,4,Pokemon Team
-Giritina Lost BoxRobertPokemon Team,Giritina Lost Box,1000,Robert,TBA,4,Pokemon Team
-Wugtrio MillRobertPokemon Team,Wugtrio Mill,1000,Robert,TBA,4,Pokemon Team
-JumpluffRobertPokemon Team,Jumpluff,1000,Robert,TBA,4,Pokemon Team
-Rapid Strike UrshifuRobertPokemon Team,Rapid Strike Urshifu,1000,Robert,TBA,4,Pokemon Team
-Wailord TankRobertPokemon Team,Wailord Tank,1000,Robert,TBA,4,Pokemon Team
-LunarockRobertPokemon Team,Lunarock,1000,Robert,TBA,4,Pokemon Team
-Chien-po exRobertPokemon Team,Chien-po ex,1000,Robert,TBA,4,Pokemon Team
-Psychic EleganceTallyPokemon Team,Psychic Elegance,1000,Tally,TBA,4,Pokemon Team
-Giritina VTallyPokemon Team,Giritina V,1000,Tally,TBA,4,Pokemon Team
-Stonjourer TankRobertPokemon Team,Stonjourer Tank,1000,Robert,TBA,4,Pokemon Team
-Mewtwo exRobertPokemon Team,Mewtwo ex,1000,Robert,TBA,4,Pokemon Team
-Exeggutor VRobertPokemon Team,Exeggutor V,1000,Robert,TBA,4,Pokemon Team
-GroudonRobertPokemon Team,Groudon,1000,Robert,TBA,4,Pokemon Team
-LunalaRobertPokemon Team,Lunala,1000,Robert,TBA,4,Pokemon Team
-HoopaRobertPokemon Team,Hoopa,1000,Robert,TBA,4,Pokemon Team
-SirfetchdRobertPokemon Team,Sirfetchd,1000,Robert,TBA,4,Pokemon Team
-ChewtleRobertPokemon Team,Chewtle,1000,Robert,TBA,4,Pokemon Team
-Noivern VRobertPokemon Team,Noivern V,1000,Robert,TBA,4,Pokemon Team
-Corviknight VRobertPokemon Team,Corviknight V,1000,Robert,TBA,4,Pokemon Team
-Melmetal VRobertPokemon Team,Melmetal V,1000,Robert,TBA,4,Pokemon Team
-Victini VRobertPokemon Team,Victini V,1000,Robert,TBA,4,Pokemon Team
-Pikachu Zekrom GXRobertPokemon Team,Pikachu Zekrom GX,1000,Robert,TBA,4,Pokemon Team
-Charizard GXRobertPokemon Team,Charizard GX,1000,Robert,TBA,4,Pokemon Team
-Raichu GXRobertPokemon Team,Raichu GX,1000,Robert,TBA,4,Pokemon Team
-Mewtwo GXRobertPokemon Team,Mewtwo GX,1000,Robert,TBA,4,Pokemon Team
-Lurantis GXRobertPokemon Team,Lurantis GX,1000,Robert,TBA,4,Pokemon Team
-TurtlesTallyPokemon Team,Turtles,1000,Tally,TBA,4,Pokemon Team
-EmpoleonTallyPokemon Team,Empoleon,1000,Tally,TBA,4,Pokemon Team
-SeahorseTallyPokemon Team,Seahorse,1000,Tally,TBA,4,Pokemon Team
-Classic Mewtwo StallRobertPokemon Team,Classic Mewtwo Stall,1000,Robert,MewtwoStall,4,Pokemon Team
-SteelixOlliePokemon Team,Steelix,1000,Ollie,TBA,4,Pokemon Team
+United WingsRobertPokemon Team,United Wings,1000,Robert,UnitedWingsRobert,4,Pokemon Team
+Pikachu and FriendsRobertPokemon Team,Pikachu and Friends,1000,Robert,PikachuandFriendsRobert,4,Pokemon Team
+Sleeping SlakingRobertPokemon Team,Sleeping Slaking,1000,Robert,SleepingSlakingRobert,4,Pokemon Team
+Gone FishinRobertPokemon Team,Gone Fishin,1000,Robert,GoneFishinRobert,4,Pokemon Team
+Toxic GlimmoraRobertPokemon Team,Toxic Glimmora,1000,Robert,ToxicGlimmoraRobert,4,Pokemon Team
+Giritina Lost BoxRobertPokemon Team,Giritina Lost Box,1000,Robert,GiritinaLostBoxRobert,4,Pokemon Team
+Wugtrio MillRobertPokemon Team,Wugtrio Mill,1000,Robert,WugtrioMillRobert,4,Pokemon Team
+JumpluffRobertPokemon Team,Jumpluff,1000,Robert,JumpluffRobert,4,Pokemon Team
+Rapid Strike UrshifuRobertPokemon Team,Rapid Strike Urshifu,1000,Robert,RapidStrikeUrshifuRobert,4,Pokemon Team
+Wailord TankRobertPokemon Team,Wailord Tank,1000,Robert,WailordTankRobert,4,Pokemon Team
+LunarockRobertPokemon Team,Lunarock,1000,Robert,LunarockRobert,4,Pokemon Team
+Chien-po exRobertPokemon Team,Chien-po ex,1000,Robert,Chien-poexRobert,4,Pokemon Team
+Psychic EleganceTallyPokemon Team,Psychic Elegance,1000,Tally,PsychicEleganceTally,4,Pokemon Team
+Giritina VTallyPokemon Team,Giritina V,1000,Tally,GiritinaVTally,4,Pokemon Team
+Stonjourer TankRobertPokemon Team,Stonjourer Tank,1000,Robert,StonjourerTankRobert,4,Pokemon Team
+Mewtwo exRobertPokemon Team,Mewtwo ex,1000,Robert,MewtwoexRobert,4,Pokemon Team
+Exeggutor VRobertPokemon Team,Exeggutor V,1000,Robert,ExeggutorVRobert,4,Pokemon Team
+GroudonRobertPokemon Team,Groudon,1000,Robert,GroudonRobert,4,Pokemon Team
+LunalaRobertPokemon Team,Lunala,1000,Robert,LunalaRobert,4,Pokemon Team
+HoopaRobertPokemon Team,Hoopa,1000,Robert,HoopaRobert,4,Pokemon Team
+SirfetchdRobertPokemon Team,Sirfetchd,1000,Robert,SirfetchdRobert,4,Pokemon Team
+ChewtleRobertPokemon Team,Chewtle,1000,Robert,ChewtleRobert,4,Pokemon Team
+Noivern VRobertPokemon Team,Noivern V,1000,Robert,NoivernVRobert,4,Pokemon Team
+Corviknight VRobertPokemon Team,Corviknight V,1000,Robert,CorviknightVRobert,4,Pokemon Team
+Melmetal VRobertPokemon Team,Melmetal V,1000,Robert,MelmetalVRobert,4,Pokemon Team
+Victini VRobertPokemon Team,Victini V,1000,Robert,VictiniVRobert,4,Pokemon Team
+Pikachu Zekrom GXRobertPokemon Team,Pikachu Zekrom GX,1000,Robert,PikachuZekromGXRobert,4,Pokemon Team
+Charizard GXRobertPokemon Team,Charizard GX,1000,Robert,CharizardGXRobert,4,Pokemon Team
+Raichu GXRobertPokemon Team,Raichu GX,1000,Robert,RaichuGXRobert,4,Pokemon Team
+Mewtwo GXRobertPokemon Team,Mewtwo GX,1000,Robert,MewtwoGXRobert,4,Pokemon Team
+Lurantis GXRobertPokemon Team,Lurantis GX,1000,Robert,LurantisGXRobert,4,Pokemon Team
+TurtlesTallyPokemon Team,Turtles,1000,Tally,TurtlesTally,4,Pokemon Team
+EmpoleonTallyPokemon Team,Empoleon,1000,Tally,EmpoleonTally,4,Pokemon Team
+SeahorseTallyPokemon Team,Seahorse,1000,Tally,SeahorseTally,4,Pokemon Team
+Classic Mewtwo StallRobertPokemon Team,Classic Mewtwo Stall,1000,Robert,ClassicMewtwoStallRobert,4,Pokemon Team
+SteelixOlliePokemon Team,Steelix,1000,Ollie,SteelixOllie,4,Pokemon Team
