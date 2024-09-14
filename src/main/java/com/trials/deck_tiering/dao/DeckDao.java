@@ -96,6 +96,7 @@ public class DeckDao {
             StringBuffer oneline = new StringBuffer();
             buildCsvWriter(deck, oneline);
             bw.write(oneline.toString());
+            bw.newLine();
             bw.flush();
             bw.close();
 

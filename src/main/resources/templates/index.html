@@ -19,9 +19,24 @@
         <header>
             <h1 th:text="${title}">Index</h1>
         </header>
-        <tr th:each="game : ${gameList}">
-            <a href="#main" class="button big alt scrolly" th:text="${game}" th:href="@{/decks/game/{game}(game=${game})}">Auto genned</a>
-        </tr>
+        <h3>Yu-Gi-Oh</h3>
+        <table>
+            <tr th:each="game : ${ygoList}">
+                <a href="#main" class="button big alt scrolly" th:text="${game}" th:href="@{/decks/game/{game}(game=${game})}">Auto genned</a>
+            </tr>
+        </table>
+        <h3>Pokemon</h3>
+        <table>
+            <tr th:each="game : ${pokemonList}">
+                <a href="#main" class="button big alt scrolly" th:text="${game}" th:href="@{/decks/game/{game}(game=${game})}">Auto genned</a>
+            </tr>
+        </table>
+        <h3>Magic the Gathering</h3>
+        <table>
+            <tr th:each="game : ${mtgList}">
+                <a href="#main" class="button big alt scrolly" th:text="${game}" th:href="@{/decks/game/{game}(game=${game})}">Auto genned</a>
+            </tr>
+        </table>
         <a href="#main" class="button big alt scrolly" th:href="@{/decks/new}">Add Deck</a>
     </div>
 </section>

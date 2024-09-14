@@ -27,10 +27,13 @@
         </tr>
         <tr th:each="pokemondeck : ${pokemondecklist}">
           <td>
-            <a th:href="@{/deck/history/{deckId}(deckId=${pokemondeck.id})}"
+            <a th:href="@{/decks/{deckId}/decklist/{cardlist}(cardlist=${pokemondeck.cardList}, deckId=${pokemondeck.id})}"
                th:text="${pokemondeck.name}">Name</a>
           </td>
-          <td th:text="${pokemondeck.rating}">Rating</td><!--      click into for history              -->
+          <td>
+            <a th:href="@{/deck/history/{deckId}(deckId=${pokemondeck.id})}"
+               th:text="${pokemondeck.rating}">Rating</a>
+          </td>
           <td th:text="${pokemondeck.tier}">Tier</td><!--       click into for other of this tier             -->
         </tr>
       </table>
@@ -44,10 +47,13 @@
         </tr>
         <tr th:each="ygodeck : ${ygodecklist}">
           <td>
-            <a th:href="@{/deck/history/{deckId}(deckId=${ygodeck.id})}"
+            <a th:href="@{/decks/{deckId}/decklist/{cardlist}(cardlist=${ygodeck.cardList}, deckId=${ygodeck.id})}"
                th:text="${ygodeck.name}">Name</a>
           </td>
-          <td th:text="${ygodeck.rating}">Rating</td><!--      click into for history              -->
+          <td>
+            <a th:href="@{/deck/history/{deckId}(deckId=${ygodeck.id})}"
+               th:text="${ygodeck.rating}">Rating</a>
+          </td>
           <td th:text="${ygodeck.tier}">Tier</td><!--       click into for other of this tier             -->
         </tr>
       </table>
@@ -61,13 +67,17 @@
       </tr>
       <tr th:each="edhdeck : ${edhdecklist}">
         <td>
-          <a th:href="@{/deck/history/{deckId}(deckId=${edhdeck.id})}"
+          <a th:href="@{/decks/{deckId}/decklist/{cardlist}(cardlist=${edhdeck.cardList}, deckId=${edhdeck.id})}"
              th:text="${edhdeck.name}">Name</a>
         </td>
-        <td th:text="${edhdeck.rating}">Rating</td><!--      click into for history              -->
+        <td>
+          <a th:href="@{/deck/history/{deckId}(deckId=${edhdeck.id})}"
+             th:text="${edhdeck.rating}">Rating</a>
+        </td>
         <td th:text="${edhdeck.tier}">Tier</td><!--       click into for other of this tier             -->
       </tr>
     </table>
 </section>
 </body>
 </html>
+

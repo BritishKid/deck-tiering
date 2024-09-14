@@ -3,7 +3,6 @@ package com.trials.deck_tiering.controller;
 import com.trials.deck_tiering.model.Card;
 import com.trials.deck_tiering.model.Deck;
 import com.trials.deck_tiering.model.GameEnum;
-import com.trials.deck_tiering.model.History;
 import com.trials.deck_tiering.service.DeckService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -23,7 +22,12 @@ public class DeckListController {
 
     @RequestMapping("/")
     public String index(Model model) {
-        model.addAttribute("gameList", getGameList());
+
+
+        model.addAttribute("ygoList", getYugiohGameList());
+        model.addAttribute("pokemonList", getPokemonGameList());
+        model.addAttribute("mtgList", getMtgGameList());
+
         return "index.html";
     }
 
@@ -153,7 +157,7 @@ public class DeckListController {
     @GetMapping("/decks/new")
     public String newDeck(Model model) {
 
-        model.addAttribute("gameList", getGameList());
+        model.addAttribute("gameList", getMainGameList());
         model.addAttribute("deck", new Deck());
         model.addAttribute("title", "Add A New Deck");
 

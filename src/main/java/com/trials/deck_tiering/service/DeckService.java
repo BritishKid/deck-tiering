@@ -3,10 +3,7 @@ package com.trials.deck_tiering.service;
 import com.trials.deck_tiering.dao.DeckDao;
 import com.trials.deck_tiering.dao.DecklistDao;
 import com.trials.deck_tiering.dao.HistoryDao;
-import com.trials.deck_tiering.model.Card;
-import com.trials.deck_tiering.model.Deck;
-import com.trials.deck_tiering.model.DeckComprator;
-import com.trials.deck_tiering.model.History;
+import com.trials.deck_tiering.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +13,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+
+import static com.trials.deck_tiering.model.GameEnum.*;
 
 @Service
 public class DeckService {
@@ -165,12 +164,31 @@ public class DeckService {
     }
 
     public void addNewDeck(Deck deck) {
-        deck.setId(deck.getName() + deck.getOwner() + deck.getGame());
+        String fileName = deck.getName() + deck.getOwner();
+        fileName = fileName.replaceAll("\\s+",""); //remove whitespace
         deck.setRating(1000);
         deck.setTier(4);
-        deck.setCardList("TBA");
+        deck.setCardList(fileName);
 
-        deckDao.writeDeck(deck);
+        //do for each value in the games options
+        if(deck.getGame().equals(POKEMON.getName())) {
+            for(String gameName: getPokemonGameList()) {
+                deck.setId(deck.getName() + deck.getOwner() + gameName);
+                deck.setGame(gameName);
+                deckDao.writeDeck(deck);
+            }
+        }
+        else if(deck.getGame().equals(YUGIOH.getName())) {
+            for(String gameName: getYugiohGameList()) {
+                deck.setId(deck.getName() + deck.getOwner() + gameName);
+                deck.setGame(gameName);
+                deckDao.writeDeck(deck);
+            }
+        }
+        else {
+            deck.setId(deck.getName() + deck.getOwner() + deck.getGame());
+            deckDao.writeDeck(deck);
+        }
     }
 
     public List<Card> getCardList(String cardList) throws IOException {

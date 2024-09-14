@@ -9,11 +9,11 @@
       <change beforePath="$PROJECT_DIR$/csv/decks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/decks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csv/history.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/history.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/HistoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/HistoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DeckDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DeckDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/GameEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/GameEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/DeckService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/DeckService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/deckhistory.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/deckhistory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ownersdecks.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ownersdecks.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
