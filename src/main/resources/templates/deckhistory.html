@@ -1,67 +1,103 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
-<head lang="en">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Deck Tiering: Ranking decks for various card games."
+    />
 
-    <head>
-        <title>Deck Tiering</title>    <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet" />
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    </head>
-<body>
+    <title>Deck Tiering</title>
 
-<header id ="header">
-    <h1><a href="#main"  th:href="@{/}">Deck Tiering</a></h1>
-</header>
+    <!-- Style. -->
+    <link
+      href="../static/css/main.css"
+      th:href="@{/css/main.css}"
+      rel="stylesheet"
+    />
 
-<section id="banner" style="overflow:auto">
-    <div class="inner">
-        <header style="padding-top:5px">
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Header (the small one in the top lefthand corner). -->
+    <header id="header">
+      <h1><a href="#main" th:href="@{/}">Deck Tiering</a></h1>
+    </header>
+
+    <main>
+      <section id="banner" style="overflow: auto">
+        <div class="inner">
+          <!-- Deck name. -->
+          <header style="padding-top: 5px">
             <h1 th:text="${title}">Decks</h1>
             <h2 th:text="${currentRating}">Current Rating</h2>
-            <h4><a href="#"  th:href="@{/decks/{deckid}(deckid=${deckId})/decklist/{cardlist}(cardlist=${cardList})}">Card List</a></h4>
-        </header>
-            <div id="chart_div" style="height:200px"></div>
-            <div style="padding-top:10px">
-                <div style="width:1200px;height:300px;overflow:auto;float:left;">
-                <table class="table table-striped">
-                    <tr>
-                        <th>Result</th>
-                        <th>Rating</th>
-                        <th>Tier</th>
-                    </tr>
-                    <tr th:each="deck : ${deckHistory}">
-                        <td th:text="${deck.historyOutcome}">Outcome</td><!--      click into for history              -->
-                        <td th:text="${deck.rating}">Rating</td><!--      click into for history              -->
-                        <td th:text="${deck.tier}">Tier</td><!--       click into for other of this tier             -->
-                    </tr>
-                </table>
-                </div>
+            <h4>
+              <a
+                href="#"
+                th:href="@{/decks/{deckid}(deckid=${deckId})/decklist/{cardlist}(cardlist=${cardList})}"
+                >Card List</a
+              >
+            </h4>
+          </header>
+
+          <!-- Graph. -->
+          <div id="chart_div" style="height: 200px"></div>
+
+          <!-- Deck history table. -->
+          <div style="padding-top: 10px">
+            <div
+              style="width: 1200px; height: 300px; overflow: auto; float: left"
+            >
+              <table class="table table-striped">
+                <tr>
+                  <th>Result</th>
+                  <th>Rating</th>
+                  <th>Tier</th>
+                </tr>
+                <tr th:each="deck : ${deckHistory}">
+                  <td th:text="${deck.historyOutcome}">Outcome</td>
+                  <!--      click into for history              -->
+                  <td th:text="${deck.rating}">Rating</td>
+                  <!--      click into for history              -->
+                  <td th:text="${deck.tier}">Tier</td>
+                  <!--       click into for other of this tier             -->
+                </tr>
+              </table>
             </div>
+          </div>
 
-        <script th:inline="javascript">
+          <!-- Script for the graph. -->
+          <script th:inline="javascript">
+            google.charts.load("current", { packages: ["corechart"] });
+            google.charts.setOnLoadCallback(drawChart);
 
-            google.charts.load('current', {'packages':['corechart']});
-                google.charts.setOnLoadCallback(drawChart);
             function drawChart() {
+              var data = new google.visualization.DataTable();
+              data.addColumn("number", "Games");
+              data.addColumn("number", "Rating");
 
-                var data = new google.visualization.DataTable();
-                data.addColumn('number', 'Games');
-                data.addColumn('number', 'Rating');
-                data.addRows([[${chartData}]]);
-                    var options = {
-                    'width':1200,
-                    'height':200};
+              // Correctly inject Thymeleaf variable as JS array
+              data.addRows(/*[[${chartData}]]*/);
 
-                var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-                chart.draw(data, options);
-          }
-        </script>
+              var options = {
+                width: 1200,
+                height: 200,
+              };
 
-
-
-    </div>
-</section>
-</body>
+              var chart = new google.visualization.LineChart(
+                document.getElementById("chart_div")
+              );
+              chart.draw(data, options);
+            }
+          </script>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

@@ -1,83 +1,131 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org" xmlns:float="http://www.w3.org/1999/xhtml">
-<head lang="en">
+<!DOCTYPE html>
 
+<html
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:float="http://www.w3.org/1999/xhtml"
+  lang="en"
+>
   <head>
-    <title>Deck Tiering</title>    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet" />
+    <meta
+      name="description"
+      content="Deck Tiering: Ranking decks for various card games."
+    />
+
+    <title>Deck Tiering</title>
+
+    <!-- Style. -->
+    <link
+      href="../static/css/main.css"
+      th:href="@{/css/main.css}"
+      rel="stylesheet"
+    />
   </head>
-<body>
 
-<header id ="header">
-  <h1><a href="#main" th:href="@{/}">Deck Tiering</a></h1>
-</header>
-
-<section id="banner" style="margin-top:48px">
-  <div class="inner">
-    <header>
-      <h1 th:text="${title}">Decks</h1>
+  <body>
+    <!-- Header (the small one in the top lefthand corner). -->
+    <header id="header">
+      <h1><a href="#main" th:href="@{/}">Deck Tiering</a></h1>
     </header>
-    <div style="width:400px;height:690px;overflow:auto;float:left;">
-    <table class="table table-striped">
-        <tr>
-          <th>Pokemon Decks</th>
-          <th>Rating</th>
-          <th>Tier</th>
-        </tr>
-        <tr th:each="pokemondeck : ${pokemondecklist}">
-          <td>
-            <a th:href="@{/decks/{deckId}/decklist/{cardlist}(cardlist=${pokemondeck.cardList}, deckId=${pokemondeck.id})}"
-               th:text="${pokemondeck.name}">Name</a>
-          </td>
-          <td>
-            <a th:href="@{/deck/history/{deckId}(deckId=${pokemondeck.id})}"
-               th:text="${pokemondeck.rating}">Rating</a>
-          </td>
-          <td th:text="${pokemondeck.tier}">Tier</td><!--       click into for other of this tier             -->
-        </tr>
-      </table>
-    </div>
-    <div style="width:400px;height:690px;overflow:auto;float:left;">
-      <table class="table table-striped">
-        <tr>
-          <th>Yu-Gi-Oh Decks</th>
-          <th>Rating</th>
-          <th>Tier</th>
-        </tr>
-        <tr th:each="ygodeck : ${ygodecklist}">
-          <td>
-            <a th:href="@{/decks/{deckId}/decklist/{cardlist}(cardlist=${ygodeck.cardList}, deckId=${ygodeck.id})}"
-               th:text="${ygodeck.name}">Name</a>
-          </td>
-          <td>
-            <a th:href="@{/deck/history/{deckId}(deckId=${ygodeck.id})}"
-               th:text="${ygodeck.rating}">Rating</a>
-          </td>
-          <td th:text="${ygodeck.tier}">Tier</td><!--       click into for other of this tier             -->
-        </tr>
-      </table>
-    </div>
-    <div style="width:400px;height:690px;overflow:auto;float:left;">
-    <table class="table table-striped">
-      <tr>
-        <th>Commander Decks</th>
-        <th>Rating</th>
-        <th>Tier</th>
-      </tr>
-      <tr th:each="edhdeck : ${edhdecklist}">
-        <td>
-          <a th:href="@{/decks/{deckId}/decklist/{cardlist}(cardlist=${edhdeck.cardList}, deckId=${edhdeck.id})}"
-             th:text="${edhdeck.name}">Name</a>
-        </td>
-        <td>
-          <a th:href="@{/deck/history/{deckId}(deckId=${edhdeck.id})}"
-             th:text="${edhdeck.rating}">Rating</a>
-        </td>
-        <td th:text="${edhdeck.tier}">Tier</td><!--       click into for other of this tier             -->
-      </tr>
-    </table>
-</section>
-</body>
-</html>
 
+    <main>
+      <section id="banner" style="margin-top: 48px">
+        <div class="inner">
+          <!-- Owners name. -->
+          <header>
+            <h1 th:text="${title}">Decks</h1>
+          </header>
+
+          <!-- Listing of Pkmon decks. -->
+          <div style="width: 400px; height: 690px; overflow: auto; float: left">
+            <table class="table table-striped">
+              <tr>
+                <th>Pokemon Decks</th>
+                <th>Rating</th>
+                <th>Tier</th>
+              </tr>
+              <tr th:each="pokemondeck : ${pokemondecklist}">
+                <td>
+                  <a
+                    th:href="@{/decks/{deckId}/decklist/{cardlist}(cardlist=${pokemondeck.cardList}, deckId=${pokemondeck.id})}"
+                    th:text="${pokemondeck.name}"
+                    >Name</a
+                  >
+                </td>
+                <td>
+                  <a
+                    th:href="@{/deck/history/{deckId}(deckId=${pokemondeck.id})}"
+                    th:text="${pokemondeck.rating}"
+                    >Rating</a
+                  >
+                </td>
+                <td th:text="${pokemondeck.tier}">Tier</td>
+                <!--       click into for other of this tier             -->
+              </tr>
+            </table>
+          </div>
+
+          <!-- Listing of YGO decks. -->
+          <div style="width: 400px; height: 690px; overflow: auto; float: left">
+            <table class="table table-striped">
+              <tr>
+                <th>Yu-Gi-Oh Decks</th>
+                <th>Rating</th>
+                <th>Tier</th>
+              </tr>
+              <tr th:each="ygodeck : ${ygodecklist}">
+                <td>
+                  <a
+                    th:href="@{/decks/{deckId}/decklist/{cardlist}(cardlist=${ygodeck.cardList}, deckId=${ygodeck.id})}"
+                    th:text="${ygodeck.name}"
+                    >Name</a
+                  >
+                </td>
+                <td>
+                  <a
+                    th:href="@{/deck/history/{deckId}(deckId=${ygodeck.id})}"
+                    th:text="${ygodeck.rating}"
+                    >Rating</a
+                  >
+                </td>
+                <td th:text="${ygodeck.tier}">Tier</td>
+                <!--       click into for other of this tier             -->
+              </tr>
+            </table>
+          </div>
+
+          <!-- Listing of MTG decks. -->
+          <div style="width: 400px; height: 690px; overflow: auto; float: left">
+            <table class="table table-striped">
+              <tr>
+                <th>Commander Decks</th>
+                <th>Rating</th>
+                <th>Tier</th>
+              </tr>
+              <tr th:each="edhdeck : ${edhdecklist}">
+                <td>
+                  <a
+                    th:href="@{/decks/{deckId}/decklist/{cardlist}(cardlist=${edhdeck.cardList}, deckId=${edhdeck.id})}"
+                    th:text="${edhdeck.name}"
+                    >Name</a
+                  >
+                </td>
+                <td>
+                  <a
+                    th:href="@{/deck/history/{deckId}(deckId=${edhdeck.id})}"
+                    th:text="${edhdeck.rating}"
+                    >Rating</a
+                  >
+                </td>
+                <td th:text="${edhdeck.tier}">Tier</td>
+                <!--       click into for other of this tier             -->
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

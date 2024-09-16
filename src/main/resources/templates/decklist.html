@@ -1,59 +1,131 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
-<head lang="en">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Deck Tiering: Ranking decks for various card games."
+    />
 
-    <head>
-        <title>Deck Tiering</title>    <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet" />
-    </head>
-<body>
+    <title>Deck Tiering</title>
 
-<header id ="header">
-    <h1><a href="#main" th:href="@{/}">Deck Tiering</a></h1>
-</header>
+    <!-- Style. -->
+    <link
+      href="../static/css/main.css"
+      th:href="@{/css/main.css}"
+      rel="stylesheet"
+    />
+  </head>
 
-<section id="banner" style="margin-top:48px">
-    <div class="inner">
-        <header>
+  <body>
+    <!-- Header (the small one in the top lefthand corner). -->
+    <header id="header">
+      <h1><a href="#main" th:href="@{/}">Deck Tiering</a></h1>
+    </header>
+
+    <main>
+      <section id="banner" style="margin-top: 48px">
+        <div class="inner">
+          <!-- Listing of selected decks. -->
+          <header>
             <h1 th:text="${game}">Decks</h1>
-        </header>
-        <div style="width:600px;height:690px;overflow:auto;float:left;">
-        <table class="table table-striped">
-                <tr>
-                    <th>Deck</th>
-                    <th>Rating</th>
-                    <th>Tier</th>
-                    <th>Owner</th>
-                </tr>
-                <tr th:each="deck : ${decklist}">
-                    <td>
-                    <a th:href="@{/decks/{deckId}/decklist/{cardlist}(cardlist=${deck.cardList}, deckId=${deck.id})}"
-                       th:text="${deck.name}">Name</a>
-                    </td>
-                    <td>
-                        <a th:href="@{/deck/history/{deckId}(deckId=${deck.id})}"
-                           th:text="${deck.rating}">Rating</a>
-                    </td>
-                    <td th:text="${deck.tier}">Tier</td><!--       click into for other of this tier             -->
-                    <td>
-                        <a th:href="@{/deck/owner/{ownerId}(ownerId=${deck.owner})}"
-                           th:text="${deck.owner}">Owner</a>
-                    </td> <!--       click into for other dekcs they own             -->
-                </tr>
+          </header>
+
+          <!-- Listing of decks. -->
+          <div style="width: 600px; height: 690px; overflow: auto; float: left">
+            <table class="table table-striped">
+              <tr>
+                <th>Deck</th>
+                <th>Rating</th>
+                <th>Tier</th>
+                <th>Owner</th>
+              </tr>
+              <tr th:each="deck : ${decklist}">
+                <td>
+                  <a
+                    th:href="@{/decks/{deckId}/decklist/{cardlist}(cardlist=${deck.cardList}, deckId=${deck.id})}"
+                    th:text="${deck.name}"
+                    >Name</a
+                  >
+                </td>
+                <td>
+                  <a
+                    th:href="@{/deck/history/{deckId}(deckId=${deck.id})}"
+                    th:text="${deck.rating}"
+                    >Rating</a
+                  >
+                </td>
+                <td th:text="${deck.tier}">Tier</td>
+                <!--       click into for other of this tier             -->
+                <td>
+                  <a
+                    th:href="@{/deck/owner/{ownerId}(ownerId=${deck.owner})}"
+                    th:text="${deck.owner}"
+                    >Owner</a
+                  >
+                </td>
+                <!--       click into for other dekcs they own             -->
+              </tr>
             </table>
+          </div>
+
+          <!-- Listing of tiers. -->
+          <div style="width: 400px; float: right">
+            <a
+              href="#main"
+              class="button big alt scrolly"
+              th:href="@{/decks/tier/1/{game}(game=${game})}"
+              >Tier 1</a
+            >
+            <a
+              href="#main"
+              class="button big alt scrolly"
+              th:href="@{/decks/tier/2/{game}(game=${game})}"
+              >Tier 2</a
+            >
+            <a
+              href="#main"
+              class="button big alt scrolly"
+              th:href="@{/decks/tier/3/{game}(game=${game})}"
+              >Tier 3</a
+            >
+            <a
+              href="#main"
+              class="button big alt scrolly"
+              th:href="@{/decks/tier/4/{game}(game=${game})}"
+              >Tier 4</a
+            >
+            <a
+              href="#main"
+              class="button big alt scrolly"
+              th:href="@{/decks/tier/5/{game}(game=${game})}"
+              >Tier 5</a
+            >
+            <a
+              href="#main"
+              class="button big alt scrolly"
+              th:href="@{/decks/tier/6/{game}(game=${game})}"
+              >Tier 6</a
+            >
+            <a
+              href="#main"
+              class="button big alt scrolly"
+              th:href="@{/decks/game/{game}(game=${game})}"
+              >All</a
+            >
+
+            <!-- Add result. -->
+            <a
+              href="#main"
+              class="button big alt scrolly"
+              th:href="@{/deck/addoutcome/game/{game}(game=${game})}"
+              >Add result</a
+            >
+          </div>
         </div>
-        <div style="width:400px;float:right;">
-            <a href="#main" class="button big alt scrolly" th:href="@{/decks/tier/1/{game}(game=${game})}">Tier 1</a>
-            <a href="#main" class="button big alt scrolly" th:href="@{/decks/tier/2/{game}(game=${game})}">Tier 2</a>
-            <a href="#main" class="button big alt scrolly" th:href="@{/decks/tier/3/{game}(game=${game})}">Tier 3</a>
-            <a href="#main" class="button big alt scrolly" th:href="@{/decks/tier/4/{game}(game=${game})}">Tier 4</a>
-            <a href="#main" class="button big alt scrolly" th:href="@{/decks/tier/5/{game}(game=${game})}">Tier 5</a>
-            <a href="#main" class="button big alt scrolly" th:href="@{/decks/tier/6/{game}(game=${game})}">Tier 6</a>
-            <a href="#main" class="button big alt scrolly" th:href="@{/decks/game/{game}(game=${game})}">All</a>
-            <a href="#main" class="button big alt scrolly" th:href="@{/deck/addoutcome/game/{game}(game=${game})}">Add result</a>
-        </div>
-    </div>
-</section>
-</body>
+      </section>
+    </main>
+  </body>
 </html>

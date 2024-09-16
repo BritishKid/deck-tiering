@@ -1,47 +1,71 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="UTF-8">
-    <title><!DOCTYPE HTML>
-      <html xmlns:th="http://www.thymeleaf.org">
-      <head lang="en">
 
-      <head>
-      <title>Deck Tiering</title>    <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet" />
-</head>
-<body>
+<html
+  lang="en"
+  xmlns:th="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Deck Tiering: Ranking decks for various card games."
+    />
 
-<header id ="header">
-  <h1><a href="#main" th:href="@{/}">Deck Tiering</a></h1>
-</header>
+    <title>Deck Tiering</title>
 
+    <!-- Style. -->
+    <link
+      href="../static/css/main.css"
+      th:href="@{/css/main.css}"
+      rel="stylesheet"
+    />
+  </head>
 
-<section id="banner" style="margin-top:48px">
-  <div class="inner">
-    <div class="col-lg-3" th:object="${decklist}">
-      <form action="#" th:action="@{/deck/resultsupdate/game/{game}(game=${game})}" th:object="${String}" method="post">
-      <select class="form-control" id="winningDeck" name="winningDeck">
-        <option value="">Winning Deck</option>
-        <option th:each="deck : ${decklist}"
-                th:value="${deck.id}"
-                th:text="${deck.name}+' : '+${deck.owner}"></option>
-      </select>
-      <select class="form-control" id="losingDeck" name="losingDeck">
-        <option value="">Losing Deck</option>
-        <option th:each="deck : ${decklist}"
-                th:value="${deck.id}"
-                th:text="${deck.name}+' : '+${deck.owner}"></option>
-      </select>
-      <p><input type="submit" value="Submit" /></p>
-    </div>
-  </div>
-</section>
-</body>
-</html></title>
-</head>
-<body>
+  <body>
+    <!-- Header (the small one in the top lefthand corner). -->
+    <header id="header">
+      <h1><a href="#main" th:href="@{/}">Deck Tiering</a></h1>
+    </header>
 
-</body>
+    <main>
+      <section id="banner" style="margin-top: 48px">
+        <div class="inner">
+          <div class="col-lg-3" th:object="${decklist}">
+            <form
+              action="#"
+              th:action="@{/deck/resultsupdate/game/{game}(game=${game})}"
+              th:object="${String}"
+              method="post"
+            >
+              <!-- Winning deck. -->
+              <select class="form-control" id="winningDeck" name="winningDeck">
+                <option value="">Winning Deck</option>
+                <option
+                  th:each="deck : ${decklist}"
+                  th:value="${deck.id}"
+                  th:text="${deck.name}+' : '+${deck.owner}"
+                ></option>
+              </select>
+
+              <!-- Losing deck. -->
+              <select class="form-control" id="losingDeck" name="losingDeck">
+                <option value="">Losing Deck</option>
+                <option
+                  th:each="deck : ${decklist}"
+                  th:value="${deck.id}"
+                  th:text="${deck.name}+' : '+${deck.owner}"
+                ></option>
+              </select>
+
+              <!-- Submit form. -->
+              <p><input type="submit" value="Submit" /></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

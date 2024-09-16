@@ -1,92 +1,124 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
-<head lang="en">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Deck Tiering: Ranking decks for various card games."
+    />
 
-    <head>
-        <title>Deck Tiering</title>    <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet" />
-    </head>
-<body>
+    <title>Deck Tiering</title>
 
-<header id ="header">
-    <h1><a href="#main" th:href="@{/}">Deck Tiering</a></h1>
-</header>
+    <!-- Style. -->
+    <link
+      href="../static/css/main.css"
+      th:href="@{/css/main.css}"
+      rel="stylesheet"
+    />
+  </head>
 
-<section id="banner" style="margin-top:48px">
-    <div class="inner">
-        <header>
+  <body>
+    <!-- Header (the small one in the top lefthand corner). -->
+    <header id="header">
+      <h1><a href="#main" th:href="@{/}">Deck Tiering</a></h1>
+    </header>
+
+    <main>
+      <section id="banner" style="margin-top: 48px">
+        <div class="inner">
+          <!-- Deck name. -->
+          <header>
             <h1 th:text="${title}">Title</h1>
-            <h4><a href="#"  th:href="@{/deck/history/{deckId}(deckId=${deckId})}">Rating History</a></h4>
-        </header>
-        <ol th:if="!${gameCheck}">
-            <div style="width:1200px;height:690px;overflow:auto;float:left;">
-                <h4>Main Deck</h4>
-                <table class="table table-striped">
-                    <tr>
-                        <th>Name</th>
-                        <th>Type</th>
-                        <th>Amount</th>
-                    </tr>
-                    <tr th:each="card : ${mainDeck}">
-                        <td th:text="${card.name}">Name</td>
-                        <td th:text="${card.cardType}">Type</td>
-                        <td th:text="${card.numberOf}">Amount</td>
-                    </tr>
-                </table>
-            </div>
-        </ol>
-        <ol th:if="${gameCheck}">
-            <div style="width:400px;height:690px;overflow:auto;float:left;">
-                <h4>Main Deck</h4>
-                <table class="table table-striped">
-                    <tr>
-                        <th>Name</th>
-                        <th>Type</th>
-                        <th>Amount</th>
-                    </tr>
-                    <tr th:each="card : ${mainDeck}">
-                        <td th:text="${card.name}">Name</td>
-                        <td th:text="${card.cardType}">Type</td>
-                        <td th:text="${card.numberOf}">Amount</td>
-                    </tr>
-                </table>
-            </div>
-            <div style="width:400px;height:690px;overflow:auto;float:left;">
-                <h4>Extra Deck</h4>
-                <table class="table table-striped">
-                    <tr>
-                        <th>Name</th>
-                        <th>Type</th>
-                        <th>Amount</th>
-                    </tr>
-                    <tr th:each="card : ${extraDeck}">
-                        <td th:text="${card.name}">Name</td>
-                        <td th:text="${card.cardType}">Type</td>
-                        <td th:text="${card.numberOf}">Amount</td>
-                    </tr>
-                </table>
-            </div>
-            <div style="width:400px;height:690px;overflow:auto;float:left;">
-                <h4>Side Deck</h4>
-                <table class="table table-striped">
-                    <tr>
-                        <th>Name</th>
-                        <th>Type</th>
-                        <th>Amount</th>
-                    </tr>
-                    <tr th:each="card : ${sideDeck}">
-                        <td th:text="${card.name}">Name</td>
-                        <td th:text="${card.cardType}">Type</td>
-                        <td th:text="${card.numberOf}">Amount</td>
-                    </tr>
-                </table>
-            </div>
-        </ol>
-    </div>
-</section>
+            <h4>
+              <a href="#" th:href="@{/deck/history/{deckId}(deckId=${deckId})}"
+                >Rating History</a
+              >
+            </h4>
+          </header>
 
+          <!-- Main deck. -->
+          <ol th:if="!${gameCheck}">
+            <div
+              style="width: 1200px; height: 690px; overflow: auto; float: left"
+            >
+              <h4>Main Deck</h4>
+              <table class="table table-striped">
+                <tr>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Amount</th>
+                </tr>
+                <tr th:each="card : ${mainDeck}">
+                  <td th:text="${card.name}">Name</td>
+                  <td th:text="${card.cardType}">Type</td>
+                  <td th:text="${card.numberOf}">Amount</td>
+                </tr>
+              </table>
+            </div>
+          </ol>
 
-</section>
-</body>
+          <!-- Main deck. -->
+          <ol th:if="${gameCheck}">
+            <div
+              style="width: 400px; height: 690px; overflow: auto; float: left"
+            >
+              <h4>Main Deck</h4>
+              <table class="table table-striped">
+                <tr>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Amount</th>
+                </tr>
+                <tr th:each="card : ${mainDeck}">
+                  <td th:text="${card.name}">Name</td>
+                  <td th:text="${card.cardType}">Type</td>
+                  <td th:text="${card.numberOf}">Amount</td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- Extra deck. -->
+            <div
+              style="width: 400px; height: 690px; overflow: auto; float: left"
+            >
+              <h4>Extra Deck</h4>
+              <table class="table table-striped">
+                <tr>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Amount</th>
+                </tr>
+                <tr th:each="card : ${extraDeck}">
+                  <td th:text="${card.name}">Name</td>
+                  <td th:text="${card.cardType}">Type</td>
+                  <td th:text="${card.numberOf}">Amount</td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- Side deck. -->
+            <div
+              style="width: 400px; height: 690px; overflow: auto; float: left"
+            >
+              <h4>Side Deck</h4>
+              <table class="table table-striped">
+                <tr>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Amount</th>
+                </tr>
+                <tr th:each="card : ${sideDeck}">
+                  <td th:text="${card.name}">Name</td>
+                  <td th:text="${card.cardType}">Type</td>
+                  <td th:text="${card.numberOf}">Amount</td>
+                </tr>
+              </table>
+            </div>
+          </ol>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

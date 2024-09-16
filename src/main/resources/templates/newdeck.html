@@ -1,37 +1,60 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
-<head lang="en">
+<!DOCTYPE html>
 
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
   <head>
-    <title>Deck Tiering</title>    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet" />
+    <meta
+      name="description"
+      content="Deck Tiering: Ranking decks for various card games."
+    />
+
+    <title>Deck Tiering</title>
+
+    <!-- Style. -->
+    <link
+      href="../static/css/main.css"
+      th:href="@{/css/main.css}"
+      rel="stylesheet"
+    />
   </head>
-<body>
 
-<header id ="header">
-  <h1><a href="#main"  th:href="@{/}">Deck Tiering</a></h1>
-</header>
-
-
-<section id="banner" style="margin-top:48px">
-  <div class="inner">
-    <header>
-      <h1 th:text="${title}">Index</h1>
+  <body>
+    <!-- Header (the small one in the top lefthand corner). -->
+    <header id="header">
+      <h1><a href="#main" th:href="@{/}">Deck Tiering</a></h1>
     </header>
 
-    <form action="#" th:action="@{/decks/add}" th:object="${deck}" method="post">
-      Deck Name: <input type="text" th:field="*{name}"/>
-      Owner Name: <input type="text" th:field="*{owner}"/>
-      Game Name: <select class="form-control" id="game" name="game">
-<!--        <option value="">Game</option>-->
-        <option th:each="game : ${gameList}"
+    <main>
+      <section id="banner" style="margin-top: 48px">
+        <div class="inner">
+          <header>
+            <h1 th:text="${title}">Index</h1>
+          </header>
+
+          <form
+            action="#"
+            th:action="@{/decks/add}"
+            th:object="${deck}"
+            method="post"
+          >
+            Deck Name: <input type="text" th:field="*{name}" /> Owner Name:
+            <input type="text" th:field="*{owner}" /> Game Name:
+            <select class="form-control" id="game" name="game">
+              <!--        <option value="">Game</option>-->
+              <option
+                th:each="game : ${gameList}"
                 th:value="${game}"
-                th:text="${game}"></option>
-      </select>
-    <p><input type="submit" value="Submit" />
-    </form>
-  </div>
-</section>
-</body>
+                th:text="${game}"
+              ></option>
+            </select>
+
+            <!-- Submit button. -->
+            <p><input type="submit" value="Submit" /></p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
