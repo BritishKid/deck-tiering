@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Deck Tiering: Ranking decks for various card games."
+    />
+
+    <title>Deck Tiering</title>
+
+    <!-- Style. -->
+    <link
+      href="../static/css/style.css"
+      th:href="@{/css/main.css}"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header (banner). -->
+    <header>
+      <h1><a href="#main" th:href="@{/}">Deck Tiering</a></h1>
+    </header>
+
+    <main>
+      <section>
+          <h2 th:text="${title}">Index</h2>
+
+          <!-- Listing of YGO decks. -->
+          <h3>Yu-Gi-Oh</h3>
+          <table>
+            <tr th:each="game : ${ygoList}">
+              <a
+                href="#main"
+                class="button big alt scrolly"
+                th:text="${game}"
+                th:href="@{/decks/game/{game}(game=${game})}"
+                >Auto genned</a
+              >
+            </tr>
+          </table>
+
+          <!-- Listing of Pkmon decks. -->
+          <h3>Pokemon</h3>
+          <table>
+            <tr th:each="game : ${pokemonList}">
+              <a
+                href="#main"
+                class="button big alt scrolly"
+                th:text="${game}"
+                th:href="@{/decks/game/{game}(game=${game})}"
+                >Auto genned</a
+              >
+            </tr>
+          </table>
+
+          <!-- Listing of MTG decks. -->
+          <h3>Magic the Gathering</h3>
+          <table>
+            <tr th:each="game : ${mtgList}">
+              <a
+                href="#main"
+                class="button big alt scrolly"
+                th:text="${game}"
+                th:href="@{/decks/game/{game}(game=${game})}"
+                >Auto genned</a
+              >
+            </tr>
+          </table>
+
+          <!-- Creating a new deck.-->
+          <h3>Add Deck</h3>
+          <a href="#main" class="button big alt scrolly" th:href="@{/decks/new}"
+            >Create</a
+          >
+      </section>
+    </main>
+  </body>
+</html>
