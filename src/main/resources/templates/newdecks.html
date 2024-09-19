@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Deck Tiering: Ranking decks for various card games."
+    />
+
+    <title>Deck Tiering</title>
+
+    <!-- Style. -->
+    <link
+      href="../static/css/style.css"
+      th:href="@{/css/main.css}"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header (the small one in the top lefthand corner). -->
+    <header id="header">
+      <h1><a href="#main" th:href="@{/}">Deck Tiering</a></h1>
+    </header>
+
+    <main>
+      <section>
+        <h2 th:text="${title}">Index</h2>
+
+        <form
+          action="#"
+          th:action="@{/decks/add}"
+          th:object="${deck}"
+          method="post"
+          class="newDeckForm"
+        >
+          <label for="deck-name">Deck Name:</label>
+          <input
+            type="text"
+            id="deck-name"
+            th:field="*{name}"
+            placeholder="Enter deck name"
+          />
+
+          <label for="owner-name">Owner Name:</label>
+          <input
+            type="text"
+            id="owner-name"
+            th:field="*{owner}"
+            placeholder="Enter owner name"
+          />
+
+          <label for="game">Game Name:</label>
+          <select class="outcomeForm" id="game" name="game">
+            <option
+              th:each="game : ${gameList}"
+              th:value="${game}"
+              th:text="${game}"
+            ></option>
+          </select>
+
+          <!-- Submit button. -->
+          <p><input type="submit" value="Submit" /></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2021 Deck Tiering. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:float="http://www.w3.org/1999/xhtml"
+  lang="en"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Deck Tiering: Ranking decks for various card games."
+    />
+
+    <title>Deck Tiering</title>
+
+    <!-- Style. -->
+    <link
+      href="../static/css/style.css"
+      th:href="@{/css/main.css}"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header (the small one in the top lefthand corner). -->
+    <header>
+      <h1><a href="#main" th:href="@{/}">Deck Tiering</a></h1>
+    </header>
+
+    <main>
+      <section>
+        <!-- Owners name. -->
+        <h2 th:text="${title}">Decks</h2>
+
+        <div class="ownersDeckTable">
+          <section class="ownersTable">
+            <!-- Listing of Pkmon decks. -->
+            <table>
+              <tr>
+                <th>Pokemon Decks</th>
+                <th>Rating</th>
+                <th>Tier</th>
+              </tr>
+              <tr th:each="pokemondeck : ${pokemondecklist}">
+                <td>
+                  <a
+                    th:href="@{/decks/{deckId}/decklist/{cardlist}(cardlist=${pokemondeck.cardList}, deckId=${pokemondeck.id})}"
+                    th:text="${pokemondeck.name}"
+                    >Name</a
+                  >
+                </td>
+                <td>
+                  <a
+                    th:href="@{/deck/history/{deckId}(deckId=${pokemondeck.id})}"
+                    th:text="${pokemondeck.rating}"
+                    >Rating</a
+                  >
+                </td>
+                <td th:text="${pokemondeck.tier}">Tier</td>
+                <!--       click into for other of this tier             -->
+              </tr>
+            </table>
+          </section>
+
+          <section class="ownersTable">
+            <!-- Listing of YGO decks. -->
+            <table>
+              <tr>
+                <th>Yu-Gi-Oh Decks</th>
+                <th>Rating</th>
+                <th>Tier</th>
+              </tr>
+              <tr th:each="ygodeck : ${ygodecklist}">
+                <td>
+                  <a
+                    th:href="@{/decks/{deckId}/decklist/{cardlist}(cardlist=${ygodeck.cardList}, deckId=${ygodeck.id})}"
+                    th:text="${ygodeck.name}"
+                    >Name</a
+                  >
+                </td>
+                <td>
+                  <a
+                    th:href="@{/deck/history/{deckId}(deckId=${ygodeck.id})}"
+                    th:text="${ygodeck.rating}"
+                    >Rating</a
+                  >
+                </td>
+                <td th:text="${ygodeck.tier}">Tier</td>
+                <!--       click into for other of this tier             -->
+              </tr>
+            </table>
+          </section>
+
+          <section class="ownersTable">
+            <!-- Listing of MTG decks. -->
+            <table>
+              <tr>
+                <th>Commander Decks</th>
+                <th>Rating</th>
+                <th>Tier</th>
+              </tr>
+              <tr th:each="edhdeck : ${edhdecklist}">
+                <td>
+                  <a
+                    th:href="@{/decks/{deckId}/decklist/{cardlist}(cardlist=${edhdeck.cardList}, deckId=${edhdeck.id})}"
+                    th:text="${edhdeck.name}"
+                    >Name</a
+                  >
+                </td>
+                <td>
+                  <a
+                    th:href="@{/deck/history/{deckId}(deckId=${edhdeck.id})}"
+                    th:text="${edhdeck.rating}"
+                    >Rating</a
+                  >
+                </td>
+                <td th:text="${edhdeck.tier}">Tier</td>
+                <!--       click into for other of this tier             -->
+              </tr>
+            </table>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2021 Deck Tiering. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

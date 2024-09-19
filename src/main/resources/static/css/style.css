@@ -21,7 +21,6 @@ header {
     width: 100%;
     padding: 20px;
     text-align: center;
-    /* position: fixed; */
     top: 0;
     left: 0;
     z-index: 100;
@@ -36,7 +35,6 @@ header h1 a {
 /* Main content style */
 main {
     margin-top: 10px;
-    /* To offset the fixed header */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,17 +53,18 @@ section {
 }
 
 /* Headings style */
-/* Headings style */
-h2 {
-    margin-top: 30px;
-    font-size: 35px;
+h2, h3 {
     color: #fff;
 }
 
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
 h3 {
-    margin-top: 50px;
     font-size: 30px;
-    color: #fff;
+    margin-top: 50px;
 }
 
 /* Table styling */
@@ -78,6 +77,54 @@ table {
 /* Add spacing between rows */
 tr {
     margin-bottom: 10px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ffffff33;
+    /* Light white border */
+    color: #fff;
+}
+
+th {
+    background-color: #007bff;
+}
+
+td {
+    background-color: #041625;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Section for tables in a row */
+.ownersDeckTable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    /* Adds space between each table */
+}
+
+/* Table section */
+.ownersTable {
+    background-color: #041625;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    /* Allow flexible width */
+    min-width: 300px;
+    /* Ensure table sections don't become too small */
+    max-width: 30%;
 }
 
 /* Link button styling */
@@ -96,4 +143,98 @@ a.button {
 
 a.button:hover {
     background-color: #0056b3;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Outcome form styling */
+.outcomeForm {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+/* Modern form styling */
+.newDeckForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px; /* Limit width of the form */
+    padding: 20px;
+    background-color: #041625;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Label styling */
+.newDeckForm label {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+/* Input styling */
+.newDeckForm input[type="text"],
+.newDeckForm select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px; 
+    color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 20px 0;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer style */
+footer {
+    background-color: #041625;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
 }

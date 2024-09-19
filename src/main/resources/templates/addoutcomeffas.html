@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns:th="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Deck Tiering: Ranking decks for various card games."
+    />
+
+    <title>Deck Tiering</title>
+
+    <!-- Style. -->
+    <link
+      href="../static/css/style.css"
+      th:href="@{/css/main.css}"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header (the small one in the top lefthand corner). -->
+    <header>
+      <h1><a href="#main" th:href="@{/}">Deck Tiering</a></h1>
+    </header>
+
+    <main>
+      <section>
+        <div th:object="${decklist}">
+          <form
+            action="#"
+            th:action="@{/deck/resultsupdate/ffa/game/{game}(game=${game})}"
+            th:object="${String}"
+            method="post"
+          >
+            <!-- Winning deck 1. -->
+            <select class="outcomeForm" id="winningDeck1" name="winningDeck1">
+              <option value="">Winning Deck 1</option>
+              <option
+                th:each="deck : ${decklist}"
+                th:value="${deck.id}"
+                th:text="${deck.name}+' : '+${deck.owner}"
+              ></option>
+            </select>
+
+            <!-- Losing deck 1. -->
+            <select class="outcomeForm" id="losingDeck1" name="losingDeck1">
+              <option value="">Losing Deck 1</option>
+              <option
+                th:each="deck : ${decklist}"
+                th:value="${deck.id}"
+                th:text="${deck.name}+' : '+${deck.owner}"
+              ></option>
+            </select>
+
+            <!-- Losing deck 2. -->
+            <select class="outcomeForm" id="losingDeck2" name="losingDeck2">
+              <option value="">Losing Deck 2</option>
+              <option
+                th:each="deck : ${decklist}"
+                th:value="${deck.id}"
+                th:text="${deck.name}+' : '+${deck.owner}"
+              ></option>
+            </select>
+
+            <!-- Losing deck 3. -->
+            <select class="outcomeForm" id="losingDeck3" name="losingDeck3">
+              <option value="">Losing Deck 3</option>
+              <option
+                th:each="deck : ${decklist}"
+                th:value="${deck.id}"
+                th:text="${deck.name}+' : '+${deck.owner}"
+              ></option>
+            </select>
+
+            <!-- Submit form. -->
+            <p><input type="submit" value="Submit" /></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2021 Deck Tiering. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
