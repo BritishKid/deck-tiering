@@ -66,7 +66,7 @@ public class Calculation {
 
 
     private float Probability(float rating1,float rating2) {
-        return 1.0f * 1.0f / (1 + 1.0f * (float)(Math.pow(10, 1.0f * (rating1 - rating2) / 400)));
+        return 1.0f * 1.0f / (1 + 1.0f * (float)(Math.pow(10, 1.0f * (rating2 - rating1) / 400)));
     }
 
     private float getAverageScore(List<Deck> decks) {
