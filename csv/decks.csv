@@ -10,7 +10,7 @@ ExodiaOllieYu-Gi-Oh,Exodia,1000,Ollie,ExodiaOllie,4,Yu-Gi-Oh
 Cyber DragonOllieYu-Gi-Oh,Cyber Dragon,1000,Ollie,CyberDragonOllie,4,Yu-Gi-Oh
 Cyber DragonAlexYu-Gi-Oh,Cyber Dragon,1000,Alex,CyberDragonAlex,4,Yu-Gi-Oh
 Noble KnightsAlexYu-Gi-Oh,Noble Knights,1000,Alex,NobleKnightsAlex,4,Yu-Gi-Oh
-Cyber DragonRobertYu-Gi-Oh,Cyber Dragon,1000,Robert,CyberDragonRobert,4,Yu-Gi-Oh
+Cyber OrcustRobertYu-Gi-Oh,Cyber Dragon,1000,Robert,CyberDragonRobert,4,Yu-Gi-Oh
 Odd EyesOllieYu-Gi-Oh,Odd Eyes,1000,Ollie,OddEyesOllie,4,Yu-Gi-Oh
 Odd EyesRobertYu-Gi-Oh,Odd Eyes,1000,Robert,OddEyesRobert,4,Yu-Gi-Oh
 Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,1000,Robert,DarkMagicianDragonRobert,4,Yu-Gi-Oh
@@ -66,7 +66,7 @@ ExodiaOllieYu-Gi-Oh Team,Exodia,1000,Ollie,ExodiaOllie,4,Yu-Gi-Oh Team
 Cyber DragonOllieYu-Gi-Oh Team,Cyber Dragon,1000,Ollie,CyberDragonOllie,4,Yu-Gi-Oh Team
 Cyber DragonAlexYu-Gi-Oh Team,Cyber Dragon,1000,Alex,CyberDragonAlex,4,Yu-Gi-Oh Team
 Noble KnightsAlexYu-Gi-Oh Team,Noble Knights,1000,Alex,NobleKnightsAlex,4,Yu-Gi-Oh Team
-Cyber DragonRobertYu-Gi-Oh Team,Cyber Dragon,1000,Robert,CyberDragonRobert,4,Yu-Gi-Oh Team
+Cyber OrcustRobertYu-Gi-Oh Team,Cyber Dragon,1000,Robert,CyberDragonRobert,4,Yu-Gi-Oh Team
 Odd EyesOllieYu-Gi-Oh Team,Odd Eyes,1000,Ollie,OddEyesOllie,4,Yu-Gi-Oh Team
 Odd EyesRobertYu-Gi-Oh Team,Odd Eyes,1000,Robert,OddEyesRobert,4,Yu-Gi-Oh Team
 Dark Magician DragonRobertYu-Gi-Oh Team,Dark Magician Dragon,1000,Robert,DarkMagicianDragonRobert,4,Yu-Gi-Oh Team
@@ -84,7 +84,7 @@ ExodiaOllieYu-Gi-Oh FFA,Exodia,1000,Ollie,ExodiaOllie,4,Yu-Gi-Oh FFA
 Cyber DragonOllieYu-Gi-Oh FFA,Cyber Dragon,1000,Ollie,CyberDragonOllie,4,Yu-Gi-Oh FFA
 Cyber DragonAlexYu-Gi-Oh FFA,Cyber Dragon,1000,Alex,CyberDragonAlex,4,Yu-Gi-Oh FFA
 Noble KnightsAlexYu-Gi-Oh FFA,Noble Knights,1000,Alex,NobleKnightsAlex,4,Yu-Gi-Oh FFA
-Cyber DragonRobertYu-Gi-Oh FFA,Cyber Dragon,1000,Robert,CyberDragonRobert,4,Yu-Gi-Oh FFA
+Cyber OrcustRobertYu-Gi-Oh FFA,Cyber Dragon,1000,Robert,CyberDragonRobert,4,Yu-Gi-Oh FFA
 Odd EyesOllieYu-Gi-Oh FFA,Odd Eyes,1000,Ollie,OddEyesOllie,4,Yu-Gi-Oh FFA
 Odd EyesRobertYu-Gi-Oh FFA,Odd Eyes,1000,Robert,OddEyesRobert,4,Yu-Gi-Oh FFA
 Dark Magician DragonRobertYu-Gi-Oh FFA,Dark Magician Dragon,1000,Robert,DarkMagicianDragonRobert,4,Yu-Gi-Oh FFA
@@ -102,7 +102,7 @@ ExodiaOllieYu-Gi-Oh Tag Team,Exodia,1000,Ollie,ExodiaOllie,4,Yu-Gi-Oh Tag Team
 Cyber DragonOllieYu-Gi-Oh Tag Team,Cyber Dragon,1000,Ollie,CyberDragonOllie,4,Yu-Gi-Oh Tag Team
 Cyber DragonAlexYu-Gi-Oh Tag Team,Cyber Dragon,1000,Alex,CyberDragonAlex,4,Yu-Gi-Oh Tag Team
 Noble KnightsAlexYu-Gi-Oh Tag Team,Noble Knights,1000,Alex,NobleKnightsAlex,4,Yu-Gi-Oh Tag Team
-Cyber DragonRobertYu-Gi-Oh Tag Team,Cyber Dragon,1000,Robert,CyberDragonRobert,4,Yu-Gi-Oh Tag Team
+Cyber OrcustRobertYu-Gi-Oh Tag Team,Cyber Dragon,1000,Robert,CyberDragonRobert,4,Yu-Gi-Oh Tag Team
 Odd EyesOllieYu-Gi-Oh Tag Team,Odd Eyes,1000,Ollie,OddEyesOllie,4,Yu-Gi-Oh Tag Team
 Odd EyesRobertYu-Gi-Oh Tag Team,Odd Eyes,1000,Robert,OddEyesRobert,4,Yu-Gi-Oh Tag Team
 Dark Magician DragonRobertYu-Gi-Oh Tag Team,Dark Magician Dragon,1000,Robert,DarkMagicianDragonRobert,4,Yu-Gi-Oh Tag Team
@@ -211,12 +211,12 @@ Dark WorldMatYu-Gi-Oh,Dark World,969,Mat,DarkWorldMat,5,Yu-Gi-Oh
 Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1027,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
 Dark WorldMatYu-Gi-Oh,Dark World,955,Mat,DarkWorldMat,5,Yu-Gi-Oh
 Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,1015,Robert,DarkMagicianDragonRobert,4,Yu-Gi-Oh
-Cyber DragonRobertYu-Gi-Oh,Cyber Dragon,985,Robert,CyberDragonRobert,5,Yu-Gi-Oh
+Cyber OrcustRobertYu-Gi-Oh,Cyber Dragon,985,Robert,CyberDragonRobert,5,Yu-Gi-Oh
 Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,1028,Robert,DarkMagicianDragonRobert,4,Yu-Gi-Oh
-Cyber DragonRobertYu-Gi-Oh,Cyber Dragon,971,Robert,CyberDragonRobert,5,Yu-Gi-Oh
-Cyber DragonRobertYu-Gi-Oh,Cyber Dragon,988,Robert,CyberDragonRobert,5,Yu-Gi-Oh
+Cyber OrcustRobertYu-Gi-Oh,Cyber Dragon,971,Robert,CyberDragonRobert,5,Yu-Gi-Oh
+Cyber OrcustRobertYu-Gi-Oh,Cyber Dragon,988,Robert,CyberDragonRobert,5,Yu-Gi-Oh
 Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,1010,Robert,DarkMagicianDragonRobert,4,Yu-Gi-Oh
-Cyber DragonRobertYu-Gi-Oh,Cyber Dragon,1003,Robert,CyberDragonRobert,4,Yu-Gi-Oh
+Cyber OrcustRobertYu-Gi-Oh,Cyber Dragon,1003,Robert,CyberDragonRobert,4,Yu-Gi-Oh
 Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,994,Robert,DarkMagicianDragonRobert,5,Yu-Gi-Oh
 Realm of LightRobertYu-Gi-Oh,Realm of Light,1014,Robert,RealmofLightRobert,4,Yu-Gi-Oh
 Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,979,Robert,DarkMagicianDragonRobert,5,Yu-Gi-Oh
@@ -254,10 +254,10 @@ DinosaursRobertYu-Gi-Oh FFA,Dinosaurs,985,Robert,DinosaursRobert,5,Yu-Gi-Oh FFA
 SliferOllieYu-Gi-Oh FFA,Slifer,1000,Ollie,SliferOllie,4,Yu-Gi-Oh FFA
 SliferRobertYu-Gi-Oh FFA,Slifer,984,Robert,SliferRobert,5,Yu-Gi-Oh FFA
 Dark WorldMatYu-Gi-Oh FFA,Dark World,999,Mat,DarkWorldMat,5,Yu-Gi-Oh FFA
-Cyber DragonRobertYu-Gi-Oh,Cyber Dragon,1017,Robert,CyberDragonRobert,4,Yu-Gi-Oh
+Cyber OrcustRobertYu-Gi-Oh,Cyber Dragon,1017,Robert,CyberDragonRobert,4,Yu-Gi-Oh
 Odd EyesRobertYu-Gi-Oh,Odd Eyes,985,Robert,OddEyesRobert,5,Yu-Gi-Oh
 Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1079,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
-Cyber DragonRobertYu-Gi-Oh,Cyber Dragon,1004,Robert,CyberDragonRobert,4,Yu-Gi-Oh
+Cyber OrcustRobertYu-Gi-Oh,Cyber Dragon,1004,Robert,CyberDragonRobert,4,Yu-Gi-Oh
 Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1089,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
 Realm of LightRobertYu-Gi-Oh,Realm of Light,970,Robert,RealmofLightRobert,5,Yu-Gi-Oh
 Realm of LightRobertYu-Gi-Oh,Realm of Light,985,Robert,RealmofLightRobert,5,Yu-Gi-Oh
@@ -276,12 +276,12 @@ Odd EyesOllieYu-Gi-Oh,Odd Eyes,1012,Ollie,OddEyesOllie,4,Yu-Gi-Oh
 Realm of LightRobertYu-Gi-Oh,Realm of Light,934,Robert,RealmofLightRobert,5,Yu-Gi-Oh
 Realm of LightRobertYu-Gi-Oh,Realm of Light,952,Robert,RealmofLightRobert,5,Yu-Gi-Oh
 Odd EyesOllieYu-Gi-Oh,Odd Eyes,993,Ollie,OddEyesOllie,5,Yu-Gi-Oh
-Cyber DragonRobertYu-Gi-Oh,Cyber Dragon,1017,Robert,CyberDragonRobert,4,Yu-Gi-Oh
+Cyber OrcustRobertYu-Gi-Oh,Cyber Dragon,1017,Robert,CyberDragonRobert,4,Yu-Gi-Oh
 SliferOllieYu-Gi-Oh,Slifer,956,Ollie,SliferOllie,5,Yu-Gi-Oh
-Cyber DragonRobertYu-Gi-Oh,Cyber Dragon,1029,Robert,CyberDragonRobert,4,Yu-Gi-Oh
+Cyber OrcustRobertYu-Gi-Oh,Cyber Dragon,1029,Robert,CyberDragonRobert,4,Yu-Gi-Oh
 SliferOllieYu-Gi-Oh,Slifer,943,Ollie,SliferOllie,5,Yu-Gi-Oh
 SliferOllieYu-Gi-Oh,Slifer,961,Ollie,SliferOllie,5,Yu-Gi-Oh
-Cyber DragonRobertYu-Gi-Oh,Cyber Dragon,1010,Robert,CyberDragonRobert,4,Yu-Gi-Oh
+Cyber OrcustRobertYu-Gi-Oh,Cyber Dragon,1010,Robert,CyberDragonRobert,4,Yu-Gi-Oh
 Blue EyesVictoriaYu-Gi-Oh,Blue Eyes,1014,Victoria,BlueEyesVictoria,4,Yu-Gi-Oh
 Odd EyesOllieYu-Gi-Oh,Odd Eyes,978,Ollie,OddEyesOllie,5,Yu-Gi-Oh
 Odd EyesOllieYu-Gi-Oh,Odd Eyes,994,Ollie,OddEyesOllie,5,Yu-Gi-Oh
@@ -350,7 +350,7 @@ Dark MagicianMatYu-Gi-Oh Team,Dark Magician,969,Mat,DarkMagicianMat,5,Yu-Gi-Oh T
 Odd EyesOllieYu-Gi-Oh Team,Odd Eyes,1013,Ollie,OddEyesOllie,4,Yu-Gi-Oh Team
 Dark MagicianMatYu-Gi-Oh Team,Dark Magician,984,Mat,DarkMagicianMat,5,Yu-Gi-Oh Team
 SliferOllieYu-Gi-Oh Team,Slifer,1015,Ollie,SliferOllie,4,Yu-Gi-Oh Team
-Cyber DragonRobertYu-Gi-Oh Team,Cyber Dragon,984,Robert,CyberDragonRobert,5,Yu-Gi-Oh Team
+Cyber OrcustRobertYu-Gi-Oh Team,Cyber Dragon,984,Robert,CyberDragonRobert,5,Yu-Gi-Oh Team
 Cyber DragonAlexYu-Gi-Oh Team,Cyber Dragon,999,Alex,CyberDragonAlex,5,Yu-Gi-Oh Team
 Dark Magician DragonRobertYu-Gi-Oh Team,Dark Magician Dragon,1000,Robert,DarkMagicianDragonRobert,4,Yu-Gi-Oh Team
 Dark MagicianMatYu-Gi-Oh Team,Dark Magician,999,Mat,DarkMagicianMat,5,Yu-Gi-Oh Team
@@ -377,7 +377,7 @@ Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,983,Robert,DarkMagicianD
 DinosaursRobertYu-Gi-Oh,Dinosaurs,1072,Robert,DinosaursRobert,4,Yu-Gi-Oh
 Dark Magician DragonRobertYu-Gi-Oh,Dark Magician Dragon,971,Robert,DarkMagicianDragonRobert,5,Yu-Gi-Oh
 DinosaursRobertYu-Gi-Oh,Dinosaurs,1084,Robert,DinosaursRobert,4,Yu-Gi-Oh
-Cyber DragonRobertYu-Gi-Oh,Cyber Dragon,997,Robert,CyberDragonRobert,5,Yu-Gi-Oh
+Cyber OrcustRobertYu-Gi-Oh,Cyber Dragon,997,Robert,CyberDragonRobert,5,Yu-Gi-Oh
 Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1131,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
 DinosaursRobertYu-Gi-Oh,Dinosaurs,1070,Robert,DinosaursRobert,4,Yu-Gi-Oh
 DinosaursRobertYu-Gi-Oh,Dinosaurs,1087,Robert,DinosaursRobert,4,Yu-Gi-Oh
@@ -419,7 +419,7 @@ Dark MagicianMatYu-Gi-Oh FFA,Dark Magician,999,Mat,DarkMagicianMat,5,Yu-Gi-Oh FF
 SliferRobertYu-Gi-Oh FFA,Slifer,969,Robert,SliferRobert,5,Yu-Gi-Oh FFA
 HEROOllieYu-Gi-Oh FFA,HERO,985,Ollie,HEROOllie,5,Yu-Gi-Oh FFA
 Gunkan SushipRobertYu-Gi-Oh FFA,Gunkan Suship,1014,Robert,GunkanSushipRobert,4,Yu-Gi-Oh FFA
-Cyber DragonRobertYu-Gi-Oh FFA,Cyber Dragon,985,Robert,CyberDragonRobert,5,Yu-Gi-Oh FFA
+Cyber OrcustRobertYu-Gi-Oh FFA,Cyber Dragon,985,Robert,CyberDragonRobert,5,Yu-Gi-Oh FFA
 Odd EyesOllieYu-Gi-Oh FFA,Odd Eyes,970,Ollie,OddEyesOllie,5,Yu-Gi-Oh FFA
 Dark MagicianMatYu-Gi-Oh FFA,Dark Magician,984,Mat,DarkMagicianMat,5,Yu-Gi-Oh FFA
 Noble KnightsAlexYu-Gi-Oh,Noble Knights,1018,Alex,NobleKnightsAlex,4,Yu-Gi-Oh
@@ -662,3 +662,168 @@ DinosaursRobertYu-Gi-Oh,Dinosaurs,1168,Robert,DinosaursRobert,4,Yu-Gi-Oh
 CyberdarkRobertYu-Gi-Oh,Cyberdark,973,Robert,CyberdarkRobert,5,Yu-Gi-Oh
 NouvellesRobertYu-Gi-Oh,Nouvelles,1020,Robert,NouvellesRobert,4,Yu-Gi-Oh
 DinosaursRobertYu-Gi-Oh,Dinosaurs,1146,Robert,DinosaursRobert,4,Yu-Gi-Oh
+Blue Eyes SynchroRobertYu-Gi-Oh,Blue Eyes Synchro,1031,Robert,BlueEyesSynchroRobert,4,Yu-Gi-Oh
+Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1104,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
+Blue Eyes SynchroRobertYu-Gi-Oh,Blue Eyes Synchro,1049,Robert,BlueEyesSynchroRobert,4,Yu-Gi-Oh
+Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1085,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
+PurrelyRobertYu-Gi-Oh,Purrely,1000,Robert,PurrelyRobert,4,Yu-Gi-Oh
+PurrelyRobertYu-Gi-Oh FFA,Purrely,1000,Robert,PurrelyRobert,4,Yu-Gi-Oh FFA
+PurrelyRobertYu-Gi-Oh Team,Purrely,1000,Robert,PurrelyRobert,4,Yu-Gi-Oh Team
+PurrelyRobertYu-Gi-Oh Tag Team,Purrely,1000,Robert,PurrelyRobert,4,Yu-Gi-Oh Tag Team
+Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1096,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
+PurrelyRobertYu-Gi-Oh,Purrely,988,Robert,PurrelyRobert,5,Yu-Gi-Oh
+Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1106,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
+PurrelyRobertYu-Gi-Oh,Purrely,977,Robert,PurrelyRobert,5,Yu-Gi-Oh
+LabrythnRobertYu-Gi-Oh,Labrythn,1000,Robert,LabrythnRobert,4,Yu-Gi-Oh
+LabrythnRobertYu-Gi-Oh FFA,Labrythn,1000,Robert,LabrythnRobert,4,Yu-Gi-Oh FFA
+LabrythnRobertYu-Gi-Oh Team,Labrythn,1000,Robert,LabrythnRobert,4,Yu-Gi-Oh Team
+LabrythnRobertYu-Gi-Oh Tag Team,Labrythn,1000,Robert,LabrythnRobert,4,Yu-Gi-Oh Tag Team
+Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1116,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
+LabrythnRobertYu-Gi-Oh,Labrythn,989,Robert,LabrythnRobert,5,Yu-Gi-Oh
+Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1125,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
+LabrythnRobertYu-Gi-Oh,Labrythn,979,Robert,LabrythnRobert,5,Yu-Gi-Oh
+RESCUE-ACERobertYu-Gi-Oh,RESCUE-ACE,1000,Robert,RESCUE-ACERobert,4,Yu-Gi-Oh
+RESCUE-ACERobertYu-Gi-Oh FFA,RESCUE-ACE,1000,Robert,RESCUE-ACERobert,4,Yu-Gi-Oh FFA
+RESCUE-ACERobertYu-Gi-Oh Team,RESCUE-ACE,1000,Robert,RESCUE-ACERobert,4,Yu-Gi-Oh Team
+RESCUE-ACERobertYu-Gi-Oh Tag Team,RESCUE-ACE,1000,Robert,RESCUE-ACERobert,4,Yu-Gi-Oh Tag Team
+CubicOllieYu-Gi-Oh,Cubic,1000,Ollie,CubicOllie,4,Yu-Gi-Oh
+CubicOllieYu-Gi-Oh FFA,Cubic,1000,Ollie,CubicOllie,4,Yu-Gi-Oh FFA
+CubicOllieYu-Gi-Oh Team,Cubic,1000,Ollie,CubicOllie,4,Yu-Gi-Oh Team
+CubicOllieYu-Gi-Oh Tag Team,Cubic,1000,Ollie,CubicOllie,4,Yu-Gi-Oh Tag Team
+God TrapsMatYu-Gi-Oh,God Traps,1000,Mat,GodTrapsMat,4,Yu-Gi-Oh
+God TrapsMatYu-Gi-Oh FFA,God Traps,1000,Mat,GodTrapsMat,4,Yu-Gi-Oh FFA
+God TrapsMatYu-Gi-Oh Team,God Traps,1000,Mat,GodTrapsMat,4,Yu-Gi-Oh Team
+God TrapsMatYu-Gi-Oh Tag Team,God Traps,1000,Mat,GodTrapsMat,4,Yu-Gi-Oh Tag Team
+Virtual World MateriactorRobertYu-Gi-Oh,Virtual World Materiactor,1000,Robert,VirtualWorldMateriactorRobert,4,Yu-Gi-Oh
+Virtual World MateriactorRobertYu-Gi-Oh FFA,Virtual World Materiactor,1000,Robert,VirtualWorldMateriactorRobert,4,Yu-Gi-Oh FFA
+Virtual World MateriactorRobertYu-Gi-Oh Team,Virtual World Materiactor,1000,Robert,VirtualWorldMateriactorRobert,4,Yu-Gi-Oh Team
+Virtual World MateriactorRobertYu-Gi-Oh Tag Team,Virtual World Materiactor,1000,Robert,VirtualWorldMateriactorRobert,4,Yu-Gi-Oh Tag Team
+Chaos SynchroMatYu-Gi-Oh,Chaos Synchro,1015,Mat,ChaosSynchroMat,4,Yu-Gi-Oh
+RESCUE-ACERobertYu-Gi-Oh,RESCUE-ACE,985,Robert,RESCUE-ACERobert,5,Yu-Gi-Oh
+RESCUE-ACERobertYu-Gi-Oh,RESCUE-ACE,1001,Robert,RESCUE-ACERobert,4,Yu-Gi-Oh
+Chaos SynchroMatYu-Gi-Oh,Chaos Synchro,998,Mat,ChaosSynchroMat,5,Yu-Gi-Oh
+RESCUE-ACERobertYu-Gi-Oh,RESCUE-ACE,1015,Robert,RESCUE-ACERobert,4,Yu-Gi-Oh
+Chaos SynchroMatYu-Gi-Oh,Chaos Synchro,983,Mat,ChaosSynchroMat,5,Yu-Gi-Oh
+Crystal BeastRobertYu-Gi-Oh FFA,Crystal Beast,999,Robert,CrystalBeastRobert,5,Yu-Gi-Oh FFA
+CubicOllieYu-Gi-Oh FFA,Cubic,984,Ollie,CubicOllie,5,Yu-Gi-Oh FFA
+God TrapsMatYu-Gi-Oh FFA,God Traps,984,Mat,GodTrapsMat,5,Yu-Gi-Oh FFA
+CubicOllieYu-Gi-Oh FFA,Cubic,999,Ollie,CubicOllie,5,Yu-Gi-Oh FFA
+God TrapsMatYu-Gi-Oh FFA,God Traps,968,Mat,GodTrapsMat,5,Yu-Gi-Oh FFA
+Gunkan SushipRobertYu-Gi-Oh FFA,Gunkan Suship,975,Robert,GunkanSushipRobert,5,Yu-Gi-Oh FFA
+Virtual World MateriactorRobertYu-Gi-Oh FFA,Virtual World Materiactor,1014,Robert,VirtualWorldMateriactorRobert,4,Yu-Gi-Oh FFA
+SliferOllieYu-Gi-Oh FFA,Slifer,971,Ollie,SliferOllie,5,Yu-Gi-Oh FFA
+Dark MagicianMatYu-Gi-Oh FFA,Dark Magician,969,Mat,DarkMagicianMat,5,Yu-Gi-Oh FFA
+DinosaursRobertYu-Gi-Oh,Dinosaurs,1156,Robert,DinosaursRobert,4,Yu-Gi-Oh
+Blue Eyes SynchroRobertYu-Gi-Oh,Blue Eyes Synchro,1038,Robert,BlueEyesSynchroRobert,4,Yu-Gi-Oh
+Blue Eyes SynchroRobertYu-Gi-Oh,Blue Eyes Synchro,1057,Robert,BlueEyesSynchroRobert,4,Yu-Gi-Oh
+DinosaursRobertYu-Gi-Oh,Dinosaurs,1136,Robert,DinosaursRobert,4,Yu-Gi-Oh
+Blue Eyes SynchroRobertYu-Gi-Oh,Blue Eyes Synchro,1075,Robert,BlueEyesSynchroRobert,4,Yu-Gi-Oh
+DinosaursRobertYu-Gi-Oh,Dinosaurs,1117,Robert,DinosaursRobert,4,Yu-Gi-Oh
+LOCAL BLUE EYESBLUE EYESYu-Gi-Oh,LOCAL BLUE EYES,1000,BLUE EYES,LOCALBLUEEYESBLUEEYES,4,Yu-Gi-Oh
+LOCAL BLUE EYESBLUE EYESYu-Gi-Oh FFA,LOCAL BLUE EYES,1000,BLUE EYES,LOCALBLUEEYESBLUEEYES,4,Yu-Gi-Oh FFA
+LOCAL BLUE EYESBLUE EYESYu-Gi-Oh Team,LOCAL BLUE EYES,1000,BLUE EYES,LOCALBLUEEYESBLUEEYES,4,Yu-Gi-Oh Team
+LOCAL BLUE EYESBLUE EYESYu-Gi-Oh Tag Team,LOCAL BLUE EYES,1000,BLUE EYES,LOCALBLUEEYESBLUEEYES,4,Yu-Gi-Oh Tag Team
+LOCAL MITSURUGILOCALYu-Gi-Oh,LOCAL MITSURUGI,1000,LOCAL,LOCALMITSURUGILOCAL,4,Yu-Gi-Oh
+LOCAL MITSURUGILOCALYu-Gi-Oh FFA,LOCAL MITSURUGI,1000,LOCAL,LOCALMITSURUGILOCAL,4,Yu-Gi-Oh FFA
+LOCAL MITSURUGILOCALYu-Gi-Oh Team,LOCAL MITSURUGI,1000,LOCAL,LOCALMITSURUGILOCAL,4,Yu-Gi-Oh Team
+LOCAL MITSURUGILOCALYu-Gi-Oh Tag Team,LOCAL MITSURUGI,1000,LOCAL,LOCALMITSURUGILOCAL,4,Yu-Gi-Oh Tag Team
+DinosaursRobertYu-Gi-Oh,Dinosaurs,1127,Robert,DinosaursRobert,4,Yu-Gi-Oh
+LOCAL BLUE EYESBLUE EYESYu-Gi-Oh,LOCAL BLUE EYES,989,BLUE EYES,LOCALBLUEEYESBLUEEYES,5,Yu-Gi-Oh
+DinosaursRobertYu-Gi-Oh,Dinosaurs,1136,Robert,DinosaursRobert,4,Yu-Gi-Oh
+LOCAL BLUE EYESBLUE EYESYu-Gi-Oh,LOCAL BLUE EYES,979,BLUE EYES,LOCALBLUEEYESBLUEEYES,5,Yu-Gi-Oh
+PurrelyRobertYu-Gi-Oh,Purrely,992,Robert,PurrelyRobert,5,Yu-Gi-Oh
+LOCAL BLUE EYESBLUE EYESYu-Gi-Oh,LOCAL BLUE EYES,963,BLUE EYES,LOCALBLUEEYESBLUEEYES,5,Yu-Gi-Oh
+LOCAL MITSURUGILOCALYu-Gi-Oh,LOCAL MITSURUGI,1020,LOCAL,LOCALMITSURUGILOCAL,4,Yu-Gi-Oh
+DinosaursRobertYu-Gi-Oh,Dinosaurs,1115,Robert,DinosaursRobert,4,Yu-Gi-Oh
+LOCAL MITSURUGILOCALYu-Gi-Oh,LOCAL MITSURUGI,1039,LOCAL,LOCALMITSURUGILOCAL,4,Yu-Gi-Oh
+DinosaursRobertYu-Gi-Oh,Dinosaurs,1095,Robert,DinosaursRobert,4,Yu-Gi-Oh
+DinosaursRobertYu-Gi-Oh,Dinosaurs,1107,Robert,DinosaursRobert,4,Yu-Gi-Oh
+LOCAL MITSURUGILOCALYu-Gi-Oh,LOCAL MITSURUGI,1026,LOCAL,LOCALMITSURUGILOCAL,4,Yu-Gi-Oh
+LOCAL MITSURUGILOCALYu-Gi-Oh,LOCAL MITSURUGI,1044,LOCAL,LOCALMITSURUGILOCAL,4,Yu-Gi-Oh
+DinosaursRobertYu-Gi-Oh,Dinosaurs,1088,Robert,DinosaursRobert,4,Yu-Gi-Oh
+DinosaursRobertYu-Gi-Oh,Dinosaurs,1099,Robert,DinosaursRobert,4,Yu-Gi-Oh
+Gimmick PuppetRobertYu-Gi-Oh,Gimmick Puppet,1003,Robert,GimmickPuppetRobert,4,Yu-Gi-Oh
+Gimmick PuppetRobertYu-Gi-Oh,Gimmick Puppet,1022,Robert,GimmickPuppetRobert,4,Yu-Gi-Oh
+DinosaursRobertYu-Gi-Oh,Dinosaurs,1079,Robert,DinosaursRobert,4,Yu-Gi-Oh
+DinosaursRobertYu-Gi-Oh,Dinosaurs,1091,Robert,DinosaursRobert,4,Yu-Gi-Oh
+Gimmick PuppetRobertYu-Gi-Oh,Gimmick Puppet,1009,Robert,GimmickPuppetRobert,4,Yu-Gi-Oh
+Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1138,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
+DinosaursRobertYu-Gi-Oh,Dinosaurs,1077,Robert,DinosaursRobert,4,Yu-Gi-Oh
+DinosaursRobertYu-Gi-Oh,Dinosaurs,1094,Robert,DinosaursRobert,4,Yu-Gi-Oh
+Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1120,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
+DinosaursRobertYu-Gi-Oh,Dinosaurs,1110,Robert,DinosaursRobert,4,Yu-Gi-Oh
+Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1103,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
+HEROOllieYu-Gi-Oh Team,HERO,1015,Ollie,HEROOllie,4,Yu-Gi-Oh Team
+LabrythnRobertYu-Gi-Oh Team,Labrythn,1015,Robert,LabrythnRobert,4,Yu-Gi-Oh Team
+Blue EyesAlexYu-Gi-Oh Team,Blue Eyes,985,Alex,BlueEyesAlex,5,Yu-Gi-Oh Team
+God TrapsMatYu-Gi-Oh Team,God Traps,985,Mat,GodTrapsMat,5,Yu-Gi-Oh Team
+MalissAlexYu-Gi-Oh,Maliss,1000,Alex,MalissAlex,4,Yu-Gi-Oh
+MalissAlexYu-Gi-Oh FFA,Maliss,1000,Alex,MalissAlex,4,Yu-Gi-Oh FFA
+MalissAlexYu-Gi-Oh Team,Maliss,1000,Alex,MalissAlex,4,Yu-Gi-Oh Team
+MalissAlexYu-Gi-Oh Tag Team,Maliss,1000,Alex,MalissAlex,4,Yu-Gi-Oh Tag Team
+MalissAlexYu-Gi-Oh Team,Maliss,1015,Alex,MalissAlex,4,Yu-Gi-Oh Team
+God TrapsMatYu-Gi-Oh Team,God Traps,1000,Mat,GodTrapsMat,4,Yu-Gi-Oh Team
+HEROOllieYu-Gi-Oh Team,HERO,999,Ollie,HEROOllie,5,Yu-Gi-Oh Team
+DinosaursRobertYu-Gi-Oh Team,Dinosaurs,999,Robert,DinosaursRobert,5,Yu-Gi-Oh Team
+Cyber OrcustRobertYu-Gi-Oh,Cyber Dragon,1012,Robert,CyberDragonRobert,4,Yu-Gi-Oh
+God TrapsMatYu-Gi-Oh,God Traps,984,Mat,GodTrapsMat,5,Yu-Gi-Oh
+Ancient GearAlexYu-Gi-Oh,Ancient Gear,1040,Alex,AncientGearAlex,4,Yu-Gi-Oh
+CubicOllieYu-Gi-Oh,Cubic,986,Ollie,CubicOllie,5,Yu-Gi-Oh
+Ancient GearAlexYu-Gi-Oh,Ancient Gear,1052,Alex,AncientGearAlex,4,Yu-Gi-Oh
+CubicOllieYu-Gi-Oh,Cubic,973,Ollie,CubicOllie,5,Yu-Gi-Oh
+SalamangreatRobertYu-Gi-Oh,Salamangreat,1062,Robert,SalamangreatRobert,4,Yu-Gi-Oh
+Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1085,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
+RED EYESLOCALSYu-Gi-Oh,RED EYES,1000,LOCALS,REDEYESLOCALS,4,Yu-Gi-Oh
+RED EYESLOCALSYu-Gi-Oh FFA,RED EYES,1000,LOCALS,REDEYESLOCALS,4,Yu-Gi-Oh FFA
+RED EYESLOCALSYu-Gi-Oh Team,RED EYES,1000,LOCALS,REDEYESLOCALS,4,Yu-Gi-Oh Team
+RED EYESLOCALSYu-Gi-Oh Tag Team,RED EYES,1000,LOCALS,REDEYESLOCALS,4,Yu-Gi-Oh Tag Team
+CRUSADIALOCALSYu-Gi-Oh,CRUSADIA,1000,LOCALS,CRUSADIALOCALS,4,Yu-Gi-Oh
+CRUSADIALOCALSYu-Gi-Oh FFA,CRUSADIA,1000,LOCALS,CRUSADIALOCALS,4,Yu-Gi-Oh FFA
+CRUSADIALOCALSYu-Gi-Oh Team,CRUSADIA,1000,LOCALS,CRUSADIALOCALS,4,Yu-Gi-Oh Team
+CRUSADIALOCALSYu-Gi-Oh Tag Team,CRUSADIA,1000,LOCALS,CRUSADIALOCALS,4,Yu-Gi-Oh Tag Team
+YUBELLOCALSYu-Gi-Oh,YUBEL,1000,LOCALS,YUBELLOCALS,4,Yu-Gi-Oh
+YUBELLOCALSYu-Gi-Oh FFA,YUBEL,1000,LOCALS,YUBELLOCALS,4,Yu-Gi-Oh FFA
+YUBELLOCALSYu-Gi-Oh Team,YUBEL,1000,LOCALS,YUBELLOCALS,4,Yu-Gi-Oh Team
+YUBELLOCALSYu-Gi-Oh Tag Team,YUBEL,1000,LOCALS,YUBELLOCALS,4,Yu-Gi-Oh Tag Team
+RED EYESLOCALSYu-Gi-Oh,RED EYES,1014,LOCALS,REDEYESLOCALS,4,Yu-Gi-Oh
+LabrythnRobertYu-Gi-Oh,Labrythn,964,Robert,LabrythnRobert,5,Yu-Gi-Oh
+YUBELLOCALSYu-Gi-Oh,YUBEL,1013,LOCALS,YUBELLOCALS,4,Yu-Gi-Oh
+LabrythnRobertYu-Gi-Oh,Labrythn,950,Robert,LabrythnRobert,5,Yu-Gi-Oh
+LabrythnRobertYu-Gi-Oh,Labrythn,967,Robert,LabrythnRobert,5,Yu-Gi-Oh
+CRUSADIALOCALSYu-Gi-Oh,CRUSADIA,982,LOCALS,CRUSADIALOCALS,5,Yu-Gi-Oh
+DinosaursRobertYu-Gi-Oh,Dinosaurs,1119,Robert,DinosaursRobert,4,Yu-Gi-Oh
+CRUSADIALOCALSYu-Gi-Oh,CRUSADIA,972,LOCALS,CRUSADIALOCALS,5,Yu-Gi-Oh
+CRUSADIALOCALSYu-Gi-Oh,CRUSADIA,991,LOCALS,CRUSADIALOCALS,5,Yu-Gi-Oh
+Blue Eyes SynchroRobertYu-Gi-Oh,Blue Eyes Synchro,1055,Robert,BlueEyesSynchroRobert,4,Yu-Gi-Oh
+Crystal BeastRobertYu-Gi-Oh,Crystal Beast,1095,Robert,CrystalBeastRobert,4,Yu-Gi-Oh
+LabrythnRobertYu-Gi-Oh,Labrythn,956,Robert,LabrythnRobert,5,Yu-Gi-Oh
+DinosaursRobertYu-Gi-Oh,Dinosaurs,1127,Robert,DinosaursRobert,4,Yu-Gi-Oh
+LabrythnRobertYu-Gi-Oh,Labrythn,947,Robert,LabrythnRobert,5,Yu-Gi-Oh
+DinosaursRobertYu-Gi-Oh,Dinosaurs,1134,Robert,DinosaursRobert,4,Yu-Gi-Oh
+LabrythnRobertYu-Gi-Oh,Labrythn,939,Robert,LabrythnRobert,5,Yu-Gi-Oh
+MarincessRobertYu-Gi-Oh,Marincess,1000,Robert,MarincessRobert,4,Yu-Gi-Oh
+MarincessRobertYu-Gi-Oh FFA,Marincess,1000,Robert,MarincessRobert,4,Yu-Gi-Oh FFA
+MarincessRobertYu-Gi-Oh Team,Marincess,1000,Robert,MarincessRobert,4,Yu-Gi-Oh Team
+MarincessRobertYu-Gi-Oh Tag Team,Marincess,1000,Robert,MarincessRobert,4,Yu-Gi-Oh Tag Team
+LabrythnRobertYu-Gi-Oh,Labrythn,956,Robert,LabrythnRobert,5,Yu-Gi-Oh
+MarincessRobertYu-Gi-Oh,Marincess,982,Robert,MarincessRobert,5,Yu-Gi-Oh
+BrandedRobertYu-Gi-Oh,Branded,1039,Robert,BrandedRobert,4,Yu-Gi-Oh
+LabrythnRobertYu-Gi-Oh,Labrythn,944,Robert,LabrythnRobert,5,Yu-Gi-Oh
+TistinaRobertYu-Gi-Oh,Tistina,1019,Robert,TistinaRobert,4,Yu-Gi-Oh
+Cyber OrcustRobertYu-Gi-Oh,Cyber Dragon,996,Robert,CyberDragonRobert,5,Yu-Gi-Oh
+SalamangreatRobertYu-Gi-Oh,Salamangreat,1073,Robert,SalamangreatRobert,4,Yu-Gi-Oh
+MarincessRobertYu-Gi-Oh,Marincess,970,Robert,MarincessRobert,5,Yu-Gi-Oh
+SalamangreatRobertYu-Gi-Oh,Salamangreat,1083,Robert,SalamangreatRobert,4,Yu-Gi-Oh
+MarincessRobertYu-Gi-Oh,Marincess,959,Robert,MarincessRobert,5,Yu-Gi-Oh
+World GuardianRobertCommander,World Guardian,1000,Robert,WorldGuardianRobert,4,Commander
+Dark SoulsRobertCommander,Dark Souls,1000,Robert,DarkSoulsRobert,4,Commander
+Yu-Gi-Oh DragonsRobertCommander,Yu-Gi-Oh Dragons,1000,Robert,Yu-Gi-OhDragonsRobert,4,Commander
+World GuardianRobertCommander,World Guardian,1015,Robert,WorldGuardianRobert,4,Commander
+Yu-Gi-Oh DragonsRobertCommander,Yu-Gi-Oh Dragons,985,Robert,Yu-Gi-OhDragonsRobert,5,Commander
+Legendary PokemonRobertCommander,Legendary Pokemon,985,Robert,LegendaryPokemonRobert,5,Commander
+AltergeistRobertYu-Gi-Oh,Altergeist,1000,Robert,AltergeistRobert,4,Yu-Gi-Oh
+AltergeistRobertYu-Gi-Oh FFA,Altergeist,1000,Robert,AltergeistRobert,4,Yu-Gi-Oh FFA
+AltergeistRobertYu-Gi-Oh Team,Altergeist,1000,Robert,AltergeistRobert,4,Yu-Gi-Oh Team
+AltergeistRobertYu-Gi-Oh Tag Team,Altergeist,1000,Robert,AltergeistRobert,4,Yu-Gi-Oh Tag Team
+BrandedRobertYu-Gi-Oh,Branded,1052,Robert,BrandedRobert,4,Yu-Gi-Oh
+AltergeistRobertYu-Gi-Oh,Altergeist,986,Robert,AltergeistRobert,5,Yu-Gi-Oh
