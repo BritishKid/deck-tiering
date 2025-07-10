@@ -13,11 +13,9 @@ public class Calculation {
     private final int TIER_4_RATING = 1000;
     private final int TIER_5_RATING = 750;
 
-
-
-
-    public List<Deck> deckRatingCalculation(List<Deck> winningDecks, List<Deck> losingDecks) {
+    public List<Deck> deckRatingCalculation(List<Deck> winningDecks, List<Deck> losingDecks, Boolean bestOf3) {
         List<Deck> updatedList = new ArrayList<>();
+        int kFactor = 60;
 
         //protected for multi matches later
         float winnerAverage = getAverageScore(winningDecks);
@@ -26,14 +24,18 @@ public class Calculation {
         float probabilityWinner = Probability(winnerAverage, loserAverage);
         float probabilityLoser = Probability(loserAverage, winnerAverage);
 
-        float winnerChange = WinnerEloRatingChange(winnerAverage, probabilityWinner);
+        if(bestOf3) {
+            kFactor = 100;
+        }
+
+        float winnerChange = WinnerEloRatingChange(winnerAverage, probabilityWinner, kFactor);
         for (Deck deck : winningDecks) {
             deck.setRating((int) (deck.getRating() + winnerChange));
             deck.setTier(deckTierCalculation(deck.getRating()));
             updatedList.add(deck);
         }
 
-        float loserChange = LoserEloRatingChange(loserAverage, probabilityLoser);
+        float loserChange = LoserEloRatingChange(loserAverage, probabilityLoser, kFactor);
         for (Deck deck: losingDecks) {
             deck.setRating((int) (deck.getRating() - loserChange));
             deck.setTier(deckTierCalculation(deck.getRating()));
@@ -53,14 +55,14 @@ public class Calculation {
         return 6;
     }
 
-    private float LoserEloRatingChange(float loserAverage, float probabilityLoser) {
-        float newLoserAverage = loserAverage + 30 * (0 - probabilityLoser);
+    private float LoserEloRatingChange(float loserAverage, float probabilityLoser, int kFactor) {
+        float newLoserAverage = loserAverage + kFactor * (0 - probabilityLoser);
         return Math.abs(newLoserAverage - loserAverage);
     }
 
-    private float WinnerEloRatingChange(float winnerAverage, float probabilityWinner) {
+    private float WinnerEloRatingChange(float winnerAverage, float probabilityWinner, int kFactor) {
 
-        float newWinnerAverage = winnerAverage + 30 * (1 - probabilityWinner);
+        float newWinnerAverage = winnerAverage + kFactor * (1 - probabilityWinner);
         return Math.abs(newWinnerAverage - winnerAverage);
     }
 

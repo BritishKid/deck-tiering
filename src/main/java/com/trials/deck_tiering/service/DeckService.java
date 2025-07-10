@@ -35,7 +35,7 @@ public class DeckService {
         return new ArrayList<Deck>(mapDeckList.values());
     }
 
-    public void updateDeckRatings(String[] winners, String[] losers) {
+    public void updateDeckRatings(String[] winners, String[] losers, Boolean bestOf3) {
 
         List<Deck> winnerDecks = new ArrayList<>();
         List<Deck> loserDecks = new ArrayList<>();
@@ -82,7 +82,7 @@ public class DeckService {
         Calculation calculation = new Calculation();
 
         //update csv
-        List<Deck> updatedList = calculation.deckRatingCalculation(winnerDecks, loserDecks);
+        List<Deck> updatedList = calculation.deckRatingCalculation(winnerDecks, loserDecks, bestOf3);
 
         writeDecks(updatedList);
         writeHistory(historyForWinners, historyForLosers);
@@ -166,7 +166,7 @@ public class DeckService {
     public void addNewDeck(Deck deck) {
         String fileName = deck.getName() + deck.getOwner();
         fileName = fileName.replaceAll("\\s+",""); //remove whitespace
-        deck.setRating(1000);
+        deck.setRating(1300);
         deck.setTier(4);
         deck.setCardList(fileName);
 
