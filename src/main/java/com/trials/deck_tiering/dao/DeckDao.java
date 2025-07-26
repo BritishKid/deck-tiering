@@ -34,6 +34,23 @@ public class DeckDao {
 
         return decks;
     }
+
+    public Map<String, Deck> getUniqueDeckListUnfiltered() {
+        Map<String, Deck> decks = new HashMap<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] values = line.split(CSV_SEPARATOR);
+                String deckId = values[0];
+                Deck deck = new Deck(deckId, values[1], Integer.parseInt(values[2]), values[3], values[4], Integer.parseInt(values[5]), values[6]);
+                decks.put(deckId, deck);
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        return decks;
+    }
     //read and write files
 
 

@@ -35,6 +35,12 @@ public class DeckService {
         return new ArrayList<Deck>(mapDeckList.values());
     }
 
+    public List<Deck> getAllUniqueDecksUnfiltered() {
+        Map<String, Deck> mapDeckList = deckDao.getUniqueDeckListUnfiltered();
+        return new ArrayList<Deck>(mapDeckList.values());
+    }
+
+
     public void updateDeckRatings(String[] winners, String[] losers, Boolean bestOf3) {
 
         List<Deck> winnerDecks = new ArrayList<>();
@@ -166,8 +172,8 @@ public class DeckService {
     public void addNewDeck(Deck deck) {
         String fileName = deck.getName() + deck.getOwner();
         fileName = fileName.replaceAll("\\s+",""); //remove whitespace
-        deck.setRating(1300);
-        deck.setTier(4);
+        deck.setRating(1500);
+        deck.setTier(3);
         deck.setCardList(fileName);
 
         //do for each value in the games options

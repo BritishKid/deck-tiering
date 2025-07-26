@@ -5,27 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4dc2f24-9b18-4da5-9e0f-f85bfa536152" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/addoutcomebestof3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/addoutcomeffabestof3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/addoutcomemultibestof3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv/decklists/AncientBoxRobert.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv/decklists/CrystalBeastRobert.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv/decklists/CyberDragonOllie.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv/decklists/CyberDragonRobert.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv/decklists/DarkMagicianDragonOllie.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv/decklists/DarkMagicianDragonRobert.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv/decklists/DinosaursRobert.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv/decklists/FestivalLeadRobert.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv/decklists/MewtwoStall.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv/decklists/OddEyesOllie.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv/decklists/OddEyesRobert.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv/decklists/RealmOfLightRobert.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv/decklists/SliferRobert.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/csv/decks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/decks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csv/history.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/history.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DeckDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DeckDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DecklistDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DecklistDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/HistoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/HistoryDao.java" afterDir="false" />
@@ -45,8 +28,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/fontawesome-webfont.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addoutcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addoutcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addoutcomebestof3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addoutcomebestof3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addoutcomeffa.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addoutcomeffa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addoutcomeffabestof3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addoutcomeffabestof3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addoutcomemulti.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addoutcomemulti.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addoutcomemultibestof3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addoutcomemultibestof3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cardlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/cardlist.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/deckhistory.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/deckhistory.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/decklist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/decklist.html" afterDir="false" />
