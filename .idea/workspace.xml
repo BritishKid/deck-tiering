@@ -6,6 +6,39 @@
   <component name="ChangeListManager">
     <list default="true" id="e4dc2f24-9b18-4da5-9e0f-f85bfa536152" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/decks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/decks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/history.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/history.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DeckDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DeckDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DecklistDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DecklistDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/HistoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/HistoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/DeckComprator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/DeckComprator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/GameEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/GameEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/Calculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/Calculation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/DeckService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/DeckService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/js/jquery.scrolly.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/js/jquery.scrolly.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/js/skel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/js/skel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/js/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/js/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addoutcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addoutcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addoutcomebestof3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addoutcomebestof3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addoutcomeffa.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addoutcomeffa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addoutcomeffabestof3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addoutcomeffabestof3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addoutcomemulti.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addoutcomemulti.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addoutcomemultibestof3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addoutcomemultibestof3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cardlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/cardlist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/deckhistory.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/deckhistory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/decklist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/decklist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/newdeck.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/newdeck.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ownersdecks.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ownersdecks.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,12 +88,12 @@
     &quot;assignee&quot;: &quot;BritishKid&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/BritishKid/deck-tiering.git",
-    "accountId": "68b4e052-8765-4dbb-8794-1527c3b50d97"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/BritishKid/deck-tiering.git&quot;,
+    &quot;accountId&quot;: &quot;68b4e052-8765-4dbb-8794-1527c3b50d97&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -69,21 +102,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DeckTieringApplication.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Gradle.Build deck-tiering.executor": "Run",
-    "Gradle.deck-tiering [:com.trials.deck_tiering.DeckTieringApplication.main()].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Robert/Documents/apps/deck-tiering/src/main/resources/templates",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DeckTieringApplication.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Gradle.Build deck-tiering.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.deck-tiering [:com.trials.deck_tiering.DeckTieringApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Robert/Documents/apps/deck-tiering/src/main/resources/templates&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.trials.deck_tiering.dao" />
