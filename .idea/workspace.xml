@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/csv/decks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/decks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csv/history.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/history.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DeckDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DeckDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DecklistDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DecklistDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/HistoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/HistoryDao.java" afterDir="false" />
@@ -91,7 +92,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/BritishKid/deck-tiering.git&quot;,
-    &quot;accountId&quot;: &quot;68b4e052-8765-4dbb-8794-1527c3b50d97&quot;
+    &quot;accountId&quot;: &quot;53188288-1294-497a-a4bc-e54ec6bb64df&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -139,7 +140,7 @@
       <recent name="C:\Users\Robert\Documents\apps\deck-tiering\deck-tiering" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DeckTieringApplication">
+  <component name="RunManager" selected="Application.DeckTieringApplication (1)">
     <configuration name="DeckTieringApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.trials.deck_tiering.DeckTieringApplication" />
       <module name="deck-tiering.main" />

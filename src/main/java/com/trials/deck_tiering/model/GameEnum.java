@@ -12,7 +12,7 @@ public enum GameEnum {
     MAGIC("Magic the Gathering"),
     YUGIOHTEAM("Yu-Gi-Oh Team"),
     YUGIOHBR("Yu-Gi-Oh FFA"),
-    YUGIOHTAG("Yu-Gi-Oh Tag Team");
+    YUGIOHGENESYS("Yu-Gi-Oh Genesys");
 
     private String name;
 
@@ -35,7 +35,7 @@ public enum GameEnum {
         gameList.add(MAGIC.getName());
         gameList.add(YUGIOHBR.getName());
         gameList.add(YUGIOHTEAM.getName());
-        gameList.add(YUGIOHTAG.getName());
+        gameList.add(YUGIOHGENESYS.getName());
 
         return gameList;
     }
@@ -67,7 +67,7 @@ public enum GameEnum {
         gameList.add(YUGIOH.getName());
         gameList.add(YUGIOHBR.getName());
         gameList.add(YUGIOHTEAM.getName());
-        gameList.add(YUGIOHTAG.getName());
+        gameList.add(YUGIOHGENESYS.getName());
 
         return gameList;
     }

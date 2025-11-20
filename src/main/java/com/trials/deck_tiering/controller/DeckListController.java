@@ -72,8 +72,7 @@ public class DeckListController {
     public String createOutcomeForGame(@PathVariable("game") String game,
                                        Model model) {
         getDecksbyGameUnfiltered(model, game);
-        if(game.equals(YUGIOHTAG.getName()) ||
-                game.equals(YUGIOHTEAM.getName())) { //for multi games
+        if( game.equals(YUGIOHTEAM.getName())) { //for multi games
             return "addoutcomemulti";
         }
         if(game.equals(YUGIOHBR.getName()) ||
@@ -87,8 +86,7 @@ public class DeckListController {
     public String createOutcomeForGameBestOf3(@PathVariable("game") String game,
                                        Model model) {
         getDecksbyGameUnfiltered(model, game);
-        if(game.equals(YUGIOHTAG.getName()) ||
-                game.equals(YUGIOHTEAM.getName())) { //for multi games
+        if(game.equals(YUGIOHTEAM.getName())) { //for multi games
             return "addoutcomemultibestof3";
         }
         if(game.equals(YUGIOHBR.getName()) ||
@@ -295,7 +293,7 @@ public class DeckListController {
         model.addAttribute("ygodecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.YUGIOH.getName()));
         model.addAttribute("edhdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.COMMANDER.getName()));
         model.addAttribute("ygobrdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.YUGIOHBR.getName())); //todo implement
-        model.addAttribute("ygottdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.YUGIOHTAG.getName())); //todo implement
+        model.addAttribute("ygottdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.YUGIOHGENESYS.getName())); //todo implement
         model.addAttribute("ygoteamdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.YUGIOHTEAM.getName())); //todo implement
         model.addAttribute("magicdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.MAGIC.getName())); //todo implement
 
