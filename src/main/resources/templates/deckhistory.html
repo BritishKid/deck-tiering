@@ -4,27 +4,27 @@
 
     <head>
         <title>Deck Tiering</title>    <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet" />
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    </head>
-<body>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet" />
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                </head>
+                <body>
 
-<header id ="header">
-    <h1><a href="#main"  th:href="@{/}">Deck Tiering</a></h1>
-</header>
+                <header id ="header">
+                    <h1><a href="#main"  th:href="@{/}">Deck Tiering</a></h1>
+                </header>
 
-<section id="banner" style="overflow:auto">
-    <div class="inner">
-        <header style="padding-top:5px">
-            <h1 th:text="${title}">Decks</h1>
-            <h2 th:text="${currentRating}">Current Rating</h2>
-            <h4><a href="#"  th:href="@{/decks/{deckid}(deckid=${deckId})/decklist/{cardlist}(cardlist=${cardList})}">Card List</a></h4>
-        </header>
-            <div id="chart_div" style="height:200px"></div>
-            <div style="padding-top:10px">
-                <div style="width:1200px;height:300px;overflow:auto;float:left;">
+                <section id="banner" style="overflow:auto">
+                    <div class="inner">
+                        <header style="padding-top:5px">
+                            <h1 th:text="${title}">Decks</h1>
+                            <h2 th:text="${currentRating}">Current Rating</h2>
+                            <h4><a href="#"  th:href="@{/decks/{deckid}(deckid=${deckId})/decklist/{cardlist}(cardlist=${cardList})}">Card List</a></h4>
+                        </header>
+                        <div id="chart_div" style="height:200px"></div>
+                        <div style="padding-top:10px">
+                            <div style="width:1200px;height:300px;overflow:auto;float:left;">
                 <table class="table table-striped">
                     <tr>
                         <th>Result</th>

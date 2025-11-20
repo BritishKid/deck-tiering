@@ -292,9 +292,9 @@ public class DeckListController {
         model.addAttribute("pokemondecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.POKEMON.getName()));
         model.addAttribute("ygodecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.YUGIOH.getName()));
         model.addAttribute("edhdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.COMMANDER.getName()));
-        model.addAttribute("ygobrdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.YUGIOHBR.getName())); //todo implement
-        model.addAttribute("ygottdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.YUGIOHGENESYS.getName())); //todo implement
-        model.addAttribute("ygoteamdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.YUGIOHTEAM.getName())); //todo implement
+        model.addAttribute("ygobrdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.YUGIOHBR.getName()));
+        model.addAttribute("ygogendecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.YUGIOHGENESYS.getName()));
+        model.addAttribute("ygoteamdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.YUGIOHTEAM.getName()));
         model.addAttribute("magicdecklist", deckService.filterByGame(orderedDeckByRating, GameEnum.MAGIC.getName())); //todo implement
 
         return "ownersdecks";
