@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4dc2f24-9b18-4da5-9e0f-f85bfa536152" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/Glicko2Calculation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csv/decks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/decks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csv/history.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/history.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DeckDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DeckDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DecklistDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DecklistDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/HistoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/HistoryDao.java" afterDir="false" />
@@ -53,6 +56,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -102,21 +108,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.DeckTieringApplication.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Gradle.Build deck-tiering.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.deck-tiering [:com.trials.deck_tiering.DeckTieringApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Robert/Documents/apps/deck-tiering/src/main/resources/templates&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.DeckTieringApplication (1).executor": "Run",
+    "Application.DeckTieringApplication.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Gradle.Build deck-tiering.executor": "Run",
+    "Gradle.deck-tiering [:com.trials.deck_tiering.DeckTieringApplication.main()].executor": "Run",
+    "Gradle.deck-tiering [bootRun].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Robert/Documents/apps/deck-tiering/csv",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.trials.deck_tiering.dao" />
@@ -125,11 +134,11 @@
       <recent name="com.trials.deck_tiering.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Robert\Documents\apps\deck-tiering\csv" />
       <recent name="C:\Users\Robert\Documents\apps\deck-tiering\src\main\resources\templates" />
       <recent name="C:\Users\Robert\Documents\apps\deck-tiering\csv\decklists" />
       <recent name="C:\Users\Robert\Documents\apps\deck-tiering\deck-tiering" />
       <recent name="C:\Users\Robert\Documents\apps\deck-tiering\deck-tiering\src\main\resources" />
-      <recent name="C:\Users\Robert\Documents\apps\deck-tiering\deck-tiering\src\main\resources\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Robert\Documents\apps\deck-tiering\csv\decklists" />
@@ -139,25 +148,11 @@
       <recent name="C:\Users\Robert\Documents\apps\deck-tiering\deck-tiering" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DeckTieringApplication (1)">
-    <configuration name="DeckTieringApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="DeckTieringApplication" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="ms-21" />
       <option name="MAIN_CLASS_NAME" value="com.trials.deck_tiering.DeckTieringApplication" />
       <module name="deck-tiering.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.trials.deck_tiering.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeckTieringApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.trials.deck_tiering.DeckTieringApplication" />
-      <module name="deck-tiering" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.trials.deck_tiering.*" />
@@ -171,7 +166,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.DeckTieringApplication" />
-        <item itemvalue="Application.DeckTieringApplication (1)" />
+        <item itemvalue="Application.DeckTieringApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -196,5 +191,31 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/Glicko2Calculation.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/Glicko2Calculation.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/Glicko2Calculation.java</url>
+          <line>214</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/Glicko2Calculation.java</url>
+          <line>201</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

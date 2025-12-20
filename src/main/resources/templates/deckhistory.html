@@ -20,23 +20,27 @@
                         <header style="padding-top:5px">
                             <h1 th:text="${title}">Decks</h1>
                             <h2 th:text="${currentRating}">Current Rating</h2>
-                            <h4><a href="#"  th:href="@{/decks/{deckid}(deckid=${deckId})/decklist/{cardlist}(cardlist=${cardList})}">Card List</a></h4>
+<!--                            <h4><a href="#"  th:href="@{/decks/{deckid}(deckid=${deckId})/decklist/{cardlist}(cardlist=${cardList})}">Card List</a></h4>-->
                         </header>
                         <div id="chart_div" style="height:200px"></div>
                         <div style="padding-top:10px">
                             <div style="width:1200px;height:300px;overflow:auto;float:left;">
-                <table class="table table-striped">
-                    <tr>
-                        <th>Result</th>
-                        <th>Rating</th>
-                        <th>Tier</th>
-                    </tr>
-                    <tr th:each="deck : ${deckHistory}">
-                        <td th:text="${deck.historyOutcome}">Outcome</td><!--      click into for history              -->
-                        <td th:text="${deck.rating}">Rating</td><!--      click into for history              -->
-                        <td th:text="${deck.tier}">Tier</td><!--       click into for other of this tier             -->
-                    </tr>
-                </table>
+                                <table class="table table-striped">
+                                    <tr>
+                                        <th>Match</th>
+                                        <th>Result</th>
+                                        <th>Rating</th>
+                                        <th>Tier</th>
+                                    </tr>
+
+                                    <tr th:each="deck, stat : ${deckHistory}">
+                                        <td th:text="${stat.index}">0</td>
+                                        <td th:text="${deck.historyOutcome}">Outcome</td>
+                                        <td th:text="${deck.rating}">Rating</td>
+                                        <td th:text="${deck.tier}">Tier</td>
+                                    </tr>
+                                </table>
+
                 </div>
             </div>
 

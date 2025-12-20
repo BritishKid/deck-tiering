@@ -1,6 +1,5 @@
 package com.trials.deck_tiering.controller;
 
-import com.trials.deck_tiering.model.Card;
 import com.trials.deck_tiering.model.Deck;
 import com.trials.deck_tiering.model.GameEnum;
 import com.trials.deck_tiering.service.DeckService;
@@ -9,7 +8,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.ui.Model;
 
-import java.io.IOException;
 import java.util.List;
 
 import static com.trials.deck_tiering.model.GameEnum.*;
@@ -19,6 +17,85 @@ public class DeckListController {
 
     @Autowired
     private DeckService deckService;
+
+
+
+    //fixed
+    @PostMapping(path="/deck/resultsupdate/game/{game}")
+    public String updateResult(@RequestParam("deckA") String deckAId,
+                               @RequestParam("deckB") String deckBId,
+                               @RequestParam("winsA") Integer winsA,
+                               @RequestParam("winsB") Integer winsB,
+                               @PathVariable String game,
+                               Model model) {
+
+        if (deckAId == null || deckBId == null || deckAId.isBlank() || deckBId.isBlank()) {
+            getDecksbyGameUnfiltered(model, game);
+            model.addAttribute("error", "Please select two decks.");
+            return "addoutcome";
+        }
+
+        if (deckAId.equals(deckBId)) {
+            getDecksbyGameUnfiltered(model, game);
+            model.addAttribute("error", "Please select two different decks.");
+            return "addoutcome";
+        }
+
+        if (winsA == null || winsB == null || winsA < 0 || winsB < 0) {
+            getDecksbyGameUnfiltered(model, game);
+            model.addAttribute("error", "Wins must be numbers 0 or greater.");
+            return "addoutcome";
+        }
+
+        if (winsA.equals(winsB)) {
+            getDecksbyGameUnfiltered(model, game);
+            model.addAttribute("error", "Draws aren't supported — please enter a winning score.");
+            return "addoutcome";
+        }
+
+        String winnerId;
+        String loserId;
+        int winnerWins;
+        int loserWins;
+
+        if (winsA > winsB) {
+            winnerId = deckAId;
+            loserId = deckBId;
+            winnerWins = winsA;
+            loserWins = winsB;
+        } else {
+            winnerId = deckBId;
+            loserId = deckAId;
+            winnerWins = winsB;
+            loserWins = winsA;
+        }
+
+        deckService.updateDeckRatings1v1(winnerId, loserId, winnerWins, loserWins);
+
+        getDecksbyGame(model, game);
+        return "decklist";
+    }
+
+    private void getDecksbyGame(Model model, String game) {
+        List<Deck> allUniqueDecks = deckService.getAllUniqueDecks();
+        List<Deck> filteredByGame = deckService.filterByGame(deckService.orderDeckByRating(allUniqueDecks), game);
+
+        model.addAttribute("decklist", filteredByGame);
+        model.addAttribute("game", game);
+    }
+
+
+    private void getDecksbyGameUnfiltered(Model model, String game) {
+        List<Deck> allUniqueDecks = deckService.getAllUniqueDecksUnfiltered();
+        List<Deck> filteredByGame = deckService.filterByGame(deckService.orderDeckByRating(allUniqueDecks), game);
+
+        model.addAttribute("decklist", filteredByGame);
+        model.addAttribute("game", game);
+    }
+
+    //todo
+
+
 
     @RequestMapping("/")
     public String index(Model model) {
@@ -39,35 +116,6 @@ public class DeckListController {
         return "decklist";
     }
 
-    @PostMapping(path="/deck/winners={winners}&losers={losers}") //unused
-    public String updateResults(@PathVariable("winners") String winnerIds,
-                                @PathVariable("losers") String losersIds,
-                                Model model) {
-
-        String[] winners = winnerIds.split(","); //this allows for multi games in future for now handle 1v1
-        String[] losers = losersIds.split(",");
-
-        deckService.updateDeckRatings(winners, losers, false);
-
-        model.addAttribute("decklist", deckService.getAllUniqueDecks());
-        model.addAttribute("game", "NEED TO ADD GAME");
-        return "decklist";
-    }
-
-    @RequestMapping(path="/deck/addoutcome/bo3")
-    public String createOutcomebo3(Model model) {
-        List<Deck> allUniqueDecks = deckService.getAllUniqueDecksUnfiltered();
-        model.addAttribute("decklist", deckService.orderDeckByRating(allUniqueDecks));
-        return "addoutcomebestof3";
-    }
-
-    @RequestMapping(path="/deck/addoutcome")
-    public String createOutcome(Model model) {
-        List<Deck> allUniqueDecks = deckService.getAllUniqueDecksUnfiltered();
-        model.addAttribute("decklist", deckService.orderDeckByRating(allUniqueDecks));
-        return "addoutcome";
-    }
-
     @RequestMapping(path="/deck/addoutcome/game/{game}")
     public String createOutcomeForGame(@PathVariable("game") String game,
                                        Model model) {
@@ -82,150 +130,101 @@ public class DeckListController {
         return "addoutcome";
     }
 
-    @RequestMapping(path="/deck/addoutcome/gamebo3/{game}")
-    public String createOutcomeForGameBestOf3(@PathVariable("game") String game,
-                                       Model model) {
-        getDecksbyGameUnfiltered(model, game);
-        if(game.equals(YUGIOHTEAM.getName())) { //for multi games
-            return "addoutcomemultibestof3";
-        }
-        if(game.equals(YUGIOHBR.getName()) ||
-                game.equals(COMMANDER.getName())) { //for ffa games
-            return "addoutcomeffabestof3";
-        }
-        return "addoutcomebestof3";
-    }
 
-    @PostMapping(path="/deck/resultsupdate/game/{game}")
-    public String updateResult(@ModelAttribute("winningDeck") String winningDeck,
-                               @ModelAttribute("losingDeck") String losingDeck,
-                               @PathVariable String game,
-                               Model model) {
+//    @PostMapping(path="/deck/resultsupdate/multi/game/{game}")
+//    public String updateResultMulti(@ModelAttribute("winningDeck1") String winningDeck1,
+//                               @ModelAttribute("losingDeck1") String losingDeck1,
+//                               @ModelAttribute("winningDeck2") String winningDeck2,
+//                               @ModelAttribute("losingDeck2") String losingDeck2,
+//                               @PathVariable String game,
+//                               Model model) {
+//
+//        if(winningDeck1.isEmpty() || losingDeck1.isEmpty() || losingDeck2.isEmpty()) { //prevent error HTTP 500 on forgetting to add result
+//            return "index";
+//        }
+//
+//        String[] winners = new String[]{winningDeck1, winningDeck2}; //this allows for multi games in future for now handle 1v1
+//        String[] losers = new String[]{losingDeck1, losingDeck2};
+//        deckService.updateDeckRatings(winners, losers, false);
+//
+//        getDecksbyGame(model, game);
+//        return "decklist";
+//    }
 
-        if(winningDeck.isEmpty() || losingDeck.isEmpty()) { //prevent error HTTP 500 on forgetting to add result
-            return "index";
-        }
-
-        String[] winners = new String[]{winningDeck}; //this allows for multi games in future for now handle 1v1
-        String[] losers = new String[]{losingDeck};
-        deckService.updateDeckRatings(winners, losers, false);
-
-        getDecksbyGame(model, game);
-        return "decklist";
-    }
-
-    @PostMapping(path="/deck/resultsupdate/gamebo3/{game}")
-    public String updateResultBestof3(@ModelAttribute("winningDeck") String winningDeck,
-                               @ModelAttribute("losingDeck") String losingDeck,
-                               @PathVariable String game,
-                               Model model) {
-
-        if(winningDeck.isEmpty() || losingDeck.isEmpty()) { //prevent error HTTP 500 on forgetting to add result
-            return "index";
-        }
-
-        String[] winners = new String[]{winningDeck}; //this allows for multi games in future for now handle 1v1
-        String[] losers = new String[]{losingDeck};
-        deckService.updateDeckRatings(winners, losers, true);
-
-        getDecksbyGame(model, game);
-        return "decklist";
-    }
-
-    @PostMapping(path="/deck/resultsupdate/multi/game/{game}")
-    public String updateResultMulti(@ModelAttribute("winningDeck1") String winningDeck1,
-                               @ModelAttribute("losingDeck1") String losingDeck1,
-                               @ModelAttribute("winningDeck2") String winningDeck2,
-                               @ModelAttribute("losingDeck2") String losingDeck2,
-                               @PathVariable String game,
-                               Model model) {
-
-        if(winningDeck1.isEmpty() || losingDeck1.isEmpty() || losingDeck2.isEmpty()) { //prevent error HTTP 500 on forgetting to add result
-            return "index";
-        }
-
-        String[] winners = new String[]{winningDeck1, winningDeck2}; //this allows for multi games in future for now handle 1v1
-        String[] losers = new String[]{losingDeck1, losingDeck2};
-        deckService.updateDeckRatings(winners, losers, false);
-
-        getDecksbyGame(model, game);
-        return "decklist";
-    }
-
-    @PostMapping(path="/deck/resultsupdate/multi/game/{game}/bestof3")
-    public String updateResultMultiBestof3(@ModelAttribute("winningDeck1") String winningDeck1,
-                                    @ModelAttribute("losingDeck1") String losingDeck1,
-                                    @ModelAttribute("winningDeck2") String winningDeck2,
-                                    @ModelAttribute("losingDeck2") String losingDeck2,
-                                    @PathVariable String game,
-                                    Model model) {
-
-        if(winningDeck1.isEmpty() || losingDeck1.isEmpty() || losingDeck2.isEmpty()) { //prevent error HTTP 500 on forgetting to add result
-            return "index";
-        }
-
-        String[] winners = new String[]{winningDeck1, winningDeck2}; //this allows for multi games in future for now handle 1v1
-        String[] losers = new String[]{losingDeck1, losingDeck2};
-        deckService.updateDeckRatings(winners, losers, true);
-
-        getDecksbyGame(model, game);
-        return "decklist";
-    }
+//    @PostMapping(path="/deck/resultsupdate/multi/game/{game}/bestof3")
+//    public String updateResultMultiBestof3(@ModelAttribute("winningDeck1") String winningDeck1,
+//                                    @ModelAttribute("losingDeck1") String losingDeck1,
+//                                    @ModelAttribute("winningDeck2") String winningDeck2,
+//                                    @ModelAttribute("losingDeck2") String losingDeck2,
+//                                    @PathVariable String game,
+//                                    Model model) {
+//
+//        if(winningDeck1.isEmpty() || losingDeck1.isEmpty() || losingDeck2.isEmpty()) { //prevent error HTTP 500 on forgetting to add result
+//            return "index";
+//        }
+//
+//        String[] winners = new String[]{winningDeck1, winningDeck2}; //this allows for multi games in future for now handle 1v1
+//        String[] losers = new String[]{losingDeck1, losingDeck2};
+//        deckService.updateDeckRatings(winners, losers, true);
+//
+//        getDecksbyGame(model, game);
+//        return "decklist";
+//    }
 
 
-    @PostMapping(path="/deck/resultsupdate/ffa/game/{game}")
-    public String updateResultFFA(@ModelAttribute("winningDeck1") String winningDeck1,
-                               @ModelAttribute("losingDeck1") String losingDeck1,
-                               @ModelAttribute("losingDeck3") String losingDeck3,
-                               @ModelAttribute("losingDeck2") String losingDeck2,
-                               @PathVariable String game,
-                               Model model) {
+//    @PostMapping(path="/deck/resultsupdate/ffa/game/{game}")
+//    public String updateResultFFA(@ModelAttribute("winningDeck1") String winningDeck1,
+//                               @ModelAttribute("losingDeck1") String losingDeck1,
+//                               @ModelAttribute("losingDeck3") String losingDeck3,
+//                               @ModelAttribute("losingDeck2") String losingDeck2,
+//                               @PathVariable String game,
+//                               Model model) {
+//
+//        if(winningDeck1.isEmpty() || losingDeck1.isEmpty() || losingDeck2.isEmpty()) { //prevent error HTTP 500 on forgetting to add result
+//            return "index";
+//        }
+//
+//        String[] winners = new String[]{winningDeck1}; //this allows for multi games in future for now handle 1v1
+//        String[] losers;
+//
+//        if(losingDeck3.isEmpty()) {
+//            losers = new String[]{losingDeck1, losingDeck2};
+//        }
+//        else {
+//            losers = new String[]{losingDeck1, losingDeck2, losingDeck3};
+//        }
+//
+//        deckService.updateDeckRatings(winners, losers, false);
+//        getDecksbyGame(model, game);
+//        return "decklist";
+//    }
 
-        if(winningDeck1.isEmpty() || losingDeck1.isEmpty() || losingDeck2.isEmpty()) { //prevent error HTTP 500 on forgetting to add result
-            return "index";
-        }
-
-        String[] winners = new String[]{winningDeck1}; //this allows for multi games in future for now handle 1v1
-        String[] losers;
-
-        if(losingDeck3.isEmpty()) {
-            losers = new String[]{losingDeck1, losingDeck2};
-        }
-        else {
-            losers = new String[]{losingDeck1, losingDeck2, losingDeck3};
-        }
-
-        deckService.updateDeckRatings(winners, losers, false);
-        getDecksbyGame(model, game);
-        return "decklist";
-    }
-
-    @PostMapping(path="/deck/resultsupdate/ffa/game/{game}/bestof3")
-    public String updateResultFFABestof3(@ModelAttribute("winningDeck1") String winningDeck1,
-                                  @ModelAttribute("losingDeck1") String losingDeck1,
-                                  @ModelAttribute("losingDeck3") String losingDeck3,
-                                  @ModelAttribute("losingDeck2") String losingDeck2,
-                                  @PathVariable String game,
-                                  Model model) {
-
-        if(winningDeck1.isEmpty() || losingDeck1.isEmpty() || losingDeck2.isEmpty()) { //prevent error HTTP 500 on forgetting to add result
-            return "index";
-        }
-
-        String[] winners = new String[]{winningDeck1}; //this allows for multi games in future for now handle 1v1
-        String[] losers;
-
-        if(losingDeck3.isEmpty()) {
-            losers = new String[]{losingDeck1, losingDeck2};
-        }
-        else {
-            losers = new String[]{losingDeck1, losingDeck2, losingDeck3};
-        }
-
-        deckService.updateDeckRatings(winners, losers, true);
-        getDecksbyGame(model, game);
-        return "decklist";
-    }
+//    @PostMapping(path="/deck/resultsupdate/ffa/game/{game}/bestof3")
+//    public String updateResultFFABestof3(@ModelAttribute("winningDeck1") String winningDeck1,
+//                                  @ModelAttribute("losingDeck1") String losingDeck1,
+//                                  @ModelAttribute("losingDeck3") String losingDeck3,
+//                                  @ModelAttribute("losingDeck2") String losingDeck2,
+//                                  @PathVariable String game,
+//                                  Model model) {
+//
+//        if(winningDeck1.isEmpty() || losingDeck1.isEmpty() || losingDeck2.isEmpty()) { //prevent error HTTP 500 on forgetting to add result
+//            return "index";
+//        }
+//
+//        String[] winners = new String[]{winningDeck1}; //this allows for multi games in future for now handle 1v1
+//        String[] losers;
+//
+//        if(losingDeck3.isEmpty()) {
+//            losers = new String[]{losingDeck1, losingDeck2};
+//        }
+//        else {
+//            losers = new String[]{losingDeck1, losingDeck2, losingDeck3};
+//        }
+//
+//        deckService.updateDeckRatings(winners, losers, true);
+//        getDecksbyGame(model, game);
+//        return "decklist";
+//    }
 
     @PostMapping("/decks/add")
     public String addDeck(@ModelAttribute Deck deck,
@@ -249,38 +248,38 @@ public class DeckListController {
         return "newdeck";
     }
 
-    @GetMapping("/decks/{deckid}/decklist/{cardlist}")
-    public String getCardlist(@PathVariable("deckid") String deckId, //this isn't working currently from the template
-                              @PathVariable("cardlist") String cardList,
-                              Model model) {
-        List<Card> listofCards;
-        try {
-            listofCards = deckService.getCardList(cardList); //this eventually will be an object
-        } catch (IOException e) {
-            return "cardList";
-        }
-
-        List<Card> mainDeck = listofCards.stream().filter(card -> card.getDeckLocation().equals("Deck")).toList();
-
-        //below are only used in YuGiOh
-        List<Card> extraDeck = listofCards.stream().filter(card -> card.getDeckLocation().equals("Extra Deck")).toList();
-        List<Card> sideDeck = listofCards.stream().filter(card -> card.getDeckLocation().equals("Side Deck")).toList();
-
-        if(extraDeck.isEmpty()){
-            model.addAttribute("gameCheck", false);
-        }
-        else {
-            model.addAttribute("gameCheck", true);
-        }
-
-        model.addAttribute("title", "Deck List");
-        model.addAttribute("mainDeck", mainDeck); //split by extra, regular and side
-        model.addAttribute("extraDeck", extraDeck); //split by extra, regular and side
-        model.addAttribute("sideDeck", sideDeck); //split by extra, regular and side
-        model.addAttribute("deckId", deckId);
-
-        return "cardlist";
-    }
+//    @GetMapping("/decks/{deckid}/decklist/{cardlist}")
+//    public String getCardlist(@PathVariable("deckid") String deckId, //this isn't working currently from the template
+//                              @PathVariable("cardlist") String cardList,
+//                              Model model) {
+//        List<Card> listofCards;
+//        try {
+//            listofCards = deckService.getCardList(cardList); //this eventually will be an object
+//        } catch (IOException e) {
+//            return "cardList";
+//        }
+//
+//        List<Card> mainDeck = listofCards.stream().filter(card -> card.getDeckLocation().equals("Deck")).toList();
+//
+//        //below are only used in YuGiOh
+//        List<Card> extraDeck = listofCards.stream().filter(card -> card.getDeckLocation().equals("Extra Deck")).toList();
+//        List<Card> sideDeck = listofCards.stream().filter(card -> card.getDeckLocation().equals("Side Deck")).toList();
+//
+//        if(extraDeck.isEmpty()){
+//            model.addAttribute("gameCheck", false);
+//        }
+//        else {
+//            model.addAttribute("gameCheck", true);
+//        }
+//
+//        model.addAttribute("title", "Deck List");
+//        model.addAttribute("mainDeck", mainDeck); //split by extra, regular and side
+//        model.addAttribute("extraDeck", extraDeck); //split by extra, regular and side
+//        model.addAttribute("sideDeck", sideDeck); //split by extra, regular and side
+//        model.addAttribute("deckId", deckId);
+//
+//        return "cardlist";
+//    }
 
     @GetMapping(path="/deck/owner/{ownerId}")
     public String getPlayersDeck (@PathVariable("ownerId") String owner,
@@ -309,13 +308,13 @@ public class DeckListController {
 
         deckHistoryList = deckService.addHistoryOutput(deckHistoryList, deckHistoryOutput);
 
-        //idk whats going on here and why it won't let me do in single line
-        String string = "Rating: " + deckHistoryList.getLast().getRating();
-        String string2 = " Tier: " + deckHistoryList.getLast().getTier();
+        String rating = "Rating: " + deckHistoryList.getLast().getRating();
+        String tier = " Tier: " + deckHistoryList.getLast().getTier();
+        String matches = " Matches: " + deckHistoryList.getLast().getGamesPlayed();
 
         model.addAttribute("deckHistory", deckHistoryList);
         model.addAttribute("title", deckHistoryList.getFirst().getName() + "  Owner: " + deckHistoryList.getFirst().getOwner());
-        model.addAttribute("currentRating", string + string2);
+        model.addAttribute("currentRating", rating + tier + matches);
         model.addAttribute("deckId", deckHistoryList.getFirst().getId());
         model.addAttribute("cardList", deckHistoryList.getFirst().getCardList());
         //TODO ADD OUTPUT FOR HISTORY VS OPPONENTS
@@ -339,22 +338,7 @@ public class DeckListController {
         return "decklist";
     }
 
-    private void getDecksbyGame(Model model, String game) {
-        List<Deck> allUniqueDecks = deckService.getAllUniqueDecks();
-        List<Deck> filteredByGame = deckService.filterByGame(deckService.orderDeckByRating(allUniqueDecks), game);
 
-        model.addAttribute("decklist", filteredByGame);
-        model.addAttribute("game", game);
-    }
-
-
-    private void getDecksbyGameUnfiltered(Model model, String game) {
-        List<Deck> allUniqueDecks = deckService.getAllUniqueDecksUnfiltered();
-        List<Deck> filteredByGame = deckService.filterByGame(deckService.orderDeckByRating(allUniqueDecks), game);
-
-        model.addAttribute("decklist", filteredByGame);
-        model.addAttribute("game", game);
-    }
 
 
 

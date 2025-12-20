@@ -4,34 +4,19 @@ import com.trials.deck_tiering.model.Deck;
 import org.springframework.stereotype.Repository;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Repository
 public class DeckDao {
 
     private static final String CSV_SEPARATOR = ",";
-    File file = new File("csv/decks.csv").getAbsoluteFile();
+    private static final int EXPECTED_COLS = 10;
 
+    private final File file = new File("csv/decks.csv").getAbsoluteFile();
 
     public Map<String, Deck> getUniqueDeckList() {
-        Map<String, Deck> decks = new HashMap<>();
-        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                String[] values = line.split(CSV_SEPARATOR);
-                String deckId = values[0];
-                if(Integer.parseInt(values[2]) != 1300 && Integer.parseInt(values[2]) != 1500 && Integer.parseInt(values[2]) != 1750) {
-                    Deck deck = new Deck(deckId, values[1], Integer.parseInt(values[2]), values[3], values[4], Integer.parseInt(values[5]), values[6]);
-                    decks.put(deckId, deck);
-                }
-            }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
+        Map<String, Deck> decks = getUniqueDeckListUnfiltered();
+        decks.values().removeIf(d -> d.getGamesPlayed() <= 0);
         return decks;
     }
 
@@ -40,103 +25,115 @@ public class DeckDao {
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = br.readLine()) != null) {
-                String[] values = line.split(CSV_SEPARATOR);
-                String deckId = values[0];
-                Deck deck = new Deck(deckId, values[1], Integer.parseInt(values[2]), values[3], values[4], Integer.parseInt(values[5]), values[6]);
-                decks.put(deckId, deck);
+                if (line.isBlank()) continue;
+                Deck deck = parseDeck(line);
+                decks.put(deck.getId(), deck); // keep latest row for this id
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
         return decks;
     }
-    //read and write files
-
 
     public List<Deck> getDeckInformationFromId(String deckId) {
         List<Deck> decks = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = br.readLine()) != null) {
-                String[] values = line.split(",");
-                if(values[0].equals(deckId)) {
-                    Deck deck = new Deck(values[0], values[1], Integer.parseInt(values[2]), values[3], values[4], Integer.parseInt(values[5]), values[6]);
-                    decks.add(deck);
+                if (line.isBlank()) continue;
+
+                String[] values = line.split(CSV_SEPARATOR, -1);
+                if (values.length != EXPECTED_COLS) {
+                    throw new IllegalArgumentException("Invalid decks.csv row (expected " + EXPECTED_COLS + " columns): " + line);
+                }
+
+                if (values[0].equals(deckId)) {
+                    decks.add(parseDeck(values));
                 }
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
         return decks;
-    }
-
-
-    public void writeDecks(List<Deck> decks) {
-
-        try {
-            FileWriter fw = new FileWriter(file, true); //todo put csv creator in the model
-            BufferedWriter bw = new BufferedWriter(fw);
-            for(Deck deck: decks) {
-                StringBuffer oneline = new StringBuffer();
-                buildCsvWriter(deck, oneline);
-                bw.write(oneline.toString());
-                bw.newLine();
-            }
-            bw.flush();
-            bw.close();
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
     }
 
     public List<Deck> getFullDeckList() {
-       List<Deck> decks = new ArrayList<>();
+        List<Deck> decks = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = br.readLine()) != null) {
-                String[] values = line.split(CSV_SEPARATOR);
-                Deck deck = new Deck(values[0], values[1], Integer.parseInt(values[2]), values[3], values[4], Integer.parseInt(values[5]), values[6]);
-                decks.add(deck);
+                if (line.isBlank()) continue;
+                decks.add(parseDeck(line));
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
         return decks;
     }
 
-    public void writeDeck(Deck deck) {
-        try {
-            FileWriter fw = new FileWriter(file, true); //todo put csv creator in the model
-            BufferedWriter bw = new BufferedWriter(fw);
-            StringBuffer oneline = new StringBuffer();
-            buildCsvWriter(deck, oneline);
-            bw.write(oneline.toString());
-            bw.newLine();
+    public void writeDecks(List<Deck> decks) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file, true))) {
+            for (Deck deck : decks) {
+                bw.write(toCsvLine(deck));
+                bw.newLine();
+            }
             bw.flush();
-            bw.close();
-
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
-    private static void buildCsvWriter(Deck deck, StringBuffer oneline) {
-        oneline.append(deck.getId());
-        oneline.append(CSV_SEPARATOR);
-        oneline.append(deck.getName());
-        oneline.append(CSV_SEPARATOR);
-        oneline.append(deck.getRating());
-        oneline.append(CSV_SEPARATOR);
-        oneline.append(deck.getOwner());
-        oneline.append(CSV_SEPARATOR);
-        oneline.append(deck.getCardList());
-        oneline.append(CSV_SEPARATOR);
-        oneline.append(deck.getTier());
-        oneline.append(CSV_SEPARATOR);
-        oneline.append(deck.getGame());
+    public void writeDeck(Deck deck) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file, true))) {
+            bw.write(toCsvLine(deck));
+            bw.newLine();
+            bw.flush();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private static Deck parseDeck(String line) {
+        String[] values = line.split(CSV_SEPARATOR, -1);
+        return parseDeck(values);
+    }
+
+    private static Deck parseDeck(String[] values) {
+        if (values.length != EXPECTED_COLS) {
+            throw new IllegalArgumentException("Invalid decks.csv row (expected " + EXPECTED_COLS + " columns)");
+        }
+
+        // trim for safety if csv ever gets hand-edited
+        for (int i = 0; i < values.length; i++) {
+            values[i] = values[i].trim();
+        }
+
+        Deck deck = new Deck();
+        deck.setId(values[0]);
+        deck.setName(values[1]);
+        deck.setRating(Integer.parseInt(values[2]));
+        deck.setRatingDeviation(Double.parseDouble(values[3]));
+        deck.setVolatility(Double.parseDouble(values[4]));
+        deck.setOwner(values[5]);
+        deck.setCardList(values[6]);
+        deck.setTier(Integer.parseInt(values[7]));
+        deck.setGame(values[8]);
+        deck.setGamesPlayed(Integer.parseInt(values[9]));
+        return deck;
+    }
+
+    private static String toCsvLine(Deck deck) {
+        return String.join(CSV_SEPARATOR,
+                deck.getId(),
+                deck.getName(),
+                String.valueOf(deck.getRating()),
+                String.valueOf(deck.getRatingDeviation()),
+                String.valueOf(deck.getVolatility()),
+                deck.getOwner(),
+                deck.getCardList(),
+                String.valueOf(deck.getTier()),
+                deck.getGame(),
+                String.valueOf(deck.getGamesPlayed())
+        );
     }
 }

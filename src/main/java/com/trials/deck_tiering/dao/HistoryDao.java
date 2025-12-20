@@ -11,35 +11,30 @@ import java.util.List;
 public class HistoryDao {
 
     private static final String CSV_SEPARATOR = ",";
-    File file = new File("csv/history.csv").getAbsoluteFile();
+    private static final int EXPECTED_COLS = 9;
 
+    private final File file = new File("csv/history.csv").getAbsoluteFile();
 
     public void writeHistory(List<History> deckHistory) {
-        try {
-            FileWriter fw = new FileWriter(file, true); //todo put csv creator in the model
-            BufferedWriter bw = new BufferedWriter(fw);
-            for(History history: deckHistory) {
-                StringBuffer oneline = new StringBuffer();
-                oneline.append(history.getRecordedDeckId());
-                oneline.append(CSV_SEPARATOR);
-                oneline.append(history.getRecordedDeckName());
-                oneline.append(CSV_SEPARATOR);
-                oneline.append(history.getRecordedDeckOwner());
-                oneline.append(CSV_SEPARATOR);
-                oneline.append(history.getOldRating());
-                oneline.append(CSV_SEPARATOR);
-                oneline.append(history.getOutcome());
-                oneline.append(CSV_SEPARATOR);
-                oneline.append(history.getOpponent());
-                oneline.append(CSV_SEPARATOR);
-                oneline.append(history.getGame());
-                oneline.append(CSV_SEPARATOR);
-                bw.write(oneline.toString());
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file, true))) {
+
+            for (History history : deckHistory) {
+
+                String oneline = history.getRecordedDeckId() + CSV_SEPARATOR +
+                        history.getRecordedDeckName() + CSV_SEPARATOR +
+                        history.getRecordedDeckOwner() + CSV_SEPARATOR +
+                        history.getOldRating() + CSV_SEPARATOR +
+                        history.getOutcome() + CSV_SEPARATOR +
+                        history.getOpponent() + CSV_SEPARATOR +
+                        history.getGame() + CSV_SEPARATOR +
+                        history.getWinsFor() + CSV_SEPARATOR +
+                        history.getWinsAgainst();
+
+                bw.write(oneline);
                 bw.newLine();
             }
-            bw.flush();
-            bw.close();
 
+            bw.flush();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -47,13 +42,36 @@ public class HistoryDao {
 
     public List<History> getHistoryFromDeckId(String deckId) {
         List<History> historyList = new ArrayList<>();
-        try (
-            BufferedReader br = new BufferedReader(new FileReader(file))) {
+
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
+
             while ((line = br.readLine()) != null) {
-                String[] values = line.split(",");
-                if(values[0].equals(deckId)) {
-                    History history = new History(values[0], values[1], values[2], Integer.parseInt(values[3]), values[4], values[5], values[6]);
+                if (line.isBlank()) continue;
+
+                String[] values = line.split(CSV_SEPARATOR, -1);
+                if (values.length != EXPECTED_COLS) {
+                    throw new IllegalArgumentException("Invalid history.csv row (expected "
+                            + EXPECTED_COLS + " columns): " + line);
+                }
+
+                if (values[0].equals(deckId)) {
+                    History history = new History(
+                            values[0],                      // deckId
+                            values[1],                      // name
+                            values[2],                      // owner
+                            Integer.parseInt(values[3]),    // oldRating
+                            values[4],                      // outcome
+                            values[5],                      // opponent
+                            values[6],                      // game
+                            Integer.parseInt(values[7]),    // winsFor
+                            Integer.parseInt(values[8])     // winsAgainst
+                    );
+
+                    // NEW: score columns
+                    history.setWinsFor(Integer.parseInt(values[7]));
+                    history.setWinsAgainst(Integer.parseInt(values[8]));
+
                     historyList.add(history);
                 }
             }
@@ -64,5 +82,3 @@ public class HistoryDao {
         return historyList;
     }
 }
-
-

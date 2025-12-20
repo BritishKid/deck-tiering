@@ -1,48 +1,105 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title><!DOCTYPE HTML>
-      <html xmlns:th="http://www.thymeleaf.org">
-      <head lang="en">
-
-      <head>
-      <title>Deck Tiering</title>    <meta charset="utf-8" />
+  <meta charset="UTF-8" />
+  <title>Deck Tiering</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet" />
 </head>
+
 <body>
-
-<header id ="header">
-  <h1><a href="#main" th:href="@{/}">Deck Tiering</a></h1>
+<header id="header">
+  <h1><a th:href="@{/}">Deck Tiering</a></h1>
 </header>
-
 
 <section id="banner" style="margin-top:48px">
   <div class="inner">
-    <div class="col-lg-3" th:object="${decklist}">
-      <form action="#" th:action="@{/deck/resultsupdate/game/{game}(game=${game})}" th:object="${String}" method="post">
-      <select class="form-control" id="winningDeck" name="winningDeck">
-        <option value="">Winning Deck</option>
-        <option th:each="deck : ${decklist}"
-                th:value="${deck.id}"
-                th:text="${deck.name}+' : '+${deck.owner}"></option>
-      </select>
-      <select class="form-control" id="losingDeck" name="losingDeck">
-        <option value="">Losing Deck</option>
-        <option th:each="deck : ${decklist}"
-                th:value="${deck.id}"
-                th:text="${deck.name}+' : '+${deck.owner}"></option>
-      </select>
+    <div class="col-lg-3">
+
+      <!-- optional error display -->
+      <p th:if="${error}" th:text="${error}" style="color:red;"></p>
+
+      <form th:action="@{/deck/resultsupdate/game/{game}(game=${game})}" method="post">
+
+        <div class="match-row">
+          <select class="form-control match-select" id="deckA" name="deckA">
+            <option value="">Deck A</option>
+            <option th:each="deck : ${decklist}"
+                    th:value="${deck.id}"
+                    th:text="${deck.name} + ' : ' + ${deck.owner}">
+            </option>
+          </select>
+
+          <input class="form-control match-wins"
+                 type="number"
+                 id="winsA"
+                 name="winsA"
+                 min="0"
+                 step="1"
+                 value="0" />
+        </div>
+
+        <div class="match-row match-row-gap">
+          <select class="form-control match-select" id="deckB" name="deckB">
+            <option value="">Deck B</option>
+            <option th:each="deck : ${decklist}"
+                    th:value="${deck.id}"
+                    th:text="${deck.name} + ' : ' + ${deck.owner}">
+            </option>
+          </select>
+
+          <input class="form-control match-wins"
+                 type="number"
+                 id="winsB"
+                 name="winsB"
+                 min="0"
+                 step="1"
+                 value="0" />
+        </div>
 
         <p><input type="submit" value="Submit" /></p>
+      </form>
+
+      <style>
+        /* Align dropdown + input on the same line */
+        .match-row {
+          display: flex;
+          align-items: center;
+          gap: 12px;           /* space between select and input */
+        }
+
+        /* Space between deck A row and deck B row */
+        .match-row-gap {
+          margin-top: 16px;
+        }
+
+        /* Let dropdown take most width, keep wins compact */
+        .match-select {
+          flex: 1;
+          min-width: 220px;
+        }
+
+        .match-wins {
+          width: 90px;
+        }
+
+        /* Fix unreadable number text (override your theme) */
+        .match-wins,
+        .match-wins:focus {
+          color: #111 !important;
+          background: #fff !important;
+        }
+
+        /* Optional: ensure selects stay readable too */
+        .match-select {
+          color: #111;
+          background: #fff;
+        }
+      </style>
+
     </div>
   </div>
 </section>
-</body>
-</html></title>
-</head>
-<body>
 
 </body>
 </html>

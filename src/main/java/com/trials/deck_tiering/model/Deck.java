@@ -8,22 +8,37 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Deck {
+
     private String id;
     private String name;
     private int rating;
+    private double ratingDeviation;
+    private double volatility;
     private String owner;
-    private String cardList;
+    private String cardList; // deckKey
     private int tier;
     private String game;
+    private int gamesPlayed;
     private String historyOutcome;
 
-    public Deck(String id, String name, int rating, String owner, String cardList, int tier, String game) {
-        this.id = id;
-        this.name = name;
-        this.rating = rating;
-        this.owner = owner;
-        this.cardList = cardList;
-        this.tier = tier;
-        this.game = game;
+    public static Deck createNewDeck(
+            String id,
+            String name,
+            String owner,
+            String deckKey,
+            String game
+    ) {
+        Deck deck = new Deck();
+        deck.setId(id);
+        deck.setName(name);
+        deck.setRating(1500);
+        deck.setRatingDeviation(350.0);
+        deck.setVolatility(0.06);
+        deck.setOwner(owner);
+        deck.setCardList(deckKey);
+        deck.setTier(3);
+        deck.setGame(game);
+        deck.setGamesPlayed(0);
+        return deck;
     }
 }
