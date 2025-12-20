@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4dc2f24-9b18-4da5-9e0f-f85bfa536152" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/Glicko2Calculation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csv/decks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/decks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/decksold.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/decksold.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csv/history.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/history.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/historyold.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/historyold.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/controller/DeckListController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DeckDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DeckDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DecklistDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/DecklistDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/HistoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/dao/HistoryDao.java" afterDir="false" />
@@ -22,6 +22,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/model/History.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/Calculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/Calculation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/DeckService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/DeckService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/Glicko2Calculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trials/deck_tiering/service/Glicko2Calculation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/js/jquery.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/js/jquery.scrolly.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/js/jquery.scrolly.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/js/main.js" afterDir="false" />
