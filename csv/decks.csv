@@ -158,10 +158,10 @@ Pendulum MagicianOllieYu-Gi-Oh,Pendulum Magician,1500,350.0,0.06,Ollie,PendulumM
 Pendulum MagicianOllieYu-Gi-Oh FFA,Pendulum Magician,1500,350.0,0.06,Ollie,PendulumMagicianOllie,3,Yu-Gi-Oh FFA,0
 Pendulum MagicianOllieYu-Gi-Oh Team,Pendulum Magician,1500,350.0,0.06,Ollie,PendulumMagicianOllie,3,Yu-Gi-Oh Team,0
 Pendulum MagicianOllieYu-Gi-Oh Genesys,Pendulum Magician,1500,350.0,0.06,Ollie,PendulumMagicianOllie,3,Yu-Gi-Oh Genesys,0
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,1500,350.0,0.06,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,0
-Blue Eyes RitualOllieYu-Gi-Oh FFA,Blue Eyes Ritual,1500,350.0,0.06,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh FFA,0
-Blue Eyes RitualOllieYu-Gi-Oh Team,Blue Eyes Ritual,1500,350.0,0.06,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh Team,0
-Blue Eyes RitualOllieYu-Gi-Oh Genesys,Blue Eyes Ritual,1500,350.0,0.06,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh Genesys,0
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,1500,350.0,0.06,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,0
+Blue Eyes BusterOllieYu-Gi-Oh FFA,Blue Eyes Buster,1500,350.0,0.06,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh FFA,0
+Blue Eyes BusterOllieYu-Gi-Oh Team,Blue Eyes Buster,1500,350.0,0.06,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh Team,0
+Blue Eyes BusterOllieYu-Gi-Oh Genesys,Blue Eyes Buster,1500,350.0,0.06,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh Genesys,0
 Egyptian GodsOllieYu-Gi-Oh,Egyptian Gods,1500,350.0,0.06,Ollie,EgyptianGodsOllie,3,Yu-Gi-Oh,0
 Egyptian GodsOllieYu-Gi-Oh FFA,Egyptian Gods,1500,350.0,0.06,Ollie,EgyptianGodsOllie,3,Yu-Gi-Oh FFA,0
 Egyptian GodsOllieYu-Gi-Oh Team,Egyptian Gods,1500,350.0,0.06,Ollie,EgyptianGodsOllie,3,Yu-Gi-Oh Team,0
@@ -224,7 +224,7 @@ HEROOllieYu-Gi-Oh,HERO,1747,253.40460245322316,0.060000075109031,Ollie,HEROOllie
 Dark MagicianMatYu-Gi-Oh,Dark Magician,1253,253.40460245322316,0.060000075109031,Mat,DarkMagicianMat,4,Yu-Gi-Oh,1
 ChaosMatYu-Gi-Oh,Chaos,1662,290.3189637179727,0.05999967536971373,Mat,ChaosMat,3,Yu-Gi-Oh,1
 Pendulum MagicianOllieYu-Gi-Oh,Pendulum Magician,1338,290.3189637179727,0.05999967536971373,Ollie,PendulumMagicianOllie,4,Yu-Gi-Oh,1
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,1849,248.90767381808018,0.06000165449587597,Ollie,BlueEyesRitualOllie,2,Yu-Gi-Oh,1
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,1849,248.90767381808018,0.06000165449587597,Ollie,BlueEyesRitualOllie,2,Yu-Gi-Oh,1
 ChaosMatYu-Gi-Oh,Chaos,1392,231.9401129297798,0.06000208958277993,Mat,ChaosMat,4,Yu-Gi-Oh,2
 MarincessRobertYu-Gi-Oh,Marincess,1642,252.64752990220006,0.05999895478852985,Robert,MarincessRobert,3,Yu-Gi-Oh,1
 Dark MagicianMatYu-Gi-Oh,Dark Magician,1153,215.61743297681923,0.05999929958991344,Mat,DarkMagicianMat,4,Yu-Gi-Oh,2
@@ -235,23 +235,23 @@ Dark MagicianMatYu-Gi-Oh,Dark Magician,1119,204.5339547835142,0.0599986164847037
 Dark MagicianMatYu-Gi-Oh,Dark Magician,1340,187.78343774030353,0.06000835696832648,Mat,DarkMagicianMat,4,Yu-Gi-Oh,4
 Live TwinAlexYu-Gi-Oh,Live Twin,891,270.4479245957676,0.06000872966410313,Alex,LiveTwinAlex,5,Yu-Gi-Oh,1
 SalamangreatRobertYu-Gi-Oh,Salamangreat,1825,209.75287534146634,0.06000008381867877,Robert,SalamangreatRobert,2,Yu-Gi-Oh,2
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,1699,219.2332287351084,0.06000254275019566,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,2
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,1699,219.2332287351084,0.06000254275019566,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,2
 Blue Eyes SynchroRobertYu-Gi-Oh,Blue Eyes Synchro,1645,252.26305212284342,0.05999821272529883,Robert,BlueEyesSynchroRobert,3,Yu-Gi-Oh,2
 Dark MagicianMatYu-Gi-Oh,Dark Magician,1303,177.39405898538365,0.060007521964672274,Mat,DarkMagicianMat,4,Yu-Gi-Oh,5
 Ryu-Ge DinosaursRobertYu-Gi-Oh,Ryu-Ge Dinosaurs,1881,204.5339547835142,0.05999861648470379,Robert,Ryu-GeDinosaursRobert,2,Yu-Gi-Oh,3
 CenturionAlexYu-Gi-Oh,Centurion,1432,298.68184884796415,0.05999922157244559,Alex,CenturionAlex,3,Yu-Gi-Oh,1
 Gem KnightMatYu-Gi-Oh,Gem Knight,1768,280.9886880603238,0.06000076787782216,Mat,GemKnightMat,2,Yu-Gi-Oh,1
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,1589,204.24311637503567,0.06000352189950981,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,3
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,1589,204.24311637503567,0.06000352189950981,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,3
 Gem KnightMatYu-Gi-Oh,Gem Knight,1796,264.435695550467,0.06000022463384316,Mat,GemKnightMat,2,Yu-Gi-Oh,2
 Voiceless VoiceAlexYu-Gi-Oh,Voiceless Voice,1228,241.20871992965115,0.059999530274290315,Alex,VoicelessVoiceAlex,4,Yu-Gi-Oh,2
 Ryu-Ge DinosaursRobertYu-Gi-Oh,Ryu-Ge Dinosaurs,1891,199.65453566663794,0.05999815984650798,Robert,Ryu-GeDinosaursRobert,2,Yu-Gi-Oh,4
 Dark MagicianMatYu-Gi-Oh,Dark Magician,1295,174.2403632461245,0.060007053658237774,Mat,DarkMagicianMat,4,Yu-Gi-Oh,6
 Voiceless VoiceAlexYu-Gi-Oh,Voiceless Voice,1432,222.98676576410162,0.06000351485684725,Alex,VoicelessVoiceAlex,3,Yu-Gi-Oh,3
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,1446,193.40753695111954,0.06000728603114762,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,4
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,1446,193.40753695111954,0.06000728603114762,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,4
 Voiceless VoiceAlexYu-Gi-Oh,Voiceless Voice,1615,209.89348818213438,0.06000807717574953,Alex,VoicelessVoiceAlex,3,Yu-Gi-Oh,4
 SalamangreatRobertYu-Gi-Oh,Salamangreat,1664,198.92127064235657,0.060004536281798394,Robert,SalamangreatRobert,3,Yu-Gi-Oh,3
 Dark MagicianMatYu-Gi-Oh,Dark Magician,1382,162.0455218749251,0.06000854662938,Mat,DarkMagicianMat,4,Yu-Gi-Oh,7
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,1339,176.32506617442147,0.06000872474007824,Ollie,BlueEyesRitualOllie,4,Yu-Gi-Oh,5
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,1339,176.32506617442147,0.06000872474007824,Ollie,BlueEyesRitualOllie,4,Yu-Gi-Oh,5
 SalamangreatRobertYu-Gi-Oh,Salamangreat,1759,183.5746931142288,0.060005341016796145,Robert,SalamangreatRobert,2,Yu-Gi-Oh,4
 Gem KnightMatYu-Gi-Oh,Gem Knight,1634,225.70220636232855,0.06000083195269717,Mat,GemKnightMat,3,Yu-Gi-Oh,3
 ExodiaAlexYu-Gi-Oh,Exodia,1783,289.7488589683605,0.06000112465459585,Alex,ExodiaAlex,2,Yu-Gi-Oh,1
@@ -284,7 +284,7 @@ Voiceless VoiceAlexYu-Gi-Oh,Voiceless Voice,1673,195.4584239663971,0.06000752360
 Gunkan SushipRobertYu-Gi-Oh,Gunkan Suship,1370,272.37004174820515,0.05999914538183805,Robert,GunkanSushipRobert,4,Yu-Gi-Oh,1
 Gunkan SushipRobertYu-Gi-Oh,Gunkan Suship,1522,224.06885247151698,0.05999908317295093,Robert,GunkanSushipRobert,3,Yu-Gi-Oh,2
 Dark MagicianMatYu-Gi-Oh,Dark Magician,1384,147.60407920285851,0.06000949039181491,Mat,DarkMagicianMat,4,Yu-Gi-Oh,9
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,1440,164.61558390057266,0.06001130114206,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,6
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,1440,164.61558390057266,0.06001130114206,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,6
 Gem KnightMatYu-Gi-Oh,Gem Knight,1450,163.2897253521405,0.060004000632011015,Mat,GemKnightMat,3,Yu-Gi-Oh,7
 InfernobleAlexYu-Gi-Oh,Infernoble,1667,241.86215019399197,0.0599984918471586,Alex,InfernobleAlex,3,Yu-Gi-Oh,2
 EarthboundOllieYu-Gi-Oh,Earthbound,1089,196.8323133163649,0.059997490258361576,Ollie,EarthboundOllie,4,Yu-Gi-Oh,5
@@ -323,38 +323,38 @@ Blue EyesMatt WYu-Gi-Oh,Blue Eyes,1265,162.2921360707948,0.059998970884707827,Ma
 YummyRobertYu-Gi-Oh,Yummy,1875,202.99822359428873,0.05999852311804255,Robert,YummyRobert,2,Yu-Gi-Oh,3
 MalissAlexYu-Gi-Oh,Maliss,1576,227.38405329024548,0.0599982195447965,Alex,MalissAlex,3,Yu-Gi-Oh,2
 ChaosMatYu-Gi-Oh,Chaos,1413,137.30308320624079,0.06001980878048825,Mat,ChaosMat,3,Yu-Gi-Oh,8
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,1290,144.22074016469682,0.06002011741253413,Ollie,BlueEyesRitualOllie,4,Yu-Gi-Oh,7
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,1290,144.22074016469682,0.06002011741253413,Ollie,BlueEyesRitualOllie,4,Yu-Gi-Oh,7
 YummyRobertYu-Gi-Oh,Yummy,1903,194.27852673680334,0.05999785427647361,Robert,YummyRobert,2,Yu-Gi-Oh,4
 LibromancerMatYu-Gi-Oh,Libromancer,1438,301.83101945176276,0.059999249497339,Mat,LibromancerMat,3,Yu-Gi-Oh,1
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,1385,142.9902347826429,0.06002818803061014,Ollie,BlueEyesRitualOllie,4,Yu-Gi-Oh,8
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,1385,142.9902347826429,0.06002818803061014,Ollie,BlueEyesRitualOllie,4,Yu-Gi-Oh,8
 YummyRobertYu-Gi-Oh,Yummy,1720,190.89742638032635,0.060007012537764186,Robert,YummyRobert,3,Yu-Gi-Oh,5
 MalissAlexYu-Gi-Oh,Maliss,1640,207.2399191436159,0.05999750272684817,Alex,MalissAlex,3,Yu-Gi-Oh,3
 LibromancerMatYu-Gi-Oh,Libromancer,1337,250.9207767154424,0.05999836758868262,Mat,LibromancerMat,4,Yu-Gi-Oh,2
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,1453,130.55307600078027,0.06002932726503952,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,9
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,1453,130.55307600078027,0.06002932726503952,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,9
 LibromancerMatYu-Gi-Oh,Libromancer,1181,184.49291187548837,0.05999788965996319,Mat,LibromancerMat,4,Yu-Gi-Oh,3
 Ryu-Ge DinosaursRobertYu-Gi-Oh,Ryu-Ge Dinosaurs,1916,189.88079593960302,0.059997162170464885,Robert,Ryu-GeDinosaursRobert,2,Yu-Gi-Oh,6
 Ancient GearsAlexYu-Gi-Oh,Ancient Gears,1339,241.86844093010095,0.05999844720908346,Alex,AncientGearsAlex,4,Yu-Gi-Oh,2
 Blue Eyes SynchroRobertYu-Gi-Oh,Blue Eyes Synchro,1868,196.5831328931358,0.05999836077824781,Robert,BlueEyesSynchroRobert,2,Yu-Gi-Oh,4
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,1430,124.97457211193745,0.06002790815924041,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,10
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,1430,124.97457211193745,0.06002790815924041,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,10
 Nemleria RegenesisRobertYu-Gi-Oh,Nemleria Regenesis,1638,260.2556411814064,0.05999903193760666,Robert,NemleriaRegenesisRobert,3,Yu-Gi-Oh,1
 ChaosMatYu-Gi-Oh,Chaos,1384,133.21905787817616,0.06001935384132779,Mat,ChaosMat,4,Yu-Gi-Oh,9
 YummyRobertYu-Gi-Oh,Yummy,1750,178.20222925993158,0.06000581918239779,Robert,YummyRobert,2,Yu-Gi-Oh,6
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,1416,121.83771888586361,0.06002678154009537,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,11
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,1416,121.83771888586361,0.06002678154009537,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,11
 NouvellesRobertYu-Gi-Oh,Nouvelles,1697,224.18642102403058,0.05999717996471687,Robert,NouvellesRobert,3,Yu-Gi-Oh,3
 Dark MagicianMatYu-Gi-Oh,Dark Magician,1392,135.50918469250897,0.060007428598435386,Mat,DarkMagicianMat,4,Yu-Gi-Oh,11
 Blue Eyes SynchroRobertYu-Gi-Oh,Blue Eyes Synchro,1884,189.1391592152952,0.059997618384603595,Robert,BlueEyesSynchroRobert,2,Yu-Gi-Oh,5
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,1409,120.38187040415947,0.060026029503233706,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,12
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,1409,120.38187040415947,0.060026029503233706,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,12
 Blue Eyes SynchroRobertYu-Gi-Oh,Blue Eyes Synchro,1897,183.1720245081106,0.05999693473664471,Robert,BlueEyesSynchroRobert,2,Yu-Gi-Oh,6
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,1403,119.15244142166607,0.060025329861066005,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,13
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,1403,119.15244142166607,0.060025329861066005,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,13
 YummyRobertYu-Gi-Oh,Yummy,1771,169.65919643535435,0.060004755249900656,Robert,YummyRobert,2,Yu-Gi-Oh,7
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,1393,116.96707006750192,0.06002429397859909,Ollie,BlueEyesRitualOllie,4,Yu-Gi-Oh,14
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,1393,116.96707006750192,0.06002429397859909,Ollie,BlueEyesRitualOllie,4,Yu-Gi-Oh,14
 LabrynthRobertYu-Gi-Oh,Labrynth,1616,206.20434219114674,0.06000566341493562,Robert,LabrynthRobert,3,Yu-Gi-Oh,4
 Lair of DarknessOllieYu-Gi-Oh,Lair of Darkness,1344,271.10489219552005,0.05999933044019592,Ollie,LairofDarknessOllie,4,Yu-Gi-Oh,1
 NouvellesRobertYu-Gi-Oh,Nouvelles,1714,215.70120876901694,0.0599966071124327,Robert,NouvellesRobert,3,Yu-Gi-Oh,4
 LibromancerMatYu-Gi-Oh,Libromancer,1169,179.7931695022694,0.05999730709901411,Mat,LibromancerMat,4,Yu-Gi-Oh,4
 LibromancerMatYu-Gi-Oh,Libromancer,1306,175.95974531205508,0.06000398482359108,Mat,LibromancerMat,4,Yu-Gi-Oh,5
 NouvellesRobertYu-Gi-Oh,Nouvelles,1509,209.0326560080329,0.06000393111963916,Robert,NouvellesRobert,3,Yu-Gi-Oh,5
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,1466,109.64906382723856,0.0600320357789551,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,15
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,1466,109.64906382723856,0.0600320357789551,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,15
 NouvellesRobertYu-Gi-Oh,Nouvelles,1314,166.54479576943825,0.060008601007867104,Robert,NouvellesRobert,4,Yu-Gi-Oh,6
 NouvellesRobertYu-Gi-Oh,Nouvelles,1497,154.8678090074573,0.060024108438955684,Robert,NouvellesRobert,3,Yu-Gi-Oh,7
 InfernobleAlexYu-Gi-Oh,Infernoble,1294,206.79255516711697,0.06001315324875652,Alex,InfernobleAlex,4,Yu-Gi-Oh,3
@@ -445,9 +445,9 @@ Dark MagicianMatYu-Gi-Oh Genesys,Dark Magician,1320,164.7100678912665,0.05999986
 Lair of DarknessOllieYu-Gi-Oh Genesys,Lair of Darkness,1341,180.70042260259646,0.06000578727017601,Ollie,LairofDarknessOllie,4,Yu-Gi-Oh Genesys,4
 CubicOllieYu-Gi-Oh Genesys,Cubic,1884,267.20846038235027,0.06000130427180829,Ollie,CubicOllie,2,Yu-Gi-Oh Genesys,3
 Dark MagicianMatYu-Gi-Oh Genesys,Dark Magician,1310,161.7937288267805,0.05999933220312726,Mat,DarkMagicianMat,4,Yu-Gi-Oh Genesys,10
-Blue Eyes RitualOllieYu-Gi-Oh Genesys,Blue Eyes Ritual,1605,273.4259078644954,0.05999900216870812,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh Genesys,1
+Blue Eyes BusterOllieYu-Gi-Oh Genesys,Blue Eyes Buster,1605,273.4259078644954,0.05999900216870812,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh Genesys,1
 Dark MagicianMatYu-Gi-Oh Genesys,Dark Magician,1280,155.61220816487557,0.0599986523603684,Mat,DarkMagicianMat,4,Yu-Gi-Oh Genesys,11
-Blue Eyes RitualOllieYu-Gi-Oh Genesys,Blue Eyes Ritual,1696,243.12774152115924,0.05999846033346417,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh Genesys,2
+Blue Eyes BusterOllieYu-Gi-Oh Genesys,Blue Eyes Buster,1696,243.12774152115924,0.05999846033346417,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh Genesys,2
 Dark MagicianMatt WYu-Gi-Oh Genesys,Dark Magician,1367,281.22986877746496,0.059999302568759134,Matt W,DarkMagicianMattW,4,Yu-Gi-Oh Genesys,1
 LibromancerMatYu-Gi-Oh Genesys,Libromancer,1667,210.83726278417,0.05999768536703641,Mat,LibromancerMat,3,Yu-Gi-Oh Genesys,3
 Dark MagicianMatt WYu-Gi-Oh Genesys,Dark Magician,1300,245.90203114666016,0.059998373369205216,Matt W,DarkMagicianMattW,4,Yu-Gi-Oh Genesys,2

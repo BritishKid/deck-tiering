@@ -8,8 +8,8 @@ HEROOllieYu-Gi-Oh,HERO,Ollie,1500,WON,Dark Magician owned by Mat,Yu-Gi-Oh,2,0
 Dark MagicianMatYu-Gi-Oh,Dark Magician,Mat,1500,LOST,HERO owned by Ollie,Yu-Gi-Oh,0,2
 ChaosMatYu-Gi-Oh,Chaos,Mat,1500,WON,Pendulum Magician owned by Ollie,Yu-Gi-Oh,1,0
 Pendulum MagicianOllieYu-Gi-Oh,Pendulum Magician,Ollie,1500,LOST,Chaos owned by Mat,Yu-Gi-Oh,0,1
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,Ollie,1500,WON,Chaos owned by Mat,Yu-Gi-Oh,2,0
-ChaosMatYu-Gi-Oh,Chaos,Mat,1662,LOST,Blue Eyes Ritual owned by Ollie,Yu-Gi-Oh,0,2
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,Ollie,1500,WON,Chaos owned by Mat,Yu-Gi-Oh,2,0
+ChaosMatYu-Gi-Oh,Chaos,Mat,1662,LOST,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh,0,2
 MarincessRobertYu-Gi-Oh,Marincess,Robert,1500,WON,Dark Magician owned by Mat,Yu-Gi-Oh,2,0
 Dark MagicianMatYu-Gi-Oh,Dark Magician,Mat,1253,LOST,Marincess owned by Robert,Yu-Gi-Oh,0,2
 SalamangreatRobertYu-Gi-Oh,Salamangreat,Robert,1500,WON,Chaos owned by Mat,Yu-Gi-Oh,2,0
@@ -18,24 +18,24 @@ Blue Eyes SynchroRobertYu-Gi-Oh,Blue Eyes Synchro,Robert,1500,WON,Dark Magician 
 Dark MagicianMatYu-Gi-Oh,Dark Magician,Mat,1153,LOST,Blue Eyes Synchro owned by Robert,Yu-Gi-Oh,0,1
 Dark MagicianMatYu-Gi-Oh,Dark Magician,Mat,1119,WON,Live Twin owned by Alex,Yu-Gi-Oh,2,0
 Live TwinAlexYu-Gi-Oh,Live Twin,Alex,1500,LOST,Dark Magician owned by Mat,Yu-Gi-Oh,0,2
-SalamangreatRobertYu-Gi-Oh,Salamangreat,Robert,1692,WON,Blue Eyes Ritual owned by Ollie,Yu-Gi-Oh,1,0
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,Ollie,1849,LOST,Salamangreat owned by Robert,Yu-Gi-Oh,0,1
+SalamangreatRobertYu-Gi-Oh,Salamangreat,Robert,1692,WON,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh,1,0
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,Ollie,1849,LOST,Salamangreat owned by Robert,Yu-Gi-Oh,0,1
 Blue Eyes SynchroRobertYu-Gi-Oh,Blue Eyes Synchro,Robert,1568,WON,Dark Magician owned by Mat,Yu-Gi-Oh,1,0
 Dark MagicianMatYu-Gi-Oh,Dark Magician,Mat,1340,LOST,Blue Eyes Synchro owned by Robert,Yu-Gi-Oh,0,1
 Ryu-Ge DinosaursRobertYu-Gi-Oh,Ryu-Ge Dinosaurs,Robert,1847,WON,Centurion owned by Alex,Yu-Gi-Oh,1,0
 CenturionAlexYu-Gi-Oh,Centurion,Alex,1500,LOST,Ryu-Ge Dinosaurs owned by Robert,Yu-Gi-Oh,0,1
-Gem KnightMatYu-Gi-Oh,Gem Knight,Mat,1500,WON,Blue Eyes Ritual owned by Ollie,Yu-Gi-Oh,1,0
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,Ollie,1699,LOST,Gem Knight owned by Mat,Yu-Gi-Oh,0,1
+Gem KnightMatYu-Gi-Oh,Gem Knight,Mat,1500,WON,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh,1,0
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,Ollie,1699,LOST,Gem Knight owned by Mat,Yu-Gi-Oh,0,1
 Gem KnightMatYu-Gi-Oh,Gem Knight,Mat,1768,WON,Voiceless Voice owned by Alex,Yu-Gi-Oh,1,0
 Voiceless VoiceAlexYu-Gi-Oh,Voiceless Voice,Alex,1253,LOST,Gem Knight owned by Mat,Yu-Gi-Oh,0,1
 Ryu-Ge DinosaursRobertYu-Gi-Oh,Ryu-Ge Dinosaurs,Robert,1881,WON,Dark Magician owned by Mat,Yu-Gi-Oh,1,0
 Dark MagicianMatYu-Gi-Oh,Dark Magician,Mat,1303,LOST,Ryu-Ge Dinosaurs owned by Robert,Yu-Gi-Oh,0,1
-Voiceless VoiceAlexYu-Gi-Oh,Voiceless Voice,Alex,1228,WON,Blue Eyes Ritual owned by Ollie,Yu-Gi-Oh,1,0
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,Ollie,1589,LOST,Voiceless Voice owned by Alex,Yu-Gi-Oh,0,1
+Voiceless VoiceAlexYu-Gi-Oh,Voiceless Voice,Alex,1228,WON,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh,1,0
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,Ollie,1589,LOST,Voiceless Voice owned by Alex,Yu-Gi-Oh,0,1
 Voiceless VoiceAlexYu-Gi-Oh,Voiceless Voice,Alex,1432,WON,Salamangreat owned by Robert,Yu-Gi-Oh,1,0
 SalamangreatRobertYu-Gi-Oh,Salamangreat,Robert,1825,LOST,Voiceless Voice owned by Alex,Yu-Gi-Oh,0,1
-Dark MagicianMatYu-Gi-Oh,Dark Magician,Mat,1295,WON,Blue Eyes Ritual owned by Ollie,Yu-Gi-Oh,1,0
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,Ollie,1446,LOST,Dark Magician owned by Mat,Yu-Gi-Oh,0,1
+Dark MagicianMatYu-Gi-Oh,Dark Magician,Mat,1295,WON,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh,1,0
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,Ollie,1446,LOST,Dark Magician owned by Mat,Yu-Gi-Oh,0,1
 SalamangreatRobertYu-Gi-Oh,Salamangreat,Robert,1664,WON,Gem Knight owned by Mat,Yu-Gi-Oh,1,0
 Gem KnightMatYu-Gi-Oh,Gem Knight,Mat,1796,LOST,Salamangreat owned by Robert,Yu-Gi-Oh,0,1
 ExodiaAlexYu-Gi-Oh,Exodia,Alex,1500,WON,HERO owned by Ollie,Yu-Gi-Oh,1,0
@@ -68,8 +68,8 @@ Voiceless VoiceAlexYu-Gi-Oh,Voiceless Voice,Alex,1615,WON,Gunkan Suship owned by
 Gunkan SushipRobertYu-Gi-Oh,Gunkan Suship,Robert,1500,LOST,Voiceless Voice owned by Alex,Yu-Gi-Oh,0,1
 Gunkan SushipRobertYu-Gi-Oh,Gunkan Suship,Robert,1370,WON,Dark Magician owned by Mat,Yu-Gi-Oh,1,0
 Dark MagicianMatYu-Gi-Oh,Dark Magician,Mat,1439,LOST,Gunkan Suship owned by Robert,Yu-Gi-Oh,0,1
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,Ollie,1339,WON,Gem Knight owned by Mat,Yu-Gi-Oh,1,0
-Gem KnightMatYu-Gi-Oh,Gem Knight,Mat,1549,LOST,Blue Eyes Ritual owned by Ollie,Yu-Gi-Oh,0,1
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,Ollie,1339,WON,Gem Knight owned by Mat,Yu-Gi-Oh,1,0
+Gem KnightMatYu-Gi-Oh,Gem Knight,Mat,1549,LOST,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh,0,1
 InfernobleAlexYu-Gi-Oh,Infernoble,Alex,1648,WON,Earthbound owned by Ollie,Yu-Gi-Oh,1,0
 EarthboundOllieYu-Gi-Oh,Earthbound,Ollie,1103,LOST,Infernoble owned by Alex,Yu-Gi-Oh,0,1
 Gunkan SushipRobertYu-Gi-Oh,Gunkan Suship,Robert,1522,WON,Cyber Dragon owned by Ollie,Yu-Gi-Oh,1,0
@@ -106,40 +106,40 @@ BrandedRobertYu-Gi-Oh,Branded,Robert,1747,WON,Blue Eyes owned by Matt W,Yu-Gi-Oh
 Blue EyesMatt WYu-Gi-Oh,Blue Eyes,Matt W,1278,LOST,Branded owned by Robert,Yu-Gi-Oh,0,1
 YummyRobertYu-Gi-Oh,Yummy,Robert,1815,WON,Maliss owned by Alex,Yu-Gi-Oh,1,0
 MalissAlexYu-Gi-Oh,Maliss,Alex,1653,LOST,Yummy owned by Robert,Yu-Gi-Oh,0,1
-ChaosMatYu-Gi-Oh,Chaos,Mat,1280,WON,Blue Eyes Ritual owned by Ollie,Yu-Gi-Oh,2,0
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,Ollie,1440,LOST,Chaos owned by Mat,Yu-Gi-Oh,0,2
+ChaosMatYu-Gi-Oh,Chaos,Mat,1280,WON,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh,2,0
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,Ollie,1440,LOST,Chaos owned by Mat,Yu-Gi-Oh,0,2
 YummyRobertYu-Gi-Oh,Yummy,Robert,1875,WON,Libromancer owned by Mat,Yu-Gi-Oh,1,0
 LibromancerMatYu-Gi-Oh,Libromancer,Mat,1500,LOST,Yummy owned by Robert,Yu-Gi-Oh,0,1
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,Ollie,1290,WON,Yummy owned by Robert,Yu-Gi-Oh,1,0
-YummyRobertYu-Gi-Oh,Yummy,Robert,1903,LOST,Blue Eyes Ritual owned by Ollie,Yu-Gi-Oh,0,1
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,Ollie,1290,WON,Yummy owned by Robert,Yu-Gi-Oh,1,0
+YummyRobertYu-Gi-Oh,Yummy,Robert,1903,LOST,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh,0,1
 MalissAlexYu-Gi-Oh,Maliss,Alex,1576,WON,Libromancer owned by Mat,Yu-Gi-Oh,1,0
 LibromancerMatYu-Gi-Oh,Libromancer,Mat,1438,LOST,Maliss owned by Alex,Yu-Gi-Oh,0,1
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,Ollie,1385,WON,Libromancer owned by Mat,Yu-Gi-Oh,2,0
-LibromancerMatYu-Gi-Oh,Libromancer,Mat,1337,LOST,Blue Eyes Ritual owned by Ollie,Yu-Gi-Oh,0,2
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,Ollie,1385,WON,Libromancer owned by Mat,Yu-Gi-Oh,2,0
+LibromancerMatYu-Gi-Oh,Libromancer,Mat,1337,LOST,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh,0,2
 Ryu-Ge DinosaursRobertYu-Gi-Oh,Ryu-Ge Dinosaurs,Robert,1903,WON,Ancient Gears owned by Alex,Yu-Gi-Oh,1,0
 Ancient GearsAlexYu-Gi-Oh,Ancient Gears,Alex,1358,LOST,Ryu-Ge Dinosaurs owned by Robert,Yu-Gi-Oh,0,1
-Blue Eyes SynchroRobertYu-Gi-Oh,Blue Eyes Synchro,Robert,1816,WON,Blue Eyes Ritual owned by Ollie,Yu-Gi-Oh,2,0
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,Ollie,1453,LOST,Blue Eyes Synchro owned by Robert,Yu-Gi-Oh,0,2
+Blue Eyes SynchroRobertYu-Gi-Oh,Blue Eyes Synchro,Robert,1816,WON,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh,2,0
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,Ollie,1453,LOST,Blue Eyes Synchro owned by Robert,Yu-Gi-Oh,0,2
 Nemleria RegenesisRobertYu-Gi-Oh,Nemleria Regenesis,Robert,1500,WON,Chaos owned by Mat,Yu-Gi-Oh,1,0
 ChaosMatYu-Gi-Oh,Chaos,Mat,1413,LOST,Nemleria Regenesis owned by Robert,Yu-Gi-Oh,0,1
-YummyRobertYu-Gi-Oh,Yummy,Robert,1720,WON,Blue Eyes Ritual owned by Ollie,Yu-Gi-Oh,1,0
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,Ollie,1430,LOST,Yummy owned by Robert,Yu-Gi-Oh,0,1
+YummyRobertYu-Gi-Oh,Yummy,Robert,1720,WON,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh,1,0
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,Ollie,1430,LOST,Yummy owned by Robert,Yu-Gi-Oh,0,1
 NouvellesRobertYu-Gi-Oh,Nouvelles,Robert,1634,WON,Dark Magician owned by Mat,Yu-Gi-Oh,1,0
 Dark MagicianMatYu-Gi-Oh,Dark Magician,Mat,1414,LOST,Nouvelles owned by Robert,Yu-Gi-Oh,0,1
-Blue Eyes SynchroRobertYu-Gi-Oh,Blue Eyes Synchro,Robert,1868,WON,Blue Eyes Ritual owned by Ollie,Yu-Gi-Oh,1,0
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,Ollie,1416,LOST,Blue Eyes Synchro owned by Robert,Yu-Gi-Oh,0,1
-Blue Eyes SynchroRobertYu-Gi-Oh,Blue Eyes Synchro,Robert,1884,WON,Blue Eyes Ritual owned by Ollie,Yu-Gi-Oh,1,0
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,Ollie,1409,LOST,Blue Eyes Synchro owned by Robert,Yu-Gi-Oh,0,1
-YummyRobertYu-Gi-Oh,Yummy,Robert,1750,WON,Blue Eyes Ritual owned by Ollie,Yu-Gi-Oh,1,0
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,Ollie,1403,LOST,Yummy owned by Robert,Yu-Gi-Oh,0,1
+Blue Eyes SynchroRobertYu-Gi-Oh,Blue Eyes Synchro,Robert,1868,WON,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh,1,0
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,Ollie,1416,LOST,Blue Eyes Synchro owned by Robert,Yu-Gi-Oh,0,1
+Blue Eyes SynchroRobertYu-Gi-Oh,Blue Eyes Synchro,Robert,1884,WON,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh,1,0
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,Ollie,1409,LOST,Blue Eyes Synchro owned by Robert,Yu-Gi-Oh,0,1
+YummyRobertYu-Gi-Oh,Yummy,Robert,1750,WON,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh,1,0
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,Ollie,1403,LOST,Yummy owned by Robert,Yu-Gi-Oh,0,1
 LabrynthRobertYu-Gi-Oh,Labrynth,Robert,1540,WON,Lair of Darkness owned by Ollie,Yu-Gi-Oh,1,0
 Lair of DarknessOllieYu-Gi-Oh,Lair of Darkness,Ollie,1500,LOST,Labrynth owned by Robert,Yu-Gi-Oh,0,1
 NouvellesRobertYu-Gi-Oh,Nouvelles,Robert,1697,WON,Libromancer owned by Mat,Yu-Gi-Oh,1,0
 LibromancerMatYu-Gi-Oh,Libromancer,Mat,1181,LOST,Nouvelles owned by Robert,Yu-Gi-Oh,0,1
 LibromancerMatYu-Gi-Oh,Libromancer,Mat,1169,WON,Nouvelles owned by Robert,Yu-Gi-Oh,1,0
 NouvellesRobertYu-Gi-Oh,Nouvelles,Robert,1714,LOST,Libromancer owned by Mat,Yu-Gi-Oh,0,1
-Blue Eyes RitualOllieYu-Gi-Oh,Blue Eyes Ritual,Ollie,1393,WON,Nouvelles owned by Robert,Yu-Gi-Oh,2,0
-NouvellesRobertYu-Gi-Oh,Nouvelles,Robert,1509,LOST,Blue Eyes Ritual owned by Ollie,Yu-Gi-Oh,0,2
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,Ollie,1393,WON,Nouvelles owned by Robert,Yu-Gi-Oh,2,0
+NouvellesRobertYu-Gi-Oh,Nouvelles,Robert,1509,LOST,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh,0,2
 NouvellesRobertYu-Gi-Oh,Nouvelles,Robert,1314,WON,Infernoble owned by Alex,Yu-Gi-Oh,2,0
 InfernobleAlexYu-Gi-Oh,Infernoble,Alex,1667,LOST,Nouvelles owned by Robert,Yu-Gi-Oh,0,2
 LibromancerMatYu-Gi-Oh,Libromancer,Mat,1306,WON,Orcust owned by Robert,Yu-Gi-Oh,2,1
@@ -224,10 +224,10 @@ Dark MagicianMatYu-Gi-Oh Genesys,Dark Magician,Mat,1217,WON,Lair of Darkness own
 Lair of DarknessOllieYu-Gi-Oh Genesys,Lair of Darkness,Ollie,1469,LOST,Dark Magician owned by Mat,Yu-Gi-Oh Genesys,0,1
 CubicOllieYu-Gi-Oh Genesys,Cubic,Ollie,1863,WON,Dark Magician owned by Mat,Yu-Gi-Oh Genesys,1,0
 Dark MagicianMatYu-Gi-Oh Genesys,Dark Magician,Mat,1320,LOST,Cubic owned by Ollie,Yu-Gi-Oh Genesys,0,1
-Blue Eyes RitualOllieYu-Gi-Oh Genesys,Blue Eyes Ritual,Ollie,1500,WON,Dark Magician owned by Mat,Yu-Gi-Oh Genesys,1,0
-Dark MagicianMatYu-Gi-Oh Genesys,Dark Magician,Mat,1310,LOST,Blue Eyes Ritual owned by Ollie,Yu-Gi-Oh Genesys,0,1
-Blue Eyes RitualOllieYu-Gi-Oh Genesys,Blue Eyes Ritual,Ollie,1605,WON,Dark Magician owned by Matt W,Yu-Gi-Oh Genesys,1,0
-Dark MagicianMatt WYu-Gi-Oh Genesys,Dark Magician,Matt W,1500,LOST,Blue Eyes Ritual owned by Ollie,Yu-Gi-Oh Genesys,0,1
+Blue Eyes BusterOllieYu-Gi-Oh Genesys,Blue Eyes Buster,Ollie,1500,WON,Dark Magician owned by Mat,Yu-Gi-Oh Genesys,1,0
+Dark MagicianMatYu-Gi-Oh Genesys,Dark Magician,Mat,1310,LOST,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh Genesys,0,1
+Blue Eyes BusterOllieYu-Gi-Oh Genesys,Blue Eyes Buster,Ollie,1605,WON,Dark Magician owned by Matt W,Yu-Gi-Oh Genesys,1,0
+Dark MagicianMatt WYu-Gi-Oh Genesys,Dark Magician,Matt W,1500,LOST,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh Genesys,0,1
 LibromancerMatYu-Gi-Oh Genesys,Libromancer,Mat,1619,WON,Dark Magician owned by Matt W,Yu-Gi-Oh Genesys,1,0
 Dark MagicianMatt WYu-Gi-Oh Genesys,Dark Magician,Matt W,1367,LOST,Libromancer owned by Mat,Yu-Gi-Oh Genesys,0,1
 Lair of DarknessOllieYu-Gi-Oh Genesys,Lair of Darkness,Ollie,1341,WON,Dark Magician owned by Matt W,Yu-Gi-Oh Genesys,1,0
