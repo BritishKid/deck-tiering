@@ -18,9 +18,6 @@ public class DeckListController {
     @Autowired
     private DeckService deckService;
 
-
-
-    //fixed
     @PostMapping(path="/deck/resultsupdate/game/{game}")
     public String updateResult(@RequestParam("deckA") String deckAId,
                                @RequestParam("deckB") String deckBId,
@@ -92,10 +89,6 @@ public class DeckListController {
         model.addAttribute("decklist", filteredByGame);
         model.addAttribute("game", game);
     }
-
-    //todo
-
-
 
     @RequestMapping("/")
     public String index(Model model) {

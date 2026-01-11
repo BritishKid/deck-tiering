@@ -278,3 +278,15 @@ Dark MagicianMatYu-Gi-Oh Genesys,Dark Magician,Mat,1290,WON,Lair of Darkness own
 Lair of DarknessOllieYu-Gi-Oh Genesys,Lair of Darkness,Ollie,1545,LOST,Dark Magician owned by Mat,Yu-Gi-Oh Genesys,0,1
 Lair of DarknessOllieYu-Gi-Oh Genesys,Lair of Darkness,Ollie,1473,WON,Infernoble owned by Alex,Yu-Gi-Oh Genesys,1,0
 InfernobleAlexYu-Gi-Oh Genesys,Infernoble,Alex,1958,LOST,Lair of Darkness owned by Ollie,Yu-Gi-Oh Genesys,0,1
+LibromancerMatYu-Gi-Oh Genesys,Libromancer,Mat,1576,WON,WightSworn owned by Ollie,Yu-Gi-Oh Genesys,2,0
+WightSwornOllieYu-Gi-Oh Genesys,WightSworn,Ollie,1500,LOST,Libromancer owned by Mat,Yu-Gi-Oh Genesys,0,2
+DinosaurRobertYu-Gi-Oh Genesys,Dinosaur,Robert,1848,WON,WightSworn owned by Ollie,Yu-Gi-Oh Genesys,2,0
+WightSwornOllieYu-Gi-Oh Genesys,WightSworn,Ollie,1302,LOST,Dinosaur owned by Robert,Yu-Gi-Oh Genesys,0,2
+DinosaurRobertYu-Gi-Oh Genesys,Dinosaur,Robert,1874,WON,Libromancer owned by Mat,Yu-Gi-Oh Genesys,2,0
+LibromancerMatYu-Gi-Oh Genesys,Libromancer,Mat,1643,LOST,Dinosaur owned by Robert,Yu-Gi-Oh Genesys,0,2
+LibromancerMatYu-Gi-Oh Genesys,Libromancer,Mat,1602,WON,WightSworn owned by Ollie,Yu-Gi-Oh Genesys,2,0
+WightSwornOllieYu-Gi-Oh Genesys,WightSworn,Ollie,1275,LOST,Libromancer owned by Mat,Yu-Gi-Oh Genesys,0,2
+WightSwornOllieYu-Gi-Oh Genesys,WightSworn,Ollie,1224,WON,Gunkan Suship owned by Robert,Yu-Gi-Oh Genesys,2,1
+Gunkan SushipRobertYu-Gi-Oh Genesys,Gunkan Suship,Robert,1869,LOST,WightSworn owned by Ollie,Yu-Gi-Oh Genesys,1,2
+LibromancerMatYu-Gi-Oh Genesys,Libromancer,Mat,1628,WON,Gunkan Suship owned by Robert,Yu-Gi-Oh Genesys,1,0
+Gunkan SushipRobertYu-Gi-Oh Genesys,Gunkan Suship,Robert,1556,LOST,Libromancer owned by Mat,Yu-Gi-Oh Genesys,0,1
