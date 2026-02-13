@@ -161,7 +161,7 @@ Pendulum MagicianOllieYu-Gi-Oh Genesys,Pendulum Magician,1500,350.0,0.06,Ollie,P
 Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,1500,350.0,0.06,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,0
 Blue Eyes BusterOllieYu-Gi-Oh FFA,Blue Eyes Buster,1500,350.0,0.06,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh FFA,0
 Blue Eyes BusterOllieYu-Gi-Oh Team,Blue Eyes Buster,1500,350.0,0.06,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh Team,0
-Blue Eyes BusterOllieYu-Gi-Oh Genesys,Blue Eyes Buster,1500,350.0,0.06,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh Genesys,0
+Blue Eyes OllieYu-Gi-Oh Genesys,Blue Eyes,1500,350.0,0.06,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh Genesys,0
 Egyptian GodsOllieYu-Gi-Oh,Egyptian Gods,1500,350.0,0.06,Ollie,EgyptianGodsOllie,3,Yu-Gi-Oh,0
 Egyptian GodsOllieYu-Gi-Oh FFA,Egyptian Gods,1500,350.0,0.06,Ollie,EgyptianGodsOllie,3,Yu-Gi-Oh FFA,0
 Egyptian GodsOllieYu-Gi-Oh Team,Egyptian Gods,1500,350.0,0.06,Ollie,EgyptianGodsOllie,3,Yu-Gi-Oh Team,0
@@ -445,9 +445,9 @@ Dark MagicianMatYu-Gi-Oh Genesys,Dark Magician,1320,164.7100678912665,0.05999986
 Lair of DarknessOllieYu-Gi-Oh Genesys,Lair of Darkness,1341,180.70042260259646,0.06000578727017601,Ollie,LairofDarknessOllie,4,Yu-Gi-Oh Genesys,4
 CubicOllieYu-Gi-Oh Genesys,Cubic,1884,267.20846038235027,0.06000130427180829,Ollie,CubicOllie,2,Yu-Gi-Oh Genesys,3
 Dark MagicianMatYu-Gi-Oh Genesys,Dark Magician,1310,161.7937288267805,0.05999933220312726,Mat,DarkMagicianMat,4,Yu-Gi-Oh Genesys,10
-Blue Eyes BusterOllieYu-Gi-Oh Genesys,Blue Eyes Buster,1605,273.4259078644954,0.05999900216870812,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh Genesys,1
+Blue Eyes OllieYu-Gi-Oh Genesys,Blue Eyes,1605,273.4259078644954,0.05999900216870812,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh Genesys,1
 Dark MagicianMatYu-Gi-Oh Genesys,Dark Magician,1280,155.61220816487557,0.0599986523603684,Mat,DarkMagicianMat,4,Yu-Gi-Oh Genesys,11
-Blue Eyes BusterOllieYu-Gi-Oh Genesys,Blue Eyes Buster,1696,243.12774152115924,0.05999846033346417,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh Genesys,2
+Blue Eyes OllieYu-Gi-Oh Genesys,Blue Eyes,1696,243.12774152115924,0.05999846033346417,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh Genesys,2
 Dark MagicianMatt WYu-Gi-Oh Genesys,Dark Magician,1367,281.22986877746496,0.059999302568759134,Matt W,DarkMagicianMattW,4,Yu-Gi-Oh Genesys,1
 LibromancerMatYu-Gi-Oh Genesys,Libromancer,1667,210.83726278417,0.05999768536703641,Mat,LibromancerMat,3,Yu-Gi-Oh Genesys,3
 Dark MagicianMatt WYu-Gi-Oh Genesys,Dark Magician,1300,245.90203114666016,0.059998373369205216,Matt W,DarkMagicianMattW,4,Yu-Gi-Oh Genesys,2
@@ -515,3 +515,73 @@ WightSwornOllieYu-Gi-Oh Genesys,WightSworn,1498,172.21545360530732,0.06002480773
 Gunkan SushipRobertYu-Gi-Oh Genesys,Gunkan Suship,1556,182.19450310860645,0.06003380667351956,Robert,GunkanSushipRobert,3,Yu-Gi-Oh Genesys,7
 LibromancerMatYu-Gi-Oh Genesys,Libromancer,1657,119.78261121963577,0.05999596059063032,Mat,LibromancerMat,3,Yu-Gi-Oh Genesys,11
 Gunkan SushipRobertYu-Gi-Oh Genesys,Gunkan Suship,1497,164.56106743038063,0.0600327834507446,Robert,GunkanSushipRobert,3,Yu-Gi-Oh Genesys,8
+EnneacraftRobertYu-Gi-Oh,Enneacraft,1500,350.0,0.06,Robert,EnneacraftRobert,3,Yu-Gi-Oh,0
+EnneacraftRobertYu-Gi-Oh FFA,Enneacraft,1500,350.0,0.06,Robert,EnneacraftRobert,3,Yu-Gi-Oh FFA,0
+EnneacraftRobertYu-Gi-Oh Team,Enneacraft,1500,350.0,0.06,Robert,EnneacraftRobert,3,Yu-Gi-Oh Team,0
+EnneacraftRobertYu-Gi-Oh Genesys,Enneacraft,1500,350.0,0.06,Robert,EnneacraftRobert,3,Yu-Gi-Oh Genesys,0
+HecahandsRobertYu-Gi-Oh,Hecahands,1500,350.0,0.06,Robert,HecahandsRobert,3,Yu-Gi-Oh,0
+HecahandsRobertYu-Gi-Oh FFA,Hecahands,1500,350.0,0.06,Robert,HecahandsRobert,3,Yu-Gi-Oh FFA,0
+HecahandsRobertYu-Gi-Oh Team,Hecahands,1500,350.0,0.06,Robert,HecahandsRobert,3,Yu-Gi-Oh Team,0
+HecahandsRobertYu-Gi-Oh Genesys,Hecahands,1500,350.0,0.06,Robert,HecahandsRobert,3,Yu-Gi-Oh Genesys,0
+HecahandsRobertYu-Gi-Oh Genesys,Hecahands,1887,244.58070211316988,0.06000235513890577,Robert,HecahandsRobert,2,Yu-Gi-Oh Genesys,1
+Blue Eyes OllieYu-Gi-Oh Genesys,Blue Eyes,1471,206.99297774174414,0.06000241393332342,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh Genesys,3
+EnneacraftRobertYu-Gi-Oh,Enneacraft,1549,314.31309954644445,0.05999941966841993,Robert,EnneacraftRobert,3,Yu-Gi-Oh,1
+Lair of DarknessOllieYu-Gi-Oh,Lair of Darkness,1002,243.21044403548825,0.060005453624140954,Ollie,LairofDarknessOllie,4,Yu-Gi-Oh,3
+LibromancerMatYu-Gi-Oh Genesys,Libromancer,1667,117.46057996560897,0.059994857577476704,Mat,LibromancerMat,3,Yu-Gi-Oh Genesys,12
+Red Dragon ArchfiendMatt WYu-Gi-Oh Genesys,Red Dragon Archfiend,1127,162.73087907566105,0.05999250797877363,Matt W,RedDragonArchfiendMattW,4,Yu-Gi-Oh Genesys,10
+Dark WorldMatYu-Gi-Oh Genesys,Dark World,1595,280.8288190189508,0.059999061241888724,Mat,DarkWorldMat,3,Yu-Gi-Oh Genesys,1
+Dark MagicianMatt WYu-Gi-Oh Genesys,Dark Magician,1236,178.08737543917573,0.05999805400919719,Matt W,DarkMagicianMattW,4,Yu-Gi-Oh Genesys,6
+WightSwornOllieYu-Gi-Oh Genesys,WightSworn,1549,154.33098449427297,0.06002324815310375,Ollie,WightSwornOllie,3,Yu-Gi-Oh Genesys,5
+Dark MagicianMatt WYu-Gi-Oh Genesys,Dark Magician,1183,158.31924287219687,0.05999647552140128,Matt W,DarkMagicianMattW,4,Yu-Gi-Oh Genesys,7
+WightSwornOllieYu-Gi-Oh Genesys,WightSworn,1477,142.74184906709155,0.06002439463709255,Ollie,WightSwornOllie,3,Yu-Gi-Oh Genesys,6
+Red Dragon ArchfiendMatt WYu-Gi-Oh Genesys,Red Dragon Archfiend,1207,149.21275697618472,0.05999371040574129,Matt W,RedDragonArchfiendMattW,4,Yu-Gi-Oh Genesys,11
+HecahandsRobertYu-Gi-Oh Genesys,Hecahands,1837,175.88669718128313,0.05999934735028179,Robert,HecahandsRobert,2,Yu-Gi-Oh Genesys,2
+LibromancerMatYu-Gi-Oh Genesys,Libromancer,1677,109.0390225485703,0.059990841465099726,Mat,LibromancerMat,3,Yu-Gi-Oh Genesys,13
+EnneacraftRobertYu-Gi-Oh,Enneacraft,1688,242.1492547266703,0.059998551322342816,Robert,EnneacraftRobert,3,Yu-Gi-Oh,2
+LibromancerMatYu-Gi-Oh,Libromancer,1479,129.5380677277966,0.060013322465502304,Mat,LibromancerMat,3,Yu-Gi-Oh,12
+OrcustRobertYu-Gi-Oh,Orcust,1558,189.51692835415676,0.06001943746306397,Robert,OrcustRobert,3,Yu-Gi-Oh,2
+Voiceless VoiceAlexYu-Gi-Oh,Voiceless Voice,1396,180.35052085734912,0.060027286553311035,Alex,VoicelessVoiceAlex,4,Yu-Gi-Oh,6
+EnneacraftRobertYu-Gi-Oh,Enneacraft,1726,222.5758477329398,0.05999763247489098,Robert,EnneacraftRobert,3,Yu-Gi-Oh,3
+Live TwinAlexYu-Gi-Oh,Live Twin,1123,225.56443278095387,0.06001433550321987,Alex,LiveTwinAlex,4,Yu-Gi-Oh,4
+Lair of DarknessOllieYu-Gi-Oh Genesys,Lair of Darkness,1621,112.3511333914171,0.06001751631348595,Ollie,LairofDarknessOllie,3,Yu-Gi-Oh Genesys,12
+LibromancerMatYu-Gi-Oh Genesys,Libromancer,1626,98.79484775976516,0.05999182079382947,Mat,LibromancerMat,3,Yu-Gi-Oh Genesys,14
+ChaosMatYu-Gi-Oh,Chaos,1490,125.70535846738434,0.060031089085519816,Mat,ChaosMat,3,Yu-Gi-Oh,10
+Nemleria RegenesisRobertYu-Gi-Oh,Nemleria Regenesis,1287,204.33807382345432,0.060007654107464156,Robert,NemleriaRegenesisRobert,4,Yu-Gi-Oh,2
+Ancient GearsAlexYu-Gi-Oh,Ancient Gears,1494,167.54811121798838,0.059997660937957616,Alex,AncientGearsAlex,3,Yu-Gi-Oh,3
+LibromancerMatYu-Gi-Oh,Libromancer,1419,116.75836281368157,0.06001381277082633,Mat,LibromancerMat,3,Yu-Gi-Oh,13
+HecahandsRobertYu-Gi-Oh,Hecahands,1716,209.38454036091503,0.05999913432078993,Robert,HecahandsRobert,3,Yu-Gi-Oh,1
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,1426,105.51832798065415,0.060033723715107026,Ollie,BlueEyesRitualOllie,3,Yu-Gi-Oh,16
+InfernobleAlexYu-Gi-Oh Genesys,Infernoble,1857,148.58628644578332,0.060007649163525086,Alex,InfernobleAlex,2,Yu-Gi-Oh Genesys,12
+WightSwornOllieYu-Gi-Oh Genesys,WightSworn,1464,138.8425544075314,0.060023388559666525,Ollie,WightSwornOllie,3,Yu-Gi-Oh Genesys,7
+Red Dragon ArchfiendMatt WYu-Gi-Oh Genesys,Red Dragon Archfiend,1323,141.17330814171657,0.06000267283559933,Matt W,RedDragonArchfiendMattW,4,Yu-Gi-Oh Genesys,12
+HEROOllieYu-Gi-Oh Genesys,HERO,969,249.1817541009725,0.06000598960539276,Ollie,HEROOllie,5,Yu-Gi-Oh Genesys,1
+WightSwornOllieYu-Gi-Oh Genesys,WightSworn,1597,128.7540230850405,0.060039667483559794,Ollie,WightSwornOllie,3,Yu-Gi-Oh Genesys,8
+HecahandsRobertYu-Gi-Oh Genesys,Hecahands,1628,155.8174001926315,0.060014894248468606,Robert,HecahandsRobert,3,Yu-Gi-Oh Genesys,3
+DinosaurRobertYu-Gi-Oh Genesys,Dinosaur,1964,162.9052551009147,0.05999567839725834,Robert,DinosaurRobert,2,Yu-Gi-Oh Genesys,6
+Dark WorldMatYu-Gi-Oh Genesys,Dark World,1548,250.99346507322088,0.05999816014800673,Mat,DarkWorldMat,3,Yu-Gi-Oh Genesys,2
+YummyRobertYu-Gi-Oh,Yummy,1688,151.02988479973098,0.060009028892580446,Robert,YummyRobert,3,Yu-Gi-Oh,9
+ChaosMatYu-Gi-Oh,Chaos,1467,120.91914614567614,0.06002984450974967,Mat,ChaosMat,3,Yu-Gi-Oh,11
+TistinaRobertYu-Gi-Oh Genesys,Tistina,1955,121.05848474216775,0.05999082264184542,Robert,TistinaRobert,2,Yu-Gi-Oh Genesys,15
+Gate GuardianOllieYu-Gi-Oh Genesys,Gate Guardian,1549,153.378292752042,0.06000275110352027,Ollie,GateGuardianOllie,3,Yu-Gi-Oh Genesys,8
+Rescue-ACERobertYu-Gi-Oh,Rescue-ACE,1500,350.0,0.06,Robert,Rescue-ACERobert,3,Yu-Gi-Oh,0
+Rescue-ACERobertYu-Gi-Oh FFA,Rescue-ACE,1500,350.0,0.06,Robert,Rescue-ACERobert,3,Yu-Gi-Oh FFA,0
+Rescue-ACERobertYu-Gi-Oh Team,Rescue-ACE,1500,350.0,0.06,Robert,Rescue-ACERobert,3,Yu-Gi-Oh Team,0
+Rescue-ACERobertYu-Gi-Oh Genesys,Rescue-ACE,1500,350.0,0.06,Robert,Rescue-ACERobert,3,Yu-Gi-Oh Genesys,0
+Rescue-ACERobertYu-Gi-Oh Genesys,Rescue-ACE,1698,260.4063981752062,0.059999573396400614,Robert,Rescue-ACERobert,3,Yu-Gi-Oh Genesys,1
+Gate GuardianOllieYu-Gi-Oh Genesys,Gate Guardian,1503,147.46061073502213,0.06000290430432188,Ollie,GateGuardianOllie,3,Yu-Gi-Oh Genesys,9
+HecahandsRobertYu-Gi-Oh Genesys,Hecahands,1661,149.91283175086122,0.06001432074664816,Robert,HecahandsRobert,3,Yu-Gi-Oh Genesys,4
+CenturionAlexYu-Gi-Oh Genesys,Centurion,1376,265.97069661696105,0.05999901331723751,Alex,CenturionAlex,4,Yu-Gi-Oh Genesys,1
+HecahandsRobertYu-Gi-Oh Genesys,Hecahands,1709,139.0023480740912,0.060013554216238496,Robert,HecahandsRobert,3,Yu-Gi-Oh Genesys,5
+LibromancerMatYu-Gi-Oh Genesys,Libromancer,1604,96.21320750057806,0.05999126280531881,Mat,LibromancerMat,3,Yu-Gi-Oh Genesys,15
+HecahandsRobertYu-Gi-Oh Genesys,Hecahands,1720,135.70313267658463,0.0600125949305973,Robert,HecahandsRobert,3,Yu-Gi-Oh Genesys,6
+Red Dragon ArchfiendMatt WYu-Gi-Oh Genesys,Red Dragon Archfiend,1311,137.6939541237547,0.0600017136775179,Matt W,RedDragonArchfiendMattW,4,Yu-Gi-Oh Genesys,13
+Gate GuardianOllieYu-Gi-Oh Genesys,Gate Guardian,1578,122.3318439704767,0.06000178782317618,Ollie,GateGuardianOllie,3,Yu-Gi-Oh Genesys,10
+LibromancerMatYu-Gi-Oh Genesys,Libromancer,1567,89.15406023641407,0.059990943282865854,Mat,LibromancerMat,3,Yu-Gi-Oh Genesys,16
+Red Dragon ArchfiendMatt WYu-Gi-Oh Genesys,Red Dragon Archfiend,1463,128.85889952226518,0.060024795072229006,Matt W,RedDragonArchfiendMattW,3,Yu-Gi-Oh Genesys,14
+Lair of DarknessOllieYu-Gi-Oh Genesys,Lair of Darkness,1519,107.74421195153981,0.060041139901767134,Ollie,LairofDarknessOllie,3,Yu-Gi-Oh Genesys,13
+EnneacraftRobertYu-Gi-Oh,Enneacraft,1769,201.01901489560447,0.059996414473131886,Robert,EnneacraftRobert,2,Yu-Gi-Oh,4
+ChaosMatYu-Gi-Oh,Chaos,1452,118.02924264582568,0.06002876213369038,Mat,ChaosMat,3,Yu-Gi-Oh,12
+DinosaurRobertYu-Gi-Oh Genesys,Dinosaur,1978,157.55280635173384,0.05999474026817454,Robert,DinosaurRobert,2,Yu-Gi-Oh Genesys,7
+LibromancerMatYu-Gi-Oh Genesys,Libromancer,1562,88.80635365728101,0.05999001133667751,Mat,LibromancerMat,3,Yu-Gi-Oh Genesys,17
+DinosaurRobertYu-Gi-Oh Genesys,Dinosaur,1988,153.9563140494686,0.059993997828181655,Robert,DinosaurRobert,2,Yu-Gi-Oh Genesys,8
+Lair of DarknessOllieYu-Gi-Oh Genesys,Lair of Darkness,1514,106.94984491427275,0.060040385671428664,Ollie,LairofDarknessOllie,3,Yu-Gi-Oh Genesys,14

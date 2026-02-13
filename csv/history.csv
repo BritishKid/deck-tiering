@@ -224,9 +224,9 @@ Dark MagicianMatYu-Gi-Oh Genesys,Dark Magician,Mat,1217,WON,Lair of Darkness own
 Lair of DarknessOllieYu-Gi-Oh Genesys,Lair of Darkness,Ollie,1469,LOST,Dark Magician owned by Mat,Yu-Gi-Oh Genesys,0,1
 CubicOllieYu-Gi-Oh Genesys,Cubic,Ollie,1863,WON,Dark Magician owned by Mat,Yu-Gi-Oh Genesys,1,0
 Dark MagicianMatYu-Gi-Oh Genesys,Dark Magician,Mat,1320,LOST,Cubic owned by Ollie,Yu-Gi-Oh Genesys,0,1
-Blue Eyes BusterOllieYu-Gi-Oh Genesys,Blue Eyes Buster,Ollie,1500,WON,Dark Magician owned by Mat,Yu-Gi-Oh Genesys,1,0
+Blue Eyes OllieYu-Gi-Oh Genesys,Blue Eyes,Ollie,1500,WON,Dark Magician owned by Mat,Yu-Gi-Oh Genesys,1,0
 Dark MagicianMatYu-Gi-Oh Genesys,Dark Magician,Mat,1310,LOST,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh Genesys,0,1
-Blue Eyes BusterOllieYu-Gi-Oh Genesys,Blue Eyes Buster,Ollie,1605,WON,Dark Magician owned by Matt W,Yu-Gi-Oh Genesys,1,0
+Blue Eyes OllieYu-Gi-Oh Genesys,Blue Eyes,Ollie,1605,WON,Dark Magician owned by Matt W,Yu-Gi-Oh Genesys,1,0
 Dark MagicianMatt WYu-Gi-Oh Genesys,Dark Magician,Matt W,1500,LOST,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh Genesys,0,1
 LibromancerMatYu-Gi-Oh Genesys,Libromancer,Mat,1619,WON,Dark Magician owned by Matt W,Yu-Gi-Oh Genesys,1,0
 Dark MagicianMatt WYu-Gi-Oh Genesys,Dark Magician,Matt W,1367,LOST,Libromancer owned by Mat,Yu-Gi-Oh Genesys,0,1
@@ -290,3 +290,61 @@ WightSwornOllieYu-Gi-Oh Genesys,WightSworn,Ollie,1224,WON,Gunkan Suship owned by
 Gunkan SushipRobertYu-Gi-Oh Genesys,Gunkan Suship,Robert,1869,LOST,WightSworn owned by Ollie,Yu-Gi-Oh Genesys,1,2
 LibromancerMatYu-Gi-Oh Genesys,Libromancer,Mat,1628,WON,Gunkan Suship owned by Robert,Yu-Gi-Oh Genesys,1,0
 Gunkan SushipRobertYu-Gi-Oh Genesys,Gunkan Suship,Robert,1556,LOST,Libromancer owned by Mat,Yu-Gi-Oh Genesys,0,1
+HecahandsRobertYu-Gi-Oh Genesys,Hecahands,Robert,1500,WON,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh Genesys,2,0
+Blue Eyes OllieYu-Gi-Oh Genesys,Blue Eyes,Ollie,1696,LOST,Hecahands owned by Robert,Yu-Gi-Oh Genesys,0,2
+EnneacraftRobertYu-Gi-Oh,Enneacraft,Robert,1500,WON,Lair of Darkness owned by Ollie,Yu-Gi-Oh,1,0
+Lair of DarknessOllieYu-Gi-Oh,Lair of Darkness,Ollie,1034,LOST,Enneacraft owned by Robert,Yu-Gi-Oh,0,1
+LibromancerMatYu-Gi-Oh Genesys,Libromancer,Mat,1657,WON,Red Dragon Archfiend owned by Matt W,Yu-Gi-Oh Genesys,2,0
+Red Dragon ArchfiendMatt WYu-Gi-Oh Genesys,Red Dragon Archfiend,Matt W,1144,LOST,Libromancer owned by Mat,Yu-Gi-Oh Genesys,0,2
+Dark WorldMatYu-Gi-Oh Genesys,Dark World,Mat,1500,WON,Dark Magician owned by Matt W,Yu-Gi-Oh Genesys,1,0
+Dark MagicianMatt WYu-Gi-Oh Genesys,Dark Magician,Matt W,1272,LOST,Dark World owned by Mat,Yu-Gi-Oh Genesys,0,1
+WightSwornOllieYu-Gi-Oh Genesys,WightSworn,Ollie,1498,WON,Dark Magician owned by Matt W,Yu-Gi-Oh Genesys,2,0
+Dark MagicianMatt WYu-Gi-Oh Genesys,Dark Magician,Matt W,1236,LOST,WightSworn owned by Ollie,Yu-Gi-Oh Genesys,0,2
+WightSwornOllieYu-Gi-Oh Genesys,WightSworn,Ollie,1549,WON,Red Dragon Archfiend owned by Matt W,Yu-Gi-Oh Genesys,2,1
+Red Dragon ArchfiendMatt WYu-Gi-Oh Genesys,Red Dragon Archfiend,Matt W,1127,LOST,WightSworn owned by Ollie,Yu-Gi-Oh Genesys,1,2
+HecahandsRobertYu-Gi-Oh Genesys,Hecahands,Robert,1887,WON,Libromancer owned by Mat,Yu-Gi-Oh Genesys,2,1
+LibromancerMatYu-Gi-Oh Genesys,Libromancer,Mat,1667,LOST,Hecahands owned by Robert,Yu-Gi-Oh Genesys,1,2
+EnneacraftRobertYu-Gi-Oh,Enneacraft,Robert,1549,WON,Libromancer owned by Mat,Yu-Gi-Oh,1,0
+LibromancerMatYu-Gi-Oh,Libromancer,Mat,1510,LOST,Enneacraft owned by Robert,Yu-Gi-Oh,0,1
+OrcustRobertYu-Gi-Oh,Orcust,Robert,1245,WON,Voiceless Voice owned by Alex,Yu-Gi-Oh,2,0
+Voiceless VoiceAlexYu-Gi-Oh,Voiceless Voice,Alex,1673,LOST,Orcust owned by Robert,Yu-Gi-Oh,0,2
+EnneacraftRobertYu-Gi-Oh,Enneacraft,Robert,1688,WON,Live Twin owned by Alex,Yu-Gi-Oh,2,0
+Live TwinAlexYu-Gi-Oh,Live Twin,Alex,1161,LOST,Enneacraft owned by Robert,Yu-Gi-Oh,0,2
+Lair of DarknessOllieYu-Gi-Oh Genesys,Lair of Darkness,Ollie,1553,WON,Libromancer owned by Mat,Yu-Gi-Oh Genesys,2,1
+LibromancerMatYu-Gi-Oh Genesys,Libromancer,Mat,1677,LOST,Lair of Darkness owned by Ollie,Yu-Gi-Oh Genesys,1,2
+ChaosMatYu-Gi-Oh,Chaos,Mat,1384,WON,Nemleria Regenesis owned by Robert,Yu-Gi-Oh,2,0
+Nemleria RegenesisRobertYu-Gi-Oh,Nemleria Regenesis,Robert,1638,LOST,Chaos owned by Mat,Yu-Gi-Oh,0,2
+Ancient GearsAlexYu-Gi-Oh,Ancient Gears,Alex,1339,WON,Libromancer owned by Mat,Yu-Gi-Oh,2,1
+LibromancerMatYu-Gi-Oh,Libromancer,Mat,1479,LOST,Ancient Gears owned by Alex,Yu-Gi-Oh,1,2
+HecahandsRobertYu-Gi-Oh,Hecahands,Robert,1500,WON,Blue Eyes Buster owned by Ollie,Yu-Gi-Oh,2,0
+Blue Eyes BusterOllieYu-Gi-Oh,Blue Eyes Buster,Ollie,1466,LOST,Hecahands owned by Robert,Yu-Gi-Oh,0,2
+InfernobleAlexYu-Gi-Oh Genesys,Infernoble,Alex,1842,WON,WightSworn owned by Ollie,Yu-Gi-Oh Genesys,1,0
+WightSwornOllieYu-Gi-Oh Genesys,WightSworn,Ollie,1477,LOST,Infernoble owned by Alex,Yu-Gi-Oh Genesys,0,1
+Red Dragon ArchfiendMatt WYu-Gi-Oh Genesys,Red Dragon Archfiend,Matt W,1207,WON,HERO owned by Ollie,Yu-Gi-Oh Genesys,2,0
+HEROOllieYu-Gi-Oh Genesys,HERO,Ollie,1500,LOST,Red Dragon Archfiend owned by Matt W,Yu-Gi-Oh Genesys,0,2
+WightSwornOllieYu-Gi-Oh Genesys,WightSworn,Ollie,1464,WON,Hecahands owned by Robert,Yu-Gi-Oh Genesys,2,1
+HecahandsRobertYu-Gi-Oh Genesys,Hecahands,Robert,1837,LOST,WightSworn owned by Ollie,Yu-Gi-Oh Genesys,1,2
+DinosaurRobertYu-Gi-Oh Genesys,Dinosaur,Robert,1943,WON,Dark World owned by Mat,Yu-Gi-Oh Genesys,1,0
+Dark WorldMatYu-Gi-Oh Genesys,Dark World,Mat,1595,LOST,Dinosaur owned by Robert,Yu-Gi-Oh Genesys,0,1
+YummyRobertYu-Gi-Oh,Yummy,Robert,1652,WON,Chaos owned by Mat,Yu-Gi-Oh,1,0
+ChaosMatYu-Gi-Oh,Chaos,Mat,1490,LOST,Yummy owned by Robert,Yu-Gi-Oh,0,1
+TistinaRobertYu-Gi-Oh Genesys,Tistina,Robert,1934,WON,Gate Guardian owned by Ollie,Yu-Gi-Oh Genesys,2,0
+Gate GuardianOllieYu-Gi-Oh Genesys,Gate Guardian,Ollie,1582,LOST,Tistina owned by Robert,Yu-Gi-Oh Genesys,0,2
+Rescue-ACERobertYu-Gi-Oh Genesys,Rescue-ACE,Robert,1500,WON,Gate Guardian owned by Ollie,Yu-Gi-Oh Genesys,1,0
+Gate GuardianOllieYu-Gi-Oh Genesys,Gate Guardian,Ollie,1549,LOST,Rescue-ACE owned by Robert,Yu-Gi-Oh Genesys,0,1
+HecahandsRobertYu-Gi-Oh Genesys,Hecahands,Robert,1628,WON,Centurion owned by Alex,Yu-Gi-Oh Genesys,1,0
+CenturionAlexYu-Gi-Oh Genesys,Centurion,Alex,1500,LOST,Hecahands owned by Robert,Yu-Gi-Oh Genesys,0,1
+HecahandsRobertYu-Gi-Oh Genesys,Hecahands,Robert,1661,WON,Libromancer owned by Mat,Yu-Gi-Oh Genesys,1,0
+LibromancerMatYu-Gi-Oh Genesys,Libromancer,Mat,1626,LOST,Hecahands owned by Robert,Yu-Gi-Oh Genesys,0,1
+HecahandsRobertYu-Gi-Oh Genesys,Hecahands,Robert,1709,WON,Red Dragon Archfiend owned by Matt W,Yu-Gi-Oh Genesys,1,0
+Red Dragon ArchfiendMatt WYu-Gi-Oh Genesys,Red Dragon Archfiend,Matt W,1323,LOST,Hecahands owned by Robert,Yu-Gi-Oh Genesys,0,1
+Gate GuardianOllieYu-Gi-Oh Genesys,Gate Guardian,Ollie,1503,WON,Libromancer owned by Mat,Yu-Gi-Oh Genesys,2,1
+LibromancerMatYu-Gi-Oh Genesys,Libromancer,Mat,1604,LOST,Gate Guardian owned by Ollie,Yu-Gi-Oh Genesys,1,2
+Red Dragon ArchfiendMatt WYu-Gi-Oh Genesys,Red Dragon Archfiend,Matt W,1311,WON,Lair of Darkness owned by Ollie,Yu-Gi-Oh Genesys,2,0
+Lair of DarknessOllieYu-Gi-Oh Genesys,Lair of Darkness,Ollie,1621,LOST,Red Dragon Archfiend owned by Matt W,Yu-Gi-Oh Genesys,0,2
+EnneacraftRobertYu-Gi-Oh,Enneacraft,Robert,1726,WON,Chaos owned by Mat,Yu-Gi-Oh,1,0
+ChaosMatYu-Gi-Oh,Chaos,Mat,1467,LOST,Enneacraft owned by Robert,Yu-Gi-Oh,0,1
+DinosaurRobertYu-Gi-Oh Genesys,Dinosaur,Robert,1964,WON,Libromancer owned by Mat,Yu-Gi-Oh Genesys,1,0
+LibromancerMatYu-Gi-Oh Genesys,Libromancer,Mat,1567,LOST,Dinosaur owned by Robert,Yu-Gi-Oh Genesys,0,1
+DinosaurRobertYu-Gi-Oh Genesys,Dinosaur,Robert,1978,WON,Lair of Darkness owned by Ollie,Yu-Gi-Oh Genesys,1,0
+Lair of DarknessOllieYu-Gi-Oh Genesys,Lair of Darkness,Ollie,1519,LOST,Dinosaur owned by Robert,Yu-Gi-Oh Genesys,0,1
